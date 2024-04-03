@@ -16,7 +16,8 @@ ___
 
 <a name="react"></a> 
 # React
-Mobile first responsive desktop components and features
+
+<br/>
 
 Feature : **Sign up details**
 
