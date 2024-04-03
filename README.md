@@ -13,8 +13,8 @@ ___
 <br/>
 <br/>
 
-<a name="react"/> 
-#React
+<a name="react"></a> 
+# React
 Mobile first responsive desktop components and features
 
 Feature : **Sign up details**
@@ -25,7 +25,7 @@ ___
 <br/>
 <br/>
 
-<a name="reactnative"/>
+<a name="reactnative"><a/>
 #React Native
 
 Feature : **Bitcoin Buying**
@@ -53,7 +53,7 @@ https://github.com/rfrepo/code/assets/160714309/37cc7d2c-019b-458d-a944-040e6fef
 <br/>
 <br/>
 
-<a name="angular"/>
+<a name="angular"><a/>
 #Angular
 
 Angular components and directives, spanning from the earlier versions 1 and 2
@@ -62,7 +62,7 @@ ___
 <br/>
 <br/>
 
-<a name="puremvc"/>
+<a name="puremvc"><a/>
 #PureMVC
 
 __Mazda Configurator__ - *desktop web experience*
@@ -80,7 +80,7 @@ ___
 <br/>
 <br/>
 
-<a name="electron"/>
+<a name="electron"><a/>
 #Electron
 
 __FontFace__ personal project simplifying font selection/visualisation by browsing and previewing all locally installed fonts
@@ -91,7 +91,7 @@ ___
 <br/>
 <br/>
 
-<a name="browserextensions"/>
+<a name="browserextensions"><a/>
 #Browser Extensions
 
 __Bookmark Search__ - personal project Chrome extension for searching through bookmarks.
