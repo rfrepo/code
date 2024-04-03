@@ -26,7 +26,7 @@ ___
 <br/>
 
 <a name="reactnative"><a/>
-#React Native
+# React Native
 
 Feature : **Bitcoin Buying**
 
@@ -54,7 +54,7 @@ https://github.com/rfrepo/code/assets/160714309/37cc7d2c-019b-458d-a944-040e6fef
 <br/>
 
 <a name="angular"><a/>
-#Angular
+# Angular
 
 Angular components and directives, spanning from the earlier versions 1 and 2
 ___
@@ -63,7 +63,7 @@ ___
 <br/>
 
 <a name="puremvc"><a/>
-#PureMVC
+# PureMVC
 
 __Mazda Configurator__ - *desktop web experience*
 
@@ -81,7 +81,7 @@ ___
 <br/>
 
 <a name="electron"><a/>
-#Electron
+# Electron
 
 __FontFace__ personal project simplifying font selection/visualisation by browsing and previewing all locally installed fonts
 
@@ -92,7 +92,7 @@ ___
 <br/>
 
 <a name="browserextensions"><a/>
-#Browser Extensions
+# Browser Extensions
 
 __Bookmark Search__ - personal project Chrome extension for searching through bookmarks.
 
