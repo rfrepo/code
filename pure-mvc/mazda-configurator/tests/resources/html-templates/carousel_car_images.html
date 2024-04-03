@@ -1,0 +1,5 @@
+<div id='vehicleDisplay' class="vehicleDisplay">
+    <% _.each(images, function(image, layer) { %>
+        <img id=<%= layer %> class="carPart" src=<%= image %> width="960px" height="388px"/>
+    <% }); %>
+</div>

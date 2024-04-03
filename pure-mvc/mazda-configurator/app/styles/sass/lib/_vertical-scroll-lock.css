@@ -1,0 +1,57 @@
+.vehicleContainer {
+  position: fixed;
+  width: 100%;
+  margin-left: -50%;
+  left: 50%;
+  z-index: 0; }
+
+.vehicleContainer-locked {
+  clip: rect(0px 3000px 250px 0px);
+  -webkit-backface-visibility: hidden;
+  height: 310px;
+  z-index: 2; }
+
+#vehicleDisplay {
+  position: relative; }
+
+.navigation-tabs-unlocked {
+  position: relative;
+  top: 430px;
+  width: 100%;
+  z-index: 2; }
+
+.navigation-tabs-locked {
+  position: fixed;
+  width: 100%;
+  margin-left: -50%;
+  left: 50%;
+  top: 370px;
+  z-index: 2; }
+
+.section-content {
+  background-color: #E9E9E9; }
+  .section-content .summary-details-container {
+    display: none; }
+  .section-content.summary .summary-details-container {
+    display: block; }
+  .section-content.summary .configurator-carousel, .section-content.summary .tabContentContainer, .section-content.summary #grade-content {
+    display: none; }
+
+.section-content-unlocked {
+  position: relative;
+  top: 430px;
+  overflow: hidden; }
+
+.section-content-locked {
+  top: 558px;
+  position: relative;
+  overflow: auto; }
+
+.tabsNav-locked:after {
+  content: '';
+  bottom: -40px;
+  position: absolute;
+  overflow: visible;
+  height: 40px;
+  width: 100%;
+  background: url("../resources/images/components/shadow.png") center top no-repeat; }

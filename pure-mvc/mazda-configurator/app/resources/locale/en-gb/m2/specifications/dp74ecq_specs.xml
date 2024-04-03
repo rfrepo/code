@@ -1,0 +1,225 @@
+<h3 class="accordion-header">Fahrleistungen und Verbräuche</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Abgasnorm</td>
+       <td></td>
+       <td>EURO 5 </td>
+      </tr>
+      <tr>
+       <td>Beschleunigung [0–100 km/h in Sek.]</td>
+       <td></td>
+       <td>14,9 s</td>
+      </tr>
+      <tr>
+       <td>CO2-Effizienz**</td>
+       <td>En-Eff.Klasse**</td>
+       <td>C </td>
+      </tr>
+      <tr>
+       <td>CO2-Emissionen kombiniert* g/km</td>
+       <td></td>
+       <td>115 g/km</td>
+      </tr>
+      <tr>
+       <td>Höchstgeschwindigkeit</td>
+       <td></td>
+       <td>168 km/h</td>
+      </tr>
+      <tr>
+       <td>Kraftstoffart</td>
+       <td></td>
+       <td>Super bleifrei nach DIN EN 228 (mind. 95 ROZ) E10 tauglich </td>
+      </tr>
+      <tr>
+       <td>Kraftstoffverbrauch* l/100km</td>
+       <td>außerorts</td>
+       <td>4,3 l/100km</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>innerorts</td>
+       <td>6,2 l/100km</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>kombiniert</td>
+       <td>5,0 l/100km</td>
+      </tr>
+      <tr>
+       <td>Tankinhalt</td>
+       <td></td>
+       <td>42,8 l</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Kraftübertragung</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Getriebe</td>
+       <td></td>
+       <td></td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Lenkung</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Lenkgetriebe</td>
+       <td></td>
+       <td>Zahnstangenlenkung mit Servounterstützung </td>
+      </tr>
+      <tr>
+       <td>Wendekreisdurchmesser</td>
+       <td></td>
+       <td>9,8 m</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Maße und Gewichte</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Bodenfreiheit</td>
+       <td></td>
+       <td>150 mm</td>
+      </tr>
+      <tr>
+       <td>Bremsen</td>
+       <td>Durchmesser hinten</td>
+       <td>200 mm</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>Durchmesser vorne</td>
+       <td>258 mm</td>
+      </tr>
+      <tr>
+       <td>Fahrzeuglänge/-breite/-höhe</td>
+       <td></td>
+       <td>3.920/1.695/1.475 mm</td>
+      </tr>
+      <tr>
+       <td>Kofferraumvolumen</td>
+       <td>umgelegte 2. Sitzreihe bis Höhe Sicherheitsgurte</td>
+       <td>469 l</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>umgelegte 2. Sitzreihe dachhoch</td>
+       <td>787 l</td>
+      </tr>
+      <tr>
+       <td>Kofferraumvolumen,  nach VDA</td>
+       <td></td>
+       <td>250 l</td>
+      </tr>
+      <tr>
+       <td>Kopf-/Schulter-/Beinfreiheit, hinten</td>
+       <td>nur 5-Türer</td>
+       <td>959/1.300/883 mm</td>
+      </tr>
+      <tr>
+       <td>Kopf-/Schulter-/Beinfreiheit, vorne</td>
+       <td></td>
+       <td>1.004/1.340/1.068 mm</td>
+      </tr>
+      <tr>
+       <td>Leergewicht im fahrbereiten Zustand inkl. 75 kg für den Fahrer</td>
+       <td>nur 5-Türer</td>
+       <td>1.035 kg</td>
+      </tr>
+      <tr>
+       <td>Max. Anhängelast</td>
+       <td>gebremst 12 % Steigung</td>
+       <td>900 kg</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>gebremst 8 % Steigung</td>
+       <td>1.000 kg</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>ungebremst</td>
+       <td>500 kg</td>
+      </tr>
+      <tr>
+       <td>Maximale Dach-/Stützlast</td>
+       <td></td>
+       <td>50/50 kg</td>
+      </tr>
+      <tr>
+       <td>Radstand</td>
+       <td></td>
+       <td>2.490 mm</td>
+      </tr>
+      <tr>
+       <td>Spurweite vorne/hinten</td>
+       <td>bei 185/60 R 14 und 185/55 R 15 Bereifung</td>
+       <td>1.475/1.465 mm</td>
+      </tr>
+      <tr>
+       <td>Zulässige Achslast hinten</td>
+       <td>nur 5-Türer</td>
+       <td>750 kg</td>
+      </tr>
+      <tr>
+       <td>Zulässige Achslast vorne</td>
+       <td>nur 5-Türer</td>
+       <td>790 kg</td>
+      </tr>
+      <tr>
+       <td>Zulässiges Gesamtgewicht</td>
+       <td>nur 5-Türer</td>
+       <td>1.485 kg</td>
+      </tr>
+      <tr>
+       <td>Zulässiges Zuggesamtgewicht, gebremst 12% Steigung</td>
+       <td>nur 5-Türer</td>
+       <td>2.385 kg</td>
+      </tr>
+      <tr>
+       <td>Zulässiges Zuggesamtgewicht, gebremst 8% Steigung</td>
+       <td>nur 5-Türer</td>
+       <td>2.485 kg</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Motor</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Anzahl Zylinder/Anzahl Ventile</td>
+       <td></td>
+       <td>4/16 </td>
+      </tr>
+      <tr>
+       <td>Bohrung x Hub</td>
+       <td></td>
+       <td>74,0 x 78,4 mm</td>
+      </tr>
+      <tr>
+       <td>Hubraum</td>
+       <td></td>
+       <td>1.349 cm3</td>
+      </tr>
+      <tr>
+       <td>Maximales Drehmoment</td>
+       <td></td>
+       <td>119/3.500 Nm / rpm</td>
+      </tr>
+      <tr>
+       <td>Nennleistung</td>
+       <td></td>
+       <td>55 (75)/6.000 kW (PS) / rpm</td>
+      </tr>
+      <tr>
+       <td>Verdichtungsverhältnis</td>
+       <td></td>
+       <td>10,0 (+/-0,2):1 </td>
+      </tr>
+   </table>
+</div>

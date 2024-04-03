@@ -1,0 +1,9 @@
+<% _.each(items, function(item, index) { %>
+<li id="<%= item.getId() %>" <%= item.getSelected() ? 'class="selected"' : '' %> >
+    <p class="option-title"><%= item.getName() %></p>
+    <p class="price"><%= item.getFormattedPriceText() %></p>
+    <div class="thumbnail">
+        <img src="<%= item.getThumbnailURL() %>">
+    </div>
+</li>
+<% }); %>

@@ -1,0 +1,27 @@
+.lt-ie9 {
+  img.button {
+    width: auto;
+  }
+
+  .vehicle-details-container {
+    min-height: auto;
+  }
+
+  .locked-image-shrunk {
+    left: 469px;
+    zoom: 0.5;
+  }
+
+  .unlocked-image-normal {
+    zoom: 1;
+  }
+
+  .M3 {
+    #configurator-vehicle {
+      #vehicleDisplay, #interiorDisplay {
+        top: -60px;
+      }
+    }
+  }
+
+}

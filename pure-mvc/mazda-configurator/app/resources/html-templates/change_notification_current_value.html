@@ -1,0 +1,3 @@
+<% _.each(items, function(item, index) { %>
+    <li class="<%= item.isMatch() ? 'match' : 'no-match' %>"><%= item.previousValue %></li>
+<% }); %>

@@ -1,0 +1,25 @@
+<% _.each(items, function(item, index) { %>
+<li id="<%= item.getId() %>" <%= item.getSelected() ? 'class="selected"' : '' %> >
+<span class="tick"></span>
+<div class="thumbnail">
+    <p class="option-title"><%= item.getName() %></p>
+
+    <p class="price"><%= item.getFormattedPriceText() %></p>
+</div>
+<% if(item.getType() === bmc.support.ConfigurableType.ENGINE &&
+    item.getConfigurableItemVO().getSpecifications().specs.length > 0) { %>
+<span class="dropdown"></span>
+<div class="engine-data">
+    <ul>
+        <% _.each(item.getConfigurableItemVO().getSpecifications().specs, function (specification) { %>
+        <li>
+            <p><%= specification.name %></p>
+
+            <p><%= specification.value %> <%= specification.unit %></p>
+        </li>
+        <% }); %>
+    </ul>
+</div>
+<% } %>
+</li>
+<% }); %>

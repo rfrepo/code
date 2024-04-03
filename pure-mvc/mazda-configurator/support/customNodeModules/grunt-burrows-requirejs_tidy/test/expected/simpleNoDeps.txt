@@ -1,0 +1,6 @@
+define([], function () {
+    'use strict';
+    puremvc.define({
+        bmc.support.class1.CONFIGURABLE_ITEM_UI;
+    });
+});

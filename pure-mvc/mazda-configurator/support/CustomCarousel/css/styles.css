@@ -1,0 +1,55 @@
+#CarouselContainer {
+    border: solid 1px lightblue;
+    width: 851px;
+    min-height: 50px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+#ArrowLeft, #ArrowRight {
+
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    cursor: pointer;
+    border-right: 20px solid lightblue;
+}
+
+#ArrowRight {
+    border-left: 20px solid lightblue;
+    border-right: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.swatch {
+    background: lightblue;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.carousel-item {
+    position: relative;
+    width: 80px;
+   /* border: 1px solid yellowgreen;*/
+}
+
+.carousel-item > * {
+    margin: 0 auto;
+}
+
+#ViewArea {
+    width: 600px;
+    height: 30px;
+    background-color: orangered;
+    opacity: .3;
+    margin: 0 auto;
+    position: relative;
+}

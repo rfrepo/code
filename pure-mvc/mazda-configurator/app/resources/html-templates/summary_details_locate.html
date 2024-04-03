@@ -1,0 +1,15 @@
+<% var globalConfig = bmc.support.GlobalConfig.getInstance(); %>
+<div id="dealer" class="summary-container summary-locate">
+    <div class="summary-locate-body summary-container">
+        <h2><%= globalConfig.DEALER_LOCATOR_TITLE %></h2>
+        <a class="button edit-configuration-button" href="<%= globalConfig.DEALER_LOCATOR_LINK %>" ><%= globalConfig.DEALER_LOCATOR_TEXT %></a>
+        <h2><%= globalConfig.OFFERS_TITLE %></h2>
+        <a class="button edit-configuration-button" href="<%= globalConfig.OFFERS_LINK %>" ><%= globalConfig.OFFERS_TEXT %></a>
+        <h2><%= globalConfig.FINANCE_CALCULATOR_TITLE %></h2>
+        <a class="button finance-calculator-button" href="<%= globalConfig.FINANCE_CALCULATOR_LINK %>" ><%= globalConfig.FINANCE_CALCULATOR_TEXT %></a>
+    </div>
+</div>
+<div class="finance-calculator-modal hidden">
+    <div class="header"><a class="button">Close</a></div>
+    <iframe seamless="seamless" scrolling="no"></iframe>
+</div>

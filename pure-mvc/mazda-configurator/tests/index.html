@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="lib/mocha/mocha.css">
+</head>
+<body>
+<div id="mocha"></div>
+
+<!-- assertion framework -->
+
+<script src="lib/expect.js"></script>
+<script src="lib/sinon.js"></script>
+<script src="lib/sinon/match.js"></script>
+<script src="lib/sinon/spy.js"></script>
+<script src="lib/sinon/call.js"></script>
+<script src="lib/sinon/stub.js"></script>
+<script src="lib/sinon/mock.js"></script>
+<script src="lib/sinon/assert.js"></script>
+<script src="lib/sinon/util/event.js"></script>
+<script src="lib/sinon/util/fake_xml_http_request.js"></script>
+<script src="lib/sinon/util/fake_timers.js"></script>
+<script src="lib/sinon/util/xhr_ie.js"></script>
+<script src="lib/sinon/util/timers_ie.js"></script>
+<script src="lib/sinon/util/fake_server.js"></script>
+<script src="lib/sinon/util/fake_server_with_clock.js"></script>
+<script src="lib/sinon/collection.js"></script>
+<script src="lib/sinon/sandbox.js"></script>
+<script src="lib/sinon/test.js"></script>
+<script src="lib/sinon/test_case.js"></script>
+
+<script src="lib/BTesting.js"></script>
+<script src="lib/polyfill.js"></script>
+<script src="lib/string-splice.js"></script>
+<script src="lib/mocha/mocha.js"></script>
+<script src="lib/mobile_dom.js"></script>
+
+
+<!-- include source files here... -->
+
+<script type="text/javascript">
+    window.bmc = {
+        support: {
+            services: {}
+        }
+    }
+</script>
+
+<script type="text/javascript" src="../app/scripts/core/support/LocaleDictionary.js"></script>
+<script type="text/javascript" src="../app/scripts/core/support/UrlExtractor.js"></script>
+
+<script type="text/javascript">
+    (function (global) {
+        global.urlExtractor = new bmc.support.UrlExtractor(new bmc.support.LocaleDictionary());
+        global.urlExtractor.DEFAULT_BASE_URL = "../app/scripts/core";
+    }(window));
+</script>
+
+<script type="text/javascript" src="../app/scripts/core/support/services/LoadSyncDataService.js"></script>
+<script type="text/javascript" src="../app/scripts/core/support/GlobalConstants.js"></script>
+<script type="text/javascript" src="../app/scripts/core/support/GlobalConfig.js"></script>
+<script type="text/javascript" src="../app/scripts/core/support/PlatformDetector.js"></script>
+
+<script src="../app/scripts/core/vendor/puremvc-1.0.1.js"></script>
+<script src="../app/components/requirejs/require.js"></script>
+<script src="../app/components/jquery/jquery.js"></script>
+<script src="../app/components/underscore/underscore.js"></script>
+
+<!-- Mandatory before specs are run -->
+<script>
+    mocha.setup('bdd');
+</script>
+
+<!-- include spec files here... -->
+
+<script src="spec/support/GlobalConfigSpec.js"></script>
+
+<!-- Model -->
+
+<script src="spec/model/proxies/ActiveConfigurationProxySpec.js"></script>
+<script src="spec/model/proxies/ChangeBaseVehicleByEngineProxySpec.js"></script>
+<script src="spec/model/proxies/ChangeBaseVehicleByGradeProxySpec.js"></script>
+<script src="spec/model/proxies/ChangeBaseVehicleByTrimProxySpec.js"></script>
+<script src="spec/model/proxies/ConfigurationConflictProxySpec.js"></script>
+<script src="spec/model/proxies/InteriorPresentationProxySpec.js"></script>
+<script src="spec/model/proxies/NavigationProxySpec.js"></script>
+<script src="spec/model/proxies/PriceCalculationProxySpec.js"></script>
+<script src="spec/model/proxies/SessionProxySpec.js"></script>
+<script src="spec/model/proxies/UserConfigurationsProxySpec.js"></script>
+<script src="spec/model/proxies/VehiclePresentationProxySpec.js"></script>
+
+<script src="spec/model/proxies/data/AbstractProxySpec.js"></script>
+<script src="spec/model/proxies/data/BaseVehiclesDefaultsProxySpec.js"></script>
+<script src="spec/model/proxies/data/BaseVehiclesProxySpec.js"></script>
+<script src="spec/model/proxies/data/ConfigurableItemProxySpec.js"></script>
+<script src="spec/model/proxies/data/AccessoriesProxySpec.js"></script>
+
+<script src="spec/model/vo/SimpleConfigurationVOSpec.js"></script>
+<script src="spec/model/vo/UserJourneyVOSpec.js"></script>
+
+<!-- View -->
+<script src="spec/view/components/HTMLComponentUISpec.js"></script>
+<script src="spec/view/components/NavigationContainerSpec.js"></script>
+<script src="spec/view/components/SectionContentUISpec.js"></script>
+<script src="spec/view/components/VehiclePresentationUISpec.js"></script>
+<script src="spec/view/components/VerticalScrollLockerSpec.js"></script>
+
+<script src="spec/view/components/support/CarouselSpec.js"></script>
+<script src="spec/view/components/support/ConfigurableItemSpecificationsUISpec.js"></script>
+<script src="spec/view/components/support/VehiclePresentation/InteriorStateSpec.js"></script>
+<script src="spec/view/components/support/VehiclePresentation/ExteriorSpinStateSpec.js"></script>
+<script src="spec/view/components/support/VehiclePresentation/ExteriorStateSpec.js"></script>
+<script src="spec/view/components/support/VehiclePresentation/ExteriorStaticStateSpec.js"></script>
+<script src="spec/view/components/support/SectionContent/GradeContentStrategySpec.js"></script>
+<script src="spec/view/components/support/SectionContent/EngineContentStrategySpec.js"></script>
+
+<script src="spec/view/mediators/ApplicationMediatorSpec.js"></script>
+<script src="spec/view/mediators/ChangeNotificationUIMediatorSpec.js"></script>
+<script src="spec/view/mediators/ConfigurableItemCarouselMediatorSpec.js"></script>
+<script src="spec/view/mediators/ConfigurableItemCarouselSpec.js"></script>
+<script src="spec/view/mediators/ConfigurableItemSpecificationsUIMediatorSpec.js"></script>
+<script src="spec/view/mediators/ConfigurableItemPanelMediatorSpec.js"></script>
+<script src="spec/view/mediators/ConfigurableItemPanelSpec.js"></script>
+<!--<script src="spec/view/mediators/GradeContentStrategyMediatorSpec.js"></script>-->
+<script src="spec/view/mediators/MainConfiguratorContainerMediatorSpec.js"></script>
+<script src="spec/view/mediators/MobileMediatorSpec.js"></script>
+<script src="spec/view/mediators/NavigationContainerMediatorSpec.js"></script>
+<script src="spec/view/mediators/PricePresentationMediatorSpec.js"></script>
+<script src="spec/view/mediators/RecentConfigurationsMediatorSpec.js"></script>
+<script src="spec/view/mediators/SectionContentUIMediatorSpec.js"></script>
+<script src="spec/view/mediators/SummaryMediatorSpec.js"></script>
+<script src="spec/view/mediators/VehicleDetailsMediatorSpec.js"></script>
+<script src="spec/view/mediators/VehiclePresentationMediatorSpec.js"></script>
+
+<!-- Controller -->
+<script src="spec/controller/commands/ActiveConfigurationChangeCommandSpec.js"></script>
+<script src="spec/controller/commands/AddVOToActiveConfigurationCommandSpec.js"></script>
+<script src="spec/controller/commands/CreateConflictPriceCommandSpec.js"></script>
+<script src="spec/controller/commands/ConfigurableItemSelectionCommandSpec.js"></script>
+<script src="spec/controller/commands/ConfigurableItemUpdatedCommandSpec.js"></script>
+<script src="spec/controller/commands/DisplayActiveSectionCommandSpec.js"></script>
+<script src="spec/controller/commands/LoadSavedConfigurationCommandSpec.js"></script>
+<script src="spec/controller/commands/ModelSelectedCommandSpec.js"></script>
+<script src="spec/controller/commands/NavigationItemSelectionCommandSpec.js"></script>
+<script src="spec/controller/commands/OnActiveConfigurationChangeCommandSpec.js"></script>
+<script src="spec/controller/commands/PrepareSectionCarouselContentCommandSpec.js"></script>
+<script src="spec/controller/commands/PrepareSectionContentCommandSpec.js"></script>
+<script src="spec/controller/commands/RequestPriceUpdateCommandSpec.js"></script>
+<script src="spec/controller/commands/RequestUserConfigurationsCommandSpec.js"></script>
+<script src="spec/controller/commands/SetBaseVehicleOnActiveConfigurationCommandSpec.js"></script>
+<script src="spec/controller/commands/SetPriceOnConfigurableItemsVOsCommandSpec.js"></script>
+
+<script src="spec/controller/commands/UndoConfigurationChangeCommandSpec.js"></script>
+<script src="spec/controller/commands/UpdateUserConfigurationsCommandSpec.js"></script>
+<script src="spec/controller/commands/UpdateVehiclePresentationCommandSpec.js"></script>
+
+<script src="spec/controller/commands/startup/AllConfigurableItemDataCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/AssignConfigurableItemVOsToBaseVehicleVOCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/core/PrepControllerCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/core/PrepModelCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/core/PrepViewCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/DispatchAllConfigurableItemDataCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/DistributeModelDataToProxiesForParsingCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/LoadCurrentModelDataCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/LoadGlobalConfigCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/ModelDataLoadedCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/ParseVehiclePresentationCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/SetDefaultVehicleCommandSpec.js"></script>
+<script src="spec/controller/commands/startup/StartupCommandSpec.js"></script>
+
+<!-- Support -->
+
+<script src="spec/controller/support/ConfigurableItemSelection/SelectAccessoryStrategySpec.js"></script>
+<script src="spec/controller/support/ConfigurableItemSelection/SelectionStrategyFactorySpec.js"></script>
+<script src="spec/controller/support/ConfigurableItemSelection/SelectEngineStrategySpec.js"></script>
+<script src="spec/controller/support/ConfigurableItemSelection/SelectGradeStrategySpec.js"></script>
+<script src="spec/controller/support/ConfigurableItemSelection/SelectItemStrategySpec.js"></script>
+<script src="spec/controller/support/ConfigurableItemSelection/SelectTrimStrategySpec.js"></script>
+<script src="spec/controller/support/ConfigurableItemSelection/SelectOptionPackStrategySpec.js"></script>
+
+<script src="spec/controller/support/PrepareSectionConfigurableItemUIVOs/CreateAccessoriesConfigurableItemUIVOsStrategySpec.js"></script>
+<script src="spec/controller/support/PrepareSectionConfigurableItemUIVOs/CreateWheelConfigurableItemUIVOsStrategySpec.js"></script>
+
+<script src="spec/model/support/DependencyDataParserSpec.js"></script>
+<script src="spec/model/support/DependencyStepperSpec.js"></script>
+
+<script src="spec/controller/support/PrepareSectionContent/DataBuilders/AbstractSectionDataBuilderStrategySpec.js"></script>
+<script src="spec/controller/support/PrepareSectionContent/DataBuilders/AccessoriesSectionDataBuilderStrategySpec.js"></script>
+<script src="spec/controller/support/PrepareSectionContent/DataBuilders/EngineSectionDataBuilderStrategySpec.js"></script>
+<script src="spec/controller/support/PrepareSectionContent/DataBuilders/GradeSectionDataBuilderStrategySpec.js"></script>
+<script src="spec/controller/support/PrepareSectionContent/DataBuilders/GenericSectionDataBuilderStrategySpec.js"></script>
+<script src="spec/controller/support/PrepareSectionContent/DataBuilders/SummarySectionDataBuilderStrategySpec.js"></script>
+
+<script src="spec/model/support/SectionData/GradeStandardFeaturesDataSpec.js"></script>
+
+<script src="spec/model/support/SectionData/delegate/DependencyPriceCalculatorDelegateSpec.js"></script>
+<script src="spec/model/support/SectionData/delegate/EnginePriceCalculatorDelegateSpec.js"></script>
+<script src="spec/model/support/SectionData/delegate/GradePriceCalculatorDelegateSpec.js"></script>
+<script src="spec/model/support/SectionData/delegate/GradeSectionDataBuilderDelegateSpec.js"></script>
+
+<script src="spec/model/support/SectionData/factory/PriceCalculatorDelegateFactorySpec.js"></script>
+<script src="spec/controller/support/PrepareSectionContent/SectionDataBuilderStrategyFactorySpec.js"></script>
+
+<script src="spec/support/ArrayUtilsSpec.js"></script>
+<script src="spec/support/CookieSpec.js"></script>
+<script src="spec/support/data/DataBuilderSpec.js"></script>
+<script src="spec/support/HTMLTemplateSpec.js"></script>
+<script src="spec/support/ModelFilePathCalculatorSpec.js"></script>
+<script src="spec/support/services/LoadDataServiceSpec.js"></script>
+<script src="spec/support/UrlExtractorSpec.js"></script>
+<script src="spec/support/StringUtilsSpec.js"></script>
+<script src="spec/support/PDFDataUtilsSpec.js"></script>
+<script src="spec/support/PlatformDetectorSpec.js"></script>
+<script src="spec/support/UrlBuilderSpec.js"></script>
+<script src="spec/support/AccordionSpec.js"></script>
+<script src="spec/support/tracking/TrackingServiceSpec.js"></script>
+
+
+<!-- EN-AU -->
+<script src="spec/en-au/controller/command/startup/core/PrepModelCommandSpec.js"></script>
+<script src="spec/en-au/model/proxy/data/DisclaimerProxySpec.js"></script>
+<script src="spec/en-au/controller/command/startup/DistributeModelDataToProxiesForParsingCommandSpec.js"></script>
+<script src="spec/en-au/controller/support/PrepareSectionContent/DataBuilders/AbstractSectionDataBuilderStrategySpec.js"></script>
+<script src="spec/en-au/view/components/SectionContentUISpec.js"></script>
+
+<script>
+
+    setupGlobalVariables();
+    setupRequireDependencies();
+    setupMochaGlobals();
+
+    function setupGlobalVariables() {
+        window.burrows = {
+            app: undefined,
+            startup: {
+                locale: undefined,
+                vehicle: undefined,
+                configuration: undefined
+            }
+        };
+    }
+
+    function setupRequireDependencies() {
+        require.config({
+            baseUrl: "../app/scripts/core",
+            paths: {
+                jquery: '../components/jquery/jquery',
+                'jquery.reel': 'vendor/jquery.reel',
+                jqueryui: 'vendor/jqueryui',
+                easing: 'vendor/jquery.easing',
+                carousel: 'vendor/jquery.carousel',
+                staticCarousel: 'vendor/jquery.slides',
+                json: 'vendor/json2',
+
+                'view/components/support/AusPostcodeFinderEvents':
+                        '../en-au/view/components/support/AusPostcodeFinderEvents',
+                'controller/support/PrepareSectionConfigurableItemUIVOs/CreateGradesConfigurableItemUIVOsStrategy':
+                        '../en-au/controller/support/PrepareSectionConfigurableItemUIVOs/' +
+                                'CreateGradesConfigurableItemUIVOsStrategy',
+                'controller/command/startup/FilterBaseVehicleVOsCommand':
+                        '../en-au/controller/command/startup/FilterBaseVehicleVOsCommand',
+                'model/proxy/data/DisclaimerProxy': '../en-au/model/proxy/data/DisclaimerProxy',
+                'model/proxy/PriceDisplayProxy': '../en-au/model/proxy/PriceDisplayProxy',
+                'model/vo/data/DisclaimerVO': '../en-au/model/vo/data/DisclaimerVO'
+
+            },
+            callback: runMocha
+        });
+    }
+
+    function setupMochaGlobals() {
+        mocha.setup({globals: ['bmc', 'jQuery*', 'MOBILE_DOM', 'tc_log']});
+    }
+
+    function runMocha() {
+        if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+            mocha.run();
+        }
+    }
+
+</script>
+</body>
+</html>

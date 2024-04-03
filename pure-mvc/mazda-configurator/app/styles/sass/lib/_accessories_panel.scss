@@ -1,0 +1,136 @@
+#option-pack-accessories-container {
+
+  width: 995px;
+  margin: 0 auto;
+  position: relative;
+
+  .accessories-container,
+  .optionpacks-container {
+    text-align: left;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .optionpacks-container {
+    border-bottom: 1px solid $grey;
+  }
+
+  .accessory-container {
+
+    width: 480px;
+    padding: 10px;
+    position: relative;
+    margin: 0 10px 14px 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .accessory-container img {
+
+    border: 1px solid #e9e9e9;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .accessory-swatch-details {
+
+    vertical-align: middle;
+    width: 200px;
+    text-align: left;
+    margin: -10px 0 0 8px;
+    height: 143px;
+    position: relative;
+    display: inline-block;
+
+    p {
+      margin: 0;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+  }
+
+  .button {
+
+    color: white;
+    width: 128px;
+    height: 30px;
+    display: block;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .button:after {
+    content: '';
+    top: 8px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    background: url("../resources/images/components/add-icon.png") no-repeat top right;
+  }
+
+  .selected {
+    background: #d6dfe5;
+    .button {
+      background: #586E7C;
+      background: -moz-linear-gradient(top, #586E7C 0%, #6C808C 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(#586E7C), to(#6C808C));
+      background: -o-gradient(#586E7C, #6C808C);
+      background: -ms-linear-gradient(top, #586E7C, #6C808C);
+    }
+
+    .button:after {
+      background: url("../resources/images/components/remove-icon.png") no-repeat top right;
+    }
+
+    .accessory-swatch-details:before {
+      content: '';
+      top: 6px;
+      left: -52px;
+      width: 34px;
+      height: 32px;
+      display: block;
+      position: absolute;
+      background: url("../resources/images/components/greenTick.png") no-repeat top right;
+    }
+  }
+}
+
+#summary-container-id .accessories-container,
+#summary-container-id .optionpacks-container {
+
+  @extend #option-pack-accessories-container;
+
+  width: 952px;
+
+  .accessory-container {
+    width: 455px;
+  }
+
+  .selected {
+    background: none;
+    .accessory-swatch-details:before {
+      display: none;
+    }
+  }
+
+  .button, .button:after {
+    display: none;
+  }
+}
+
+#message{
+  width: 950px;
+  margin: 0 auto;
+  position: relative;
+}

@@ -1,0 +1,38 @@
+<section id="grade-content">
+
+    <div id="standardfeatures-accordion" class="accordion">
+        <% _.each(standardFeatures, function(data, index) { %>
+
+            <h3 class="accordion-header"><%= data.name %><!--span class="expand-all">Expand All</span--></h3>
+
+            <div class="standfeatures-table-container">
+
+                <table class="accordion-table name-table">
+                    <% _.each(data.features, function(feature, index) { %>
+                        <tr><td class="standfeature-name"><%= feature.name %></td></tr>
+                    <% }); %>
+                </table>
+
+                <table class="accordion-table state-table">
+                    <% _.each(data.features, function(feature, index) { %>
+                    <tr>
+                        <td class="standfeature-name"><span style="display: block; width: 237px;"></span><%= feature.name %></td>
+                        <% _.each(feature.stateOnGrade, function(stateOnGrade){
+
+                            var iconClass = 'availability-icon';
+
+                            if(stateOnGrade.iconId !== 2 ){
+                                iconClass += stateOnGrade.iconId? ' optional':' not-available';
+                            }
+                        %><td class="standardfeature-state"><span style="display: block; width: 225px;"></span><span class="<%= iconClass %>"></span><%= stateOnGrade.label %></td><% }); %>
+                    </tr>
+
+                    <% }); %>
+
+                </table>
+
+            </div>
+
+        <% }); %>
+    </div>
+</section>

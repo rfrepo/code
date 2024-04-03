@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+
+    <title>Mazda Configurator</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <link rel="stylesheet" href="styles/vendor/normalize.css">
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="scripts/vendor/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor/spin.min.js -->
+    <script type="text/javascript" src="scripts/core/vendor/spin.min.js"></script>
+    <!-- endbuild -->
+
+    <script type="text/javascript">
+        window.bmc = {
+            support: {
+                services: {}
+            }
+
+        };
+    </script>
+    <!-- build:js scripts/support/LocaleDictionary.js -->
+    <script type="text/javascript" src="scripts/core/support/LocaleDictionary.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/support/UrlExtractor.js -->
+    <script type="text/javascript" src="scripts/core/support/UrlExtractor.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/support/PlatformDetector.js -->
+    <script type="text/javascript" src="scripts/core/support/PlatformDetector.js"></script>
+    <!-- endbuild -->
+
+    <script type="text/javascript">
+        (function (global) {
+            global.urlExtractor = new bmc.support.UrlExtractor(new bmc.support.LocaleDictionary());
+            var baseResources = urlExtractor.getResourcesUrl(),
+                    platformDetector = bmc.support.PlatformDetector,
+                    stylesUrl = baseResources === './' ? 'styles/' : '../../car-config-html5/styles/',
+                    styles = document.createElement('link');
+
+            if(platformDetector.isMobile()) {
+                stylesUrl += 'mobile.main.css';
+            } else {
+                stylesUrl += 'main.css';
+            }
+
+            styles.rel = 'stylesheet';
+            styles.href = stylesUrl;
+            document.getElementsByTagName('head')[0].appendChild(styles);
+
+        }(window));
+    </script>
+</head>
+<body>
+
+<section id="vehicle-container-id" class="vehicleContainer desktop-hidden">
+    <div class="down-arrow reset-scrolling-button button-hidden"></div>
+    <div class="image-loading-container">
+        <div class="image-loading">
+            <h1 id="vehicleLoadIndicator"></h1>
+
+            <div id="spinJs" class="js-spinner"></div>
+        </div>
+    </div>
+    <div id="configurator-vehicle" class="vehicleShow">
+        <div id='vehicleDisplay' clas='vehicleDisplay'>
+            <div id="exterior">
+                <div id="base" class="configurable-item-layer" data-id="base">
+                    <div class="reel-container"></div>
+                    <div class="static-image"></div>
+                </div>
+                <div id="wheel" class="configurable-item-layer" data-id="wheel">
+                    <div class="reel-container"></div>
+                    <div class="static-image"></div>
+                </div>
+                <div id="accessories">
+                </div>
+                <div id="spinIndicator"></div>
+            </div>
+            <div id="interior">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="mazdaLogoContainer" class="mazda-logo-container hidden">
+    <img class="mazda-logo" src="resources/images/mazda.png"/>
+</div>
+
+<div id="navigation-tabs" class="navigation-tabs navigation-tabs-unlocked desktop-hidden">
+
+    <div class="notification-alert-container"></div>
+
+    <div class="vehicle-details-container"></div>
+
+    <div id="configurator-sections" class="tabsNavContainer">
+        <nav class="tabsNav">
+            <h1 id="startupDescription" class="startup-description"></h1>
+            <ul id="tabsNavUL" class="tabsNavUL hidden">
+            </ul>
+        </nav>
+    </div>
+
+    <div class="summary-navigation-container">
+        <div class="summary-header-container">
+            <div class="summary-header">
+                <h1 class="summary-title">Summary</h1>
+                <a class="button icon summary-download-button"><span></span></a>
+            </div>
+        </div>
+        <nav class="summary-nav-container">
+            <ul>
+                <li><a href="#overview" class="anchor summary-overview"></a></li>
+                <li><a href="#accessories" class="anchor summary-accessories"></a></li>
+                <li><a href="#features" class="anchor summary-features"></a></li>
+                <li><a href="#technical" class="anchor summary-technical"></a></li>
+                <li class="dealer"><a href="#dealer" class="anchor summary-dealer"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+
+<div id="section-content" class="section-content section-content-unlocked desktop-hidden">
+
+    <section id="configuratorCarousel" class="configurator-carousel">
+
+        <div class="car-option ca-container" id="ca-container">
+            <nav class="option-nav">
+                <div class="nav-prev"><span>Previous</span></div>
+                <div class="nav-next"><span>Next</span></div>
+            </nav>
+            <ul class="carousel-items ca-wrapper"></ul>
+        </div>
+
+    </section>
+
+    <div id='message'></div>
+
+    <section id='option-pack-accessories-container'></section>
+
+    <div id="section-disclaimer"></div>
+</div>
+
+
+<div class="tray mobile-hidden">
+    <ul>
+        <li>
+            <a class="anchor-class grade">
+                <p class="title"></p>
+
+                <p class="option">...</p>
+            </a>
+        </li>
+        <li>
+            <a class="anchor-class engine">
+                <p class="title"></p>
+
+                <p class="option">...</p>
+            </a>
+        </li>
+        <li>
+            <a class="anchor-class colour">
+                <p class="title"></p>
+
+                <p class="option">...</p>
+            </a>
+        </li>
+        <li>
+            <a class="anchor-class wheel">
+                <p class="title"></p>
+
+                <p class="option">...</p>
+            </a>
+        </li>
+        <li>
+            <a class="anchor-class trim">
+                <p class="title"></p>
+
+                <p class="option">...</p>
+            </a>
+        </li>
+        <li>
+            <a class="anchor-class summary">
+                <p class="title"></p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="page mobile-hidden">
+    <nav class="topNav">
+        <div class="vehicle-details-container">
+
+            <div class="vehicle-details">
+                <div class="mazda-badge-container">
+                    <img src="./resources/images/components/mazdaBadge.png" class="mazdaBadge" alt="mazda-badge"
+                         title="mazda-badge">
+                </div>
+                <img src="./resources/images/components/mobileNavDivider.png" class="mobile-nav-divider">
+
+                <div class="vehicle-title">
+                    <h1 class="name"></h1>
+
+                    <p class="bodystyle"></p>
+                </div>
+                <div id="vehiclePricing" class="vehicle-price">
+                    <h2 class="price-value"></h2>
+                    <p id='postcode'></p>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <section class="car-show-container">
+        <div class="car-show">
+            <div id="staticCarousel" class="static-car-views">
+                <div class="car-frame">
+                </div>
+                <div class="car-frame">
+                </div>
+                <div class="car-frame">
+                </div>
+                <div class="car-frame">
+                </div>
+            </div>
+        </div>
+        <div id="imageLoading" class="car-loader">
+            <div>
+                <p id="mobileVehicleLoadIndicator"></p>
+
+                <div id="spinJsMobile" class="spinJs"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var opts = {
+                        lines: 13,
+                        length: 5,
+                        width: 3,
+                        radius: 5,
+                        corners: 1,
+                        rotate: 0,
+                        direction: 1,
+                        color: '#ffffff',
+                        speed: 1,
+                        trail: 60,
+                        shadow: false,
+                        hwaccel: false,
+                        className: 'spinner',
+                        zIndex: 2e9,
+                        top: '-8px',
+                        left: '-13px'
+                    },
+                    target = document.getElementById('spinJs'),
+                    mobileTarget = document.getElementById('spinJsMobile'),
+                    spinner = new Spinner(opts).spin(target),
+                    mobileSpinner = new Spinner(opts).spin(mobileTarget);
+        </script>
+
+    </section>
+    <div class="car-options hidden small-carousel" id="ca-container">
+        <a href="#" class="show-tray"><span></span></a>
+        <ul class="carousel-items ca-wrapper">
+            <li class="option grade" id="grade">
+                <header>
+                    <h2><span></span></h2>
+                </header>
+                <ul></ul>
+            </li>
+            <li class="option engine" id="engine">
+                <header>
+                    <h2><span></span></h2>
+                </header>
+                <ul></ul>
+            </li>
+            <li class="option colour" id="colour">
+                <header>
+                    <h2><span></span></h2>
+                </header>
+                <ul class="swatch"></ul>
+            </li>
+            <li class="option wheel" id="wheels">
+                <header>
+                    <h2><span></span></h2>
+                </header>
+                <ul class="swatch"></ul>
+            </li>
+            <li class="option trim" id="trim">
+                <header>
+                    <h2><span></span></h2>
+                </header>
+                <ul class="swatch"></ul>
+            </li>
+            <li class="option summary" id="summary">
+                <header>
+                    <h2><span></span></h2>
+                </header>
+                <ul class="summary">
+                    <li>
+                        <p class="optionTitle grade-value"></p>
+
+                        <p class="price engine-value"></p>
+                    </li>
+                    <li>
+                        <p class="optionTitle colour-value"></p>
+
+                        <p class="price colour-price"></p>
+
+                    </li>
+                    <li>
+                        <p class="optionTitle wheel-value"></p>
+
+                        <p class="price wheel-price"></p>
+
+                    </li>
+                    <li>
+                        <p class="optionTitle trim-value"></p>
+
+                        <p class="price trim-price"></p>
+
+                    </li>
+                </ul>
+                <div class="summary-dealer">
+                    <p class="summary-dealer-body"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- build:js scripts/vendor/json2.js -->
+<script src="scripts/core/vendor/json2.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/puremvc-1.0.1.min.js -->
+<script src="scripts/core/vendor/puremvc-1.0.1.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/polyfill.min.js -->
+<script src="scripts/core/vendor/polyfill.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/string-splice.js -->
+<script src="scripts/core/vendor/string-splice.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/underscore-min.js -->
+<script src="components/underscore/underscore.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/vendor/require.js -->
+<script src="components/requirejs/require.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/requireConfig-dist.js -->
+<script src="scripts/core/requireConfig.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/support/services/LoadSyncDataService.js -->
+<script type="text/javascript" src="scripts/core/support/services/LoadSyncDataService.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/support/GlobalConstants.js -->
+<script type="text/javascript" src="scripts/core/support/GlobalConstants.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/support/GlobalConfig.js -->
+<script type="text/javascript" src="scripts/core/support/GlobalConfig.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/support/LaunchConfig.js -->
+<script type="text/javascript" src="scripts/core/support/LaunchConfig.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript">
+    bmc.support.LaunchConfig.prepareConfigurator();
+</script>
+
+<!-- build:js scripts/mazda-configurator.min.js -->
+<script type="text/javascript" src="scripts/core/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

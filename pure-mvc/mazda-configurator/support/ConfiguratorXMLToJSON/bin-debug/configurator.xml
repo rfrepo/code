@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data><modelID><![CDATA[M2]]></modelID><modelName><![CDATA[Mazda2]]></modelName>
+
+
+
+
+
+
+<vehicle id="DS52RAQ" rank="1" bodystyle="2400" series="008" engine="500XZY00" keyCriteria="" option="0001" optionPack="" portFitAccessories="" capCode="" specPage="ds52raq_specs.xml" price="15990.0000" />
+<vehicle id="DS54RAQ" rank="2" bodystyle="2400" series="008" engine="N00BMCEP3" keyCriteria="" option="0001" optionPack="" portFitAccessories="" capCode="" specPage="ds54raq_specs.xml" price="17640.0000" />
+<vehicle id="DS52RAP" rank="3" bodystyle="2400" series="011" engine="500XZY00" keyCriteria="" option="0001" optionPack="" portFitAccessories="" capCode="" specPage="ds52rap_specs.xml" price="17990.0000" />
+<vehicle id="DS54RAP" rank="4" bodystyle="2400" series="011" engine="N00BMCEP3" keyCriteria="" option="0001" optionPack="" portFitAccessories="" capCode="" specPage="ds54rap_specs.xml" price="19640.0000" />
+
+
+<defaultModel select="true" vehicle="DS52RAQ" wheel="WHE_02" colour="40E" trim="DM7" accessories="null" />
+<defaultModel vehicle="DS54RAQ" wheel="WHE_02" colour="40E" trim="DM7" accessories="null" />
+<defaultModel vehicle="DS52RAP" wheel="WHE_02" colour="40E" trim="DM7" accessories="null" />
+<defaultModel vehicle="DS54RAP" wheel="WHE_02" colour="40E" trim="DM7" accessories="null" />
+
+
+<bodystyle value="2400" series="008,011">
+<file filename="f69a912f-eb26-47bc-8d17-e6e27cd2b45b.jpg" />
+<title>
+<![CDATA[Hatch]]>
+</title>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</bodystyle>
+
+
+<series value="008" bodystyle="2400">
+<file filename="eef47fad-db17-4751-87a3-06066f687489.jpg" />
+<title>
+<![CDATA[Neo Sport]]>
+</title>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</series>
+<series value="011" bodystyle="2400">
+<file filename="e04e33c6-8563-4eed-b7fe-cb288c3928d9.jpg" />
+<title>
+<![CDATA[Maxx Sport]]>
+</title>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</series>
+
+
+<engine value="500XZY00" taxIncrease="0" fuelType="Petrol" engineSize="1.5" enginePower="102" transmission="Manual" rank="1" bodystyle="2400" series="008,011">
+<file filename="b96858f0-704d-4f03-b60d-599e7c795c4e.jpg" />
+<title>
+<![CDATA[1.5L I4 petrol]]>
+</title>
+<description>
+<![CDATA[5 Speed Manual]]>
+</description>
+<disclaimer>
+<![CDATA[CO2 emissions combined of 132g/km&#xD;Fuel consumption combined of 49.6mpg]]>
+</disclaimer>
+</engine>
+<engine value="N00BMCEP3" taxIncrease="0" fuelType="Petrol" engineSize="1.5" enginePower="102" transmission="Automatic" rank="2" bodystyle="2400" series="008,011">
+<file filename="878b0ed1-ffd4-4b22-a2b7-62c4b5e12a6a.jpg" />
+<title>
+<![CDATA[1.5L I4 petrol Automatic]]>
+</title>
+<description>
+<![CDATA[4 Speed Automatic]]>
+</description>
+<disclaimer>
+<![CDATA[CO2 emissions combined of 145g/km&#xD;Fuel consumption combined of 44.8mpg]]>
+</disclaimer>
+</engine>
+
+
+<colour value="A4A" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="0.00" />
+<price series="011" value="0.00" />
+</prices>
+<file filename="9e9b0165-1cbd-4b19-b6b9-27278a1681ad.jpg" />
+<title>
+<![CDATA[True Red]]>
+</title>
+<description>
+<![CDATA[Solid Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="A3F" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="270.00" />
+<price series="011" value="270.00" />
+</prices>
+<file filename="8c12c8da-cc52-4fc6-8a3d-625cc3279af1.jpg" />
+<title>
+<![CDATA[Brilliant Black]]>
+</title>
+<description>
+<![CDATA[Solid Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="34K" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="3d5edfe2-fd1e-4a21-91ab-8d5c4f4b2f51.jpg" />
+<title>
+<![CDATA[Crystal White Pearlescent]]>
+</title>
+<description>
+<![CDATA[Pearlescent Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="40B" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="82eaffab-944e-4e3a-b5a2-eb057d47991f.jpg" />
+<title>
+<![CDATA[Clear Water Blue Metallic]]>
+</title>
+<description>
+<![CDATA[Metallic Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="42A" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="543e8911-5597-4abc-8933-573f1e669769.jpg" />
+<title>
+<![CDATA[Meteor Grey Mica]]>
+</title>
+<description>
+<![CDATA[Meteor Grey Mica]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="28W" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="524c14f1-a4d9-43d0-ba34-bfe69f40fefd.jpg" />
+<title>
+<![CDATA[Radiant Ebony Mica]]>
+</title>
+<description>
+<![CDATA[Mica Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="36A" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="17d15f5e-97f3-4fb3-b785-7d2d203d8507.jpg" />
+<title>
+<![CDATA[Spirited Green Metallic]]>
+</title>
+<description>
+<![CDATA[Metallic Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="40E" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="f00ca7b9-f747-41ff-a8ab-02de2728e729.jpg" />
+<title>
+<![CDATA[Aquatic Blue Mica]]>
+</title>
+<description>
+<![CDATA[Mica Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="38P" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="72c2246d-23bb-41d5-bbca-ab3bbafb317b.jpg" />
+<title>
+<![CDATA[Aluminium Silver  Metallic]]>
+</title>
+<description>
+<![CDATA[Metallic Body Colour]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+<colour value="35J" taxable="false" bodystyle="2400" series="008,011">
+<prices>
+<price series="008" value="500.00" />
+<price series="011" value="500.00" />
+</prices>
+<file filename="ee968105-0176-4588-997c-0d0acf190d4c.jpg" />
+<title>
+<![CDATA[Stormy Blue Mica]]>
+</title>
+<description>
+<![CDATA[Stormy Blue]]>
+</description>
+<disclaimer>
+<![CDATA[]]>
+</disclaimer>
+</colour>
+
+
+<wheel value="WHE_02" series="008,011" engine="500XZY00,N00BMCEP3" accessoryCode="8AD2-37-600" price="0.00">
+<file filename="c110e27a-c957-47ee-8290-17a6256c47b1.jpg" />
+<title>
+<![CDATA[15" Alloy wheel]]>
+</title>
+<description>
+<![CDATA[]]>
+</description>
+</wheel>
+
+
+
+
+<trim value="DM7" bodystyle="2400" series="008,011" optionPackCodes="">
+<prices>
+<price series="008" value="0.00" />
+<price series="011" value="0.00" />
+</prices>
+<file filename="21230994-8f69-4df8-ab35-aa9f4234edcf.jpg" />
+<title>
+<![CDATA[Black cloth]]>
+</title>
+<disclaimer>
+<![CDATA[Standard on TS,TS2,Tamura]]>
+</disclaimer>
+</trim>
+
+
+<option value="0001" price="0.00" itemBelongsToSpecificationCategory="Exterior">
+<file filename="7b3cc798-fd65-47ce-b259-f09e96803ed7.jpg" />
+<title>
+<![CDATA[Dusk-sensing lights]]>
+</title>
+</option>
+
+
+
+
+
+
+
+
+</data>

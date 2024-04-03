@@ -1,0 +1,90 @@
+.navigation-tabs .summary-navigation-container {
+  display: none; }
+.navigation-tabs.summary .summary-navigation-container {
+  display: block; }
+.navigation-tabs.summary .tabsNavContainer, .navigation-tabs.summary notification-alert-container {
+  display: none; }
+
+.tabsNavContainer {
+  width: 100%; }
+
+.tabsNav {
+  background: url("../resources/images/components/tabsNavBG.png") repeat-x center left; }
+  .tabsNav ul {
+    height: 60px;
+    max-width: 975px;
+    margin: 0 auto;
+    padding-left: 15px;
+    position: static;
+    z-index: 0; }
+    .tabsNav ul li {
+      float: left;
+      list-style: none;
+      display: block;
+      height: 100%;
+      width: 152px;
+      position: relative;
+      margin-left: -15px;
+      background: url("../resources/images/components/tabsNavArrow.png") no-repeat top left; }
+      .tabsNav ul li:focus, .tabsNav ul li a:focus {
+        outline: 0; }
+      .tabsNav ul li:hover, .tabsNav ul li:active {
+        background-position: left -60px; }
+        .tabsNav ul li:hover a, .tabsNav ul li:active a {
+          background: none; }
+      .tabsNav ul li a {
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        padding: 9.5px;
+        display: block;
+        cursor: pointer;
+        background: none;
+        position: static;
+        z-index: 0;
+        font-size: inherit;
+        margin: 0; }
+        .tabsNav ul li a p {
+          margin: 0;
+          line-height: 1.6;
+          color: #fff; }
+        .tabsNav ul li a > span {
+          background: none; }
+      .tabsNav ul li.ui-state-active:after {
+        position: absolute;
+        display: inline-block;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #e3ebf0;
+        border-left: 6px solid transparent;
+        content: '';
+        bottom: 0;
+        left: 45%; }
+      .tabsNav ul li.summary {
+        background: none; }
+        .tabsNav ul li.summary .tabTitle {
+          margin-top: 9px;
+          margin-left: 5px; }
+        .tabsNav ul li.summary .tabSelection {
+          display: none; }
+        .tabsNav ul li.summary .icon {
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          background-image: url(../resources/images/components/tabsNavSummaryArrow.png);
+          background-repeat: no-repeat;
+          position: relative;
+          top: 4px;
+          left: 8px; }
+      .tabsNav ul li > span {
+        background: none; }
+  .tabsNav .tabTitle {
+    font-size: 0.9em; }
+  .tabsNav .tabSelection {
+    font-size: 0.8em; }
+  .tabsNav .summaryTitle {
+    margin: 0;
+    float: left; }
+
+.progress-bar {
+  background: url("../resources/images/components/blueBar.png") no-repeat bottom left !important; }

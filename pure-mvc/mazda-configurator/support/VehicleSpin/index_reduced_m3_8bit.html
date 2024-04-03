@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html data-type="example" data-id="object-movie-animation-sprite">
+<head>
+    <title>Mazda Vehicle 360 Spin</title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-type'/>
+
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src='http://code.vostrel.cz/jquery.reel-1.2.1-bundle.js' type='text/javascript'></script>
+
+    <style>
+
+           body
+           {
+                text-align: center;
+           }
+        #vehicleDisplay {
+            position: relative;
+            margin: 0 auto;
+            width: 718px;
+            border: 1px #fff30a solid;
+        }
+
+        .carPart{
+            position: absolute !important;
+        }
+
+
+
+      /*  #rainSensor-reel{
+            border: 1px #fff30a solid;
+
+
+        }*/
+
+    </style>
+    <!-- Common examples style (gray background, thin fonts etc.) -->
+
+</head>
+<body>
+
+<h1>Mazda 3 360</h1>
+
+<div id='vehicleDisplay'>
+    <img id="base"      src='resources/images/M3_MPS_8Bit/MPS_Base_00000.png' width="718" height="290"/>
+    <img id="wheel"     src='resources/images/M3_MPS_8Bit/MPS_Specific_18_inch_Alloys_00000.png' width="718" height="290"/>
+    <img id="colour"    src='resources/images/M3_MPS_8Bit/MPS_Common_Body_Panels_Velocity_Red_00000.png' width="718" height="290"/>
+    <img id="bonnet" src='resources/images/M3_MPS_8Bit/MPS_Bonnet_w_Vent_Velocity_Red_00000.png' width="718" height="290"/>
+    <img id="bumper2"   src='resources/images/M3_MPS_8Bit/MPS_Rear_Bumper_wo_PS_Velocity_Red_00000.png' width="718" height="290"/>
+    <img id="bumper"    src='resources/images/M3_MPS_8Bit/MPS_Rear_Bumper_wo_PS_Velocity_Red_00000.png' width="718" height="290"/>
+    <img id="handles"   src='resources/images/M3_MPS_8Bit/hatchback_door_handles_wsmart_velocity_red_00000.png' width="718" height="290"/>
+    <img id="spoiler"   src='resources/images/M3_MPS_8Bit/m3_mps_rear_spoiler_velocity_red_00000.png' width="718" height="290"/>
+    <img id="wings" src='resources/images/M3_MPS_8Bit/MPS_Wing_Mirror_Velocity_Red_00000.png' width="718" height="290"/>
+    <img id="numberPlate" src='resources/images/M3_MPS_8Bit/Mazda_3_f_numberplate_00000.png' width="718" height="290"/>
+    <img id="headlights" src='resources/images/M3_MPS_8Bit/m3_ext_headlights_bi_xenon_00000.png' width="718" height="290"/>
+    <img id="headlightsBack" src='resources/images/M3_MPS_8Bit/m3_mps_ext_rear_lights_LED_wo_SMART_00000.png' width="718" height="290"/>
+    <img id="windows" src='resources/images/M3_MPS_8Bit/m3_ext_windows_privacy_glass_Hatchback_00000.png' width="718" height="290"/>
+    <img id="windows2" src='resources/images/M3_MPS_8Bit/m3_ext_windows_Hatchback_Sport_00000.png' width="718" height="290"/>
+    <img id="skirt" src='resources/images/M3_MPS_8Bit/option_side_mouldings_velocity_red_00000.png' width="718" height="290"/>
+</div>
+
+<script>
+
+    $(function () {
+
+        var pathPrepend = 'resources/images/M3_MPS_8Bit/';
+
+        function createReel(id, assetPath) {
+            return $('#' + id).reel
+            ({
+                frames: 12,
+                frame: 1,
+                images: pathPrepend + assetPath,
+                revolution: 1200,
+                loops:false,
+                klass: 'carPart'
+            });
+        };
+
+
+        var baseReel = createReel('base', 'MPS_Base_#####.png|0..11');
+
+        var wheel = createReel('wheel', 'MPS_Specific_18_inch_Alloys_#####.png|0..11');
+
+        var bumper2 = createReel('bumper2', 'MPS_Rear_Bumper_wo_PS_Velocity_Red_#####.png|0..11');
+
+        var colour = createReel('colour', 'MPS_Common_Body_Panels_Velocity_Red_#####.png|0..11');
+
+        var headlights = createReel('headlights', 'm3_ext_headlights_bi_xenon_#####.png|0..11');
+
+        var headlightsBack = createReel('headlightsBack', 'm3_mps_ext_rear_lights_LED_wo_SMART_#####.png|0..11');
+
+        var bumper = createReel('bumper', 'm3_mps_ext_front_bumper_velocity_red_#####.png|0..11');
+
+        var handles = createReel('handles', 'hatchback_door_handles_wsmart_velocity_red_#####.png|0..11');
+
+        var spoiler = createReel('spoiler', 'm3_mps_rear_spoiler_velocity_red_#####.png|0..11');
+
+        var numberPlate = createReel('numberPlate', 'Mazda_3_f_numberplate_#####.png|0..11');
+
+        var bonnet = createReel('bonnet', 'MPS_Bonnet_w_Vent_Velocity_Red_#####.png|0..11');
+
+        var windows = createReel('windows', 'm3_ext_windows_privacy_glass_Hatchback_#####.png|0..11');
+
+        var windows2 = createReel('windows2', 'm3_ext_windows_Hatchback_Sport_#####.png|0..11');
+
+        var wings = createReel('wings', 'MPS_Wing_Mirror_Velocity_Red_#####.png|0..11');
+
+        var skirt = createReel('skirt', 'option_side_mouldings_velocity_red_#####.png|0..11');
+
+
+        skirt.bind('fractionChange', function (e, a, b) {
+
+
+            handles.reel('fraction', b);
+            bumper.reel('fraction', b);
+            bumper2.reel('fraction', b);
+            baseReel.reel('fraction', b);
+            colour.reel('fraction', b);
+            wheel.reel('fraction', b);
+            numberPlate.reel('fraction', b);
+            spoiler.reel('fraction', b);
+            bonnet.reel('fraction', b);
+            windows.reel('fraction', b);
+            windows2.reel('fraction', b);
+            wings.reel('fraction', b);
+            headlightsBack.reel('fraction', b);
+            headlights.reel('fraction', b);
+
+
+        })
+
+    })
+</script>
+
+</body>
+</html>
+

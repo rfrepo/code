@@ -1,0 +1,37 @@
+#CarouselContainer {
+  border: solid 1px lightblue;
+  width: 851px;
+  min-height: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#ArrowLeft, #ArrowRight {
+
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  cursor: pointer;
+  border-right: 20px solid lightblue;
+}
+
+#ArrowRight {
+  border-left: 20px solid lightblue;
+  border-right: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.carousel-item {
+  position: relative;
+  width: 80px;
+}
+
+.carousel-item > * {
+  margin: 0 auto;
+}

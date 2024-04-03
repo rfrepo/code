@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html data-type="example" data-id="object-movie-animation-sprite">
+<head>
+    <title>Mazda Vehicle 360 Spin</title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-type'/>
+
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src='http://code.vostrel.cz/jquery.reel-1.2.1-bundle.js' type='text/javascript'></script>
+
+    <style>
+
+           body
+           {
+                text-align: center;
+           }
+        #vehicleDisplay {
+            position: relative;
+            margin: 0 auto;
+            width: 718px;
+            border: 1px #fff30a solid;
+        }
+
+        .carPart{
+            position: absolute !important;
+        }
+
+
+
+      /*  #rainSensor-reel{
+            border: 1px #fff30a solid;
+
+
+        }*/
+
+    </style>
+    <!-- Common examples style (gray background, thin fonts etc.) -->
+
+</head>
+<body>
+
+<h1>Mazda 3 360</h1>
+
+<div id='vehicleDisplay'>
+    <img id="base"          src='resources/images/cx5/cx5_grade_selection_zeal_red_00000.jpg'       width="718" height="290"/>
+    <img id="wheel"         src='resources/images/cx5/cx5_wheels_accessory_19_inch_alloy_00000.png' width="718" height="290"/>
+    <img id="frontLeds"     src='resources/images/cx5/cx5_accessories_front_led_lights_00000.png'   width="718" height="290"/>
+    <img id="stepBumper"    src='resources/images/cx5/cx5_accessories_step_bumper_00000.png'        width="718" height="290"/>
+    <img id="garnish"       src='resources/images/cx5/cx5_accessories_under_garnish_00000.png' width="718" height="290"/>
+</div>
+
+<script>
+
+    $(function () {
+
+        var pathPrepend = 'resources/images/cx5/';
+
+        function createReel(id, assetPath) {
+            return $('#' + id).reel
+            ({
+                frames: 12,
+                frame: 1,
+                images: pathPrepend + assetPath,
+                revolution: 600,
+                loops:false,
+                klass: 'carPart'
+            });
+        };
+
+
+        var base = createReel('base', 'cx5_grade_selection_zeal_red_#####.jpg|0..12');
+
+        var wheel = createReel('wheel', '/cx5_wheels_accessory_19_inch_alloy_#####.png|0..12');
+
+        var frontLeds = createReel('frontLeds', 'cx5_accessories_front_led_lights_#####.png|0..12');
+
+        var stepBumper= createReel('stepBumper', 'cx5_accessories_step_bumper_#####.png|0..12');
+
+        var garnish = createReel('garnish', 'cx5_accessories_under_garnish_#####.png|0..12');
+
+        garnish.bind('fractionChange', function (e, a, b) {
+            base.reel('fraction', b);
+            wheel.reel('fraction', b);
+            stepBumper.reel('fraction', b);
+            frontLeds.reel('fraction', b);
+        });
+
+        base.unreel();
+    })
+</script>
+
+</body>
+</html>
+

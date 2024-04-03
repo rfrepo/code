@@ -1,0 +1,241 @@
+.startup-description {
+  margin       : 0;
+  padding      : 0;
+  padding-left : 20px;
+  display      : inline;
+  color        : #FFFFFF;
+  font-family  : Arial, sans-serf;
+  font-size    : 28px;
+}
+
+.down-arrow {
+  background-color    : #000;
+  background-image    : url('../resources/images/components/down_arrow.png');
+  background-repeat   : no-repeat;
+  background-position : 10px 13px;
+  cursor              : pointer;
+  height              : 40px;
+  opacity             : 0.6;
+  width               : 40px;
+
+  @include border-radius(25px);
+
+  &:hover {
+    opacity : 1;
+  }
+}
+
+.reset-scrolling-button {
+  position           : relative;
+  top                : 125px;
+  z-index            : 1;
+
+  margin             : 0 auto;
+
+  opacity            : 0.7;
+
+  -moz-transition    : opacity 0.3s ease, top 0.3s ease;
+  -webkit-transition : opacity 0.3s ease, top 0.3s ease;
+  -o-transition      : opacity 0.3s ease, top 0.3s ease;
+  transition         : opacity 0.3s ease, top 0.3s ease;
+
+  &.button-hidden {
+    visibility : hidden;
+    opacity    : 0;
+    top        : 80px;
+  }
+}
+
+.mazda-logo-container {
+  position : absolute;
+  width    : 100%;
+  top      : 157px;
+
+  .mazda-logo {
+    position : relative;
+    z-index  : 14;
+    display  : block;
+    margin   : 0 auto;
+  }
+}
+
+.tabContentContainer, #grade-content, #section-disclaimer, .configurable-item-specification {
+  width  : 950px;
+  margin : 0 auto;
+}
+
+#grade-content, .configurable-item-specification {
+  height : 100%;
+}
+
+.configurator-carousel {
+  overflow   : hidden;
+  //background: url('../resources/images/components/optionsTransBG.png') no-repeat 1084px;
+  background : #e3ebf0;
+
+  .car-option {
+    width    : 950px;
+    margin   : 0 auto;
+    height   : 100%;
+    position : relative;
+    nav {
+      position : absolute;
+      top      : 40%;
+      width    : 100%;
+    }
+  }
+
+  .option-nav > div {
+    position      : absolute;
+    left          : -4%;
+    text-indent   : -9000px;
+    opacity       : 0.7;
+    cursor        : pointer;
+    z-index       : 1;
+    display       : none;
+    padding       : 8px;
+    background    : #56AFE1;
+    border-radius : 6px;
+  }
+
+  .option-nav > div > span {
+    display    : block;
+    background : url('../resources/images/components/optionsNavArrow.png') no-repeat top left;
+    width      : 10px;
+    height     : 20px;
+  }
+
+  .option-nav div.nav-next {
+    left : 101%;
+    > span {
+      background-position : top right;
+    }
+  }
+
+  .option-nav div:hover {
+    opacity : 1.0;
+  }
+
+}
+
+.carousel-items {
+  width       : 100%;
+  height      : 250px;
+  margin      : 0;
+  padding     : 0;
+  position    : relative;
+  white-space : nowrap;
+  background  : url('../resources/images/components/optionsDivider.png') no-repeat left bottom;
+  font-size   : 0;
+
+  li {
+    display         : inline-block;
+    text-align      : center;
+    height          : 100%;
+    position        : relative;
+    list-style-type : none;
+    background      : url('../resources/images/components/optionsDivider.png') no-repeat right bottom;
+    font-size       : 16px;
+  }
+}
+
+.swatches {
+  padding : 0;
+  li {
+    width : 20%;
+  }
+}
+
+.swatches .carousel-items,
+.swatches .carousel-items li {
+  background : none;
+}
+
+.swatches .carousel-items li .selected > div {
+  background : none;
+  position   : relative;
+}
+
+.swatches .carousel-items li .selected > div:before {
+  content             : "";
+  background-image    : url('../resources/images/components/greenTick.png');
+  background-repeat   : no-repeat;
+  background-position : top right;
+  height              : 40px;
+  width               : 40px;
+  position            : absolute;
+  top                 : 15px;
+  right               : 15px;
+}
+
+.carousel-items li .option {
+  height   : 250px;
+  padding  : 10px 15px;
+  overflow : hidden;
+  width    : 237px;
+
+  > div {
+    cursor : pointer;
+    height : 230px;
+  }
+}
+
+.carousel-items .option-default {
+
+  .button {
+    position : absolute;
+    bottom   : 20px;
+    left     : 0;
+    right    : 0;
+  }
+
+
+  .option {
+    display : table-cell;
+    vertical-align: middle;
+
+    > div {
+      padding-top: 20px;
+      position: relative;
+      height: 200px;
+    }
+  }
+}
+
+.carousel-items li .selected > div {
+  background    : #d6dfe5;
+  border-radius : 5px;
+  padding       : 20px;
+}
+
+.carousel-items li .selected .greenButton {
+  width         : 30px;
+  height        : 30px;
+  background    : #68b400 url('../resources/images/components/tick.png') no-repeat center -2px;
+  border-radius : 50%;
+  text-indent   : -9999px;
+  display       : block;
+  margin        : 20px auto 0;
+}
+
+.carousel-items .option p, .carousel-items .option h4 {
+  color  : #394a52;
+  margin : 0;
+}
+
+.carousel-items .option .button {
+  display : block;
+  margin  : 0 auto;
+}
+
+.carousel-items .option h4 {
+  white-space    : normal;
+  letter-spacing : 0px;
+}
+
+#section-disclaimer {
+  color     : #aeaeae;
+  font-size : 14px;
+  position  : relative;
+  padding   : 20px 0px 10px 0px;
+}

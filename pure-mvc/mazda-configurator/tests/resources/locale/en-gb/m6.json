@@ -1,0 +1,3318 @@
+{
+    "modelID": "M6",
+    "modelName": "Mazda6",
+    "startupBaseVehicleId":"GHW8BAA",
+    "baseVehicles": [
+        {
+            "id": "GHW8BAA",
+            "rank": "1",
+            "bodyStyleId": "2200",
+            "gradeId": "001",
+            "engineId": "600BMCXPE00",
+            "colourId": "A4D",
+            "wheelId": "WHE_01",
+            "keyCriteriaIds": "KC03,KC05,KC06,KC07,KC08,KC11,KC13,KC16",
+            "standardFeatureIds": "0001,0003,0016,0028,0030,0031,0032,0033,0034,0037,0041,0042,0046,0055,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0507,0508,0509,0511",
+            "capCode": "MA6 20SE 4SPIM  2",
+            "specPage": "bht6baa_specs.xml",
+            "price": "19595.0000"
+        },
+        {
+            "id": "GHW8BAA6N3",
+            "rank": "2",
+            "bodyStyleId": "2200",
+            "gradeId": "001",
+            "engineId": "600BMCXPE00",
+            "keyCriteriaIds": "KC03,KC05,KC06,KC07,KC08,KC11,KC13,KC16",
+            "standardFeatureIds": "0001,0003,0016,0028,0030,0031,0032,0033,0034,0037,0041,0042,0046,0055,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0507,0508,0509,0511",
+            "optionPackIds": "P_01_001",
+            "capCode": "MA6 20SEN4SPIM  2",
+            "specPage": "ghw8baa6n3_specs.xml",
+            "price": "20195.0000"
+        },
+        {
+            "id": "GLG7BAA",
+            "rank": "3",
+            "bodyStyleId": "2200",
+            "gradeId": "001",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC03,KC05,KC06,KC07,KC08,KC11,KC13,KC16",
+            "standardFeatureIds": "0001,0003,0016,0028,0030,0031,0032,0033,0034,0037,0041,0042,0046,0055,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0507,0508,0509,0511",
+            "capCode": "MA6 22SE 4SDTM  2",
+            "specPage": "glg7baa_specs.xml",
+            "price": "21795.0000"
+        },
+        {
+            "id": "GLG7BAA6N3",
+            "rank": "4",
+            "bodyStyleId": "2200",
+            "gradeId": "001",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC03,KC05,KC06,KC07,KC08,KC11,KC13,KC16",
+            "standardFeatureIds": "0001,0003,0016,0028,0030,0031,0032,0033,0034,0037,0041,0042,0046,0055,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0507,0508,0509,0511",
+            "optionPackIds": "P_01_001",
+            "capCode": "MA6 22SEN4SDTM  2",
+            "specPage": "glg7baa6n3_specs.xml",
+            "price": "22395.0000"
+        },
+        {
+            "id": "GHW8BAD",
+            "rank": "5",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "600BMCXPE00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0504,0507,0508,0509,0511",
+            "capCode": "MA6 20LSE4SPIM  2",
+            "specPage": "ghw8bad_specs.xml",
+            "price": "20395.0000"
+        },
+        {
+            "id": "GHW8BAD6N3",
+            "rank": "6",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "600BMCXPE00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0504,0507,0508,0509,0511",
+            "optionPackIds": "P_01_002",
+            "capCode": "MA6 20LSN4SPIM  2",
+            "specPage": "ghw8bad6n3_specs.xml",
+            "price": "20995.0000"
+        },
+        {
+            "id": "GJA1BAA",
+            "rank": "7",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "A00BMC2XPE00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0504,0507,0508,0509,0511",
+            "capCode": "MA6 20LSE4SPIA  2",
+            "specPage": "gja1baa_specs.xml",
+            "price": "21715.0000"
+        },
+        {
+            "id": "GJA1BAA6N3",
+            "rank": "8",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "A00BMC2XPE00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0504,0507,0508,0509,0511",
+            "optionPackIds": "P_01_002",
+            "capCode": "MA6 20LSN4SPIA  2",
+            "specPage": "gja1baa6n3_specs.xml",
+            "price": "22315.0000"
+        },
+        {
+            "id": "GLG7BAE",
+            "rank": "9",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "capCode": "MA6 22LSE4SDTM  2",
+            "specPage": "glg7bae_specs.xml",
+            "price": "22595.0000"
+        },
+        {
+            "id": "GLG7BAE6N3",
+            "rank": "10",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "optionPackIds": "P_01_002",
+            "capCode": "MA6 22LSN4SDTM  2",
+            "specPage": "glg7bae6n3_specs.xml",
+            "price": "23195.0000"
+        },
+        {
+            "id": "GLV7BAC",
+            "rank": "11",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "A00BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "capCode": "MA6 22LSE4SDTA  2",
+            "specPage": "glv7bac_specs.xml",
+            "price": "23795.0000"
+        },
+        {
+            "id": "GLV7BAC6N3",
+            "rank": "12",
+            "bodyStyleId": "2200",
+            "gradeId": "002",
+            "engineId": "A00BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "optionPackIds": "P_01_002",
+            "capCode": "MA6 22LSN4SDTA  2",
+            "specPage": "glv7bac6n3_specs.xml",
+            "price": "24395.0000"
+        },
+        {
+            "id": "GKL7BAA",
+            "rank": "13",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 20SPO4SPIM  2",
+            "specPage": "mock_spec.xml",
+            "price": "23515.0000"
+        },
+        {
+            "id": "GKL7BAA6N3",
+            "rank": "14",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 20SPN4SPIM  2",
+            "specPage": "gkl7baa6n3_specs.xml",
+            "price": "24115.0000"
+        },
+        {
+            "id": "GKL7BAB",
+            "rank": "15",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 20SPO4SPIM  2",
+            "specPage": "gkl7bab_specs.xml",
+            "price": "24215.0000"
+        },
+        {
+            "id": "GKL7BAB6N3",
+            "rank": "16",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 20SPN4SPIM  2",
+            "specPage": "gkl7bab6n3_specs.xml",
+            "price": "24815.0000"
+        },
+        {
+            "id": "GLG7BAF",
+            "rank": "17",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 22SPO4SDTM  2",
+            "specPage": "glg7baf_specs.xml",
+            "price": "24995.0000"
+        },
+        {
+            "id": "GLG7BAF6N3",
+            "rank": "18",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 22SPN4SDTM  2",
+            "specPage": "glg7baf6n3_specs.xml",
+            "price": "25595.0000"
+        },
+        {
+            "id": "GLG7BAG",
+            "rank": "19",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 22SPO4SDTM  2",
+            "specPage": "glg7bag_specs.xml",
+            "price": "25695.0000"
+        },
+        {
+            "id": "GLG7BAG6N3",
+            "rank": "20",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 22SPN4SDTM  2",
+            "specPage": "glg7bag6n3_specs.xml",
+            "price": "26295.0000"
+        },
+        {
+            "id": "GKL8BAA",
+            "rank": "21",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 22SP74SDTM  2",
+            "specPage": "gkl8baa_specs.xml",
+            "price": "25495.0000"
+        },
+        {
+            "id": "GKL8BAA6N3",
+            "rank": "22",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 22SN74SDTM  2",
+            "specPage": "gkl8baa6n3_specs.xml",
+            "price": "26095.0000"
+        },
+        {
+            "id": "GKL8BAB",
+            "rank": "23",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 22SP74SDTM  2",
+            "specPage": "gkl8bab_specs.xml",
+            "price": "26195.0000"
+        },
+        {
+            "id": "GKL8BAB6N3",
+            "rank": "24",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 22SN74SDTM  2",
+            "specPage": "gkl8bab6n3_specs.xml",
+            "price": "26795.0000"
+        },
+        {
+            "id": "GKL9BAA",
+            "rank": "25",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 22SP74SDTA  2",
+            "specPage": "gkl9baa_specs.xml",
+            "price": "26695.0000"
+        },
+        {
+            "id": "GKL9BAA6N3",
+            "rank": "26",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 22SN74SDTA  2",
+            "specPage": "gkl9baa6n3_specs.xml",
+            "price": "27295.0000"
+        },
+        {
+            "id": "GKL9BAC",
+            "rank": "27",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 22SP74SDTA  2",
+            "specPage": "gkl9bac_specs.xml",
+            "price": "27395.0000"
+        },
+        {
+            "id": "GKL9BAC6N3",
+            "rank": "28",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 22SN74SDTA  2",
+            "specPage": "gkl9bac6n3_specs.xml",
+            "price": "27995.0000"
+        },
+        {
+            "id": "GKL9BAB",
+            "rank": "29",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003,P_03_003",
+            "capCode": "MA6 22SP74SDTA  2",
+            "specPage": "gkl9bab_specs.xml",
+            "price": "28195.0000"
+        },
+        {
+            "id": "GKL9BAB6N3",
+            "rank": "30",
+            "bodyStyleId": "2200",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003,P_03_003",
+            "capCode": "MA6 22SN74SDTA  2",
+            "specPage": "gkl9bab6n3_specs.xml",
+            "price": "28795.0000"
+        },
+        {
+            "id": "GLT7BAA",
+            "rank": "31",
+            "bodyStyleId": "5500",
+            "gradeId": "001",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC03,KC05,KC06,KC07,KC08,KC11,KC13,KC16",
+            "standardFeatureIds": "0001,0003,0016,0028,0030,0031,0032,0033,0034,0037,0041,0042,0046,0055,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0507,0508,0509,0511",
+            "capCode": "MA6 22SE 5EDTM  3",
+            "specPage": "glt7baa_specs.xml",
+            "price": "22545.0000"
+        },
+        {
+            "id": "GLT7BAA6N3",
+            "rank": "32",
+            "bodyStyleId": "5500",
+            "gradeId": "001",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC03,KC05,KC06,KC07,KC08,KC11,KC13,KC16",
+            "standardFeatureIds": "0001,0003,0016,0028,0030,0031,0032,0033,0034,0037,0041,0042,0046,0055,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0507,0508,0509,0511",
+            "optionPackIds": "P_01_001",
+            "capCode": "MA6 22SEN5EDTM  3",
+            "specPage": "glt7baa6n3_specs.xml",
+            "price": "23145.0000"
+        },
+        {
+            "id": "GJE8BAA",
+            "rank": "33",
+            "bodyStyleId": "5500",
+            "gradeId": "002",
+            "engineId": "600BMCXPE00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0504,0507,0508,0509,0511",
+            "capCode": "MA6 20LSE5EPIM  3",
+            "specPage": "gje8baa_specs.xml",
+            "price": "21265.0000"
+        },
+        {
+            "id": "GJE8BAA6N3",
+            "rank": "34",
+            "bodyStyleId": "5500",
+            "gradeId": "002",
+            "engineId": "600BMCXPE00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0504,0507,0508,0509,0511",
+            "optionPackIds": "P_01_002",
+            "capCode": "MA6 20LSN5EPIM  3",
+            "specPage": "gje8baa6n3_specs.xml",
+            "price": "21865.0000"
+        },
+        {
+            "id": "GKP5BAA",
+            "rank": "35",
+            "bodyStyleId": "5500",
+            "gradeId": "002",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "capCode": "MA6 22LSE5EDTM  3",
+            "specPage": "gkp5baa_specs.xml",
+            "price": "23345.0000"
+        },
+        {
+            "id": "GKP5BAA6N3",
+            "rank": "36",
+            "bodyStyleId": "5500",
+            "gradeId": "002",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "optionPackIds": "P_01_002",
+            "capCode": "MA6 22LSN5EDTM  3",
+            "specPage": "gkp5baa6n3_specs.xml",
+            "price": "23945.0000"
+        },
+        {
+            "id": "GLT8BAA",
+            "rank": "37",
+            "bodyStyleId": "5500",
+            "gradeId": "002",
+            "engineId": "A00BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "capCode": "MA6 22LSE5EDTA  3",
+            "specPage": "glt8baa_specs.xml",
+            "price": "24545.0000"
+        },
+        {
+            "id": "GLT8BAA6N3",
+            "rank": "38",
+            "bodyStyleId": "5500",
+            "gradeId": "002",
+            "engineId": "A00BMCXPY00",
+            "keyCriteriaIds": "KC04,KC05,KC06,KC07,KC08,KC11,KC12,KC14,KC16",
+            "standardFeatureIds": "0001,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0035,0038,0039,0041,0042,0046,0055,0057,0063,0071,0075,0076,0081,0083,0084,0085,0086,0087,0088,0089,0121,0164,0500,0501,0504,0507,0508,0509,0511",
+            "optionPackIds": "P_01_002",
+            "capCode": "MA6 22LSN5EDTA  3",
+            "specPage": "glt8baa6n3_specs.xml",
+            "price": "25145.0000"
+        },
+        {
+            "id": "GKM1BAC",
+            "rank": "39",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 20SPO5EPIM  3",
+            "specPage": "gkm1bac_specs.xml",
+            "price": "24265.0000"
+        },
+        {
+            "id": "GKM1BAC6N3",
+            "rank": "40",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 20SPN5EPIM  3",
+            "specPage": "gkm1bac6n3_specs.xml",
+            "price": "24865.0000"
+        },
+        {
+            "id": "GKM1BAA",
+            "rank": "41",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 20SPO5EPIM  3",
+            "specPage": "gkm1baa_specs.xml",
+            "price": "24965.0000"
+        },
+        {
+            "id": "GKM1BAA6N3",
+            "rank": "42",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPE00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 20SPN5EPIM  3",
+            "specPage": "gkm1baa6n3_specs.xml",
+            "price": "25565.0000"
+        },
+        {
+            "id": "GKP5BAC",
+            "rank": "43",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 22SPO5EDTM  3",
+            "specPage": "gkp5bac_specs.xml",
+            "price": "25745.0000"
+        },
+        {
+            "id": "GKP5BAC6N3",
+            "rank": "44",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 22SPN5EDTM  3",
+            "specPage": "gkp5bac6n3_specs.xml",
+            "price": "26345.0000"
+        },
+        {
+            "id": "GKP5BAB",
+            "rank": "45",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 22SPO5EDTM  3",
+            "specPage": "gkp5bab_specs.xml",
+            "price": "26445.0000"
+        },
+        {
+            "id": "GKP5BAB6N3",
+            "rank": "46",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600BMCXPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 22SPN5EDTM  3",
+            "specPage": "gkp5bab6n3_specs.xml",
+            "price": "27045.0000"
+        },
+        {
+            "id": "GKM2BAB",
+            "rank": "47",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 22SP75EDTM  3",
+            "specPage": "gkm2bab_specs.xml",
+            "price": "26245.0000"
+        },
+        {
+            "id": "GKM2BAB6N3",
+            "rank": "48",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 22SN75EDTM  3",
+            "specPage": "gkm2bab6n3_specs.xml",
+            "price": "26845.0000"
+        },
+        {
+            "id": "GKM2BAA",
+            "rank": "49",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 22SP75EDTM  3",
+            "specPage": "gkm2baa_specs.xml",
+            "price": "26945.0000"
+        },
+        {
+            "id": "GKM2BAA6N3",
+            "rank": "50",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "600XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 22SN75EDTM  3",
+            "specPage": "gkm2baa6n3_specs.xml",
+            "price": "27545.0000"
+        },
+        {
+            "id": "GKM3BAC",
+            "rank": "51",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "capCode": "MA6 22SP75EDTA  3",
+            "specPage": "gkm3bac_specs.xml",
+            "price": "27445.0000"
+        },
+        {
+            "id": "GKM3BAC6N3",
+            "rank": "52",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0057,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003",
+            "capCode": "MA6 22SN75EDTA  3",
+            "specPage": "gkm3bac6n3_specs.xml",
+            "price": "28045.0000"
+        },
+        {
+            "id": "GKM3BAB",
+            "rank": "53",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003",
+            "capCode": "MA6 22SP75EDTA  3",
+            "specPage": "gkm3bab_specs.xml",
+            "price": "28145.0000"
+        },
+        {
+            "id": "GKM3BAB6N3",
+            "rank": "54",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003",
+            "capCode": "MA6 22SN75EDTA  3",
+            "specPage": "gkm3bab6n3_specs.xml",
+            "price": "28745.0000"
+        },
+        {
+            "id": "GKM3BAA",
+            "rank": "55",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_02_003,P_03_003",
+            "capCode": "MA6 22SP75EDTA  3",
+            "specPage": "gkm3baa_specs.xml",
+            "price": "28945.0000"
+        },
+        {
+            "id": "GKM3BAA6N3",
+            "rank": "56",
+            "bodyStyleId": "5500",
+            "gradeId": "003",
+            "engineId": "A00XPY00",
+            "keyCriteriaIds": "KC01,KC04,KC05,KC06,KC07,KC08,KC09,KC11,KC12,KC14,KC15,KC16",
+            "standardFeatureIds": "0002,0003,0004,0011,0014,0017,0018,0028,0030,0031,0032,0034,0036,0038,0039,0041,0042,0047,0048,0060,0063,0071,0073,0075,0076,0078,0081,0083,0084,0085,0086,0087,0088,0089,0158,0160,0162,0164,0500,0501,0504,0507,0508,0509,0512",
+            "optionPackIds": "P_01_003,P_02_003,P_03_003",
+            "capCode": "MA6 22SN75EDTA  3",
+            "specPage": "gkm3baa6n3_specs.xml",
+            "price": "29545.0000"
+        }
+
+    ]
+    , "baseVehicleDefaults": [
+    {
+        "baseVehicleId": "GHW8BAA",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GHW8BAA6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAA",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAA6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GHW8BAD",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GHW8BAD6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GJA1BAA",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GJA1BAA6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAE",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAE6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLV7BAC",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLV7BAC6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL7BAA",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL7BAA6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL7BAB",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL7BAB6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAF",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAF6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAG",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLG7BAG6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL8BAA",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL8BAA6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL8BAB",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL8BAB6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL9BAA",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL9BAA6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL9BAC",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL9BAC6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL9BAB",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKL9BAB6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLT7BAA",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLT7BAA6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GJE8BAA",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GJE8BAA6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKP5BAA",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKP5BAA6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLT8BAA",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GLT8BAA6N3",
+        "wheelId": "WHE_01",
+        "colourId": "41V",
+        "trimId": "GN5",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM1BAC",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM1BAC6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM1BAA",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM1BAA6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKP5BAC",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKP5BAC6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKP5BAB",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKP5BAB6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM2BAB",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM2BAB6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM2BAA",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM2BAA6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM3BAC",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM3BAC6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM3BAB",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM3BAB6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM3BAA",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    },
+    {
+        "baseVehicleId": "GKM3BAA6N3",
+        "wheelId": "WHE_02",
+        "colourId": "41V",
+        "trimId": "GN8",
+        "accessoryIds": "null"
+    }
+],
+    "bodyStyles": [
+        {
+            "name": "Saloon",
+            "id": "2200",
+            "description": "",
+            "imageFileName": "thumbnail.png",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "001",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "003",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tourer",
+            "id": "5500",
+            "description": "",
+            "imageFileName": "thumbnail.png",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "001",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "003",
+                        "preconditions": []
+                    }
+                ]
+            }
+        }
+    ],
+    "grades": [
+        {
+            "name": "SE",
+            "id": "001",
+            "description": "<b>Standard Features</b>&#xD;• 17\"&nbsp;Alloy wheels&#xD;• Manual air-conditioning&#xD;• Front and rear electric windows&#xD;• Cruise control&#xD;• Mazda Multimedia System&#xD;• Leather steering wheel and gear knob",
+            "imageFileName": "thumbnail.png",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "SE-L",
+            "id": "002",
+            "description": "<span style=\"font-family: arial;\"><b>Standard Features as SE model plus:</b>&#xD;• Smart City Brake Support (SCBS)&#xD;•&nbsp;Privacy glass&#xD;• Dual-zone climate control air-conditioning&#xD;• Front and rear parking sensors</span>",
+            "imageFileName": "thumbnail.png",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Sport",
+            "id": "003",
+            "description": "<b>Standard Features as SE-L model plus:</b>&#xD;• 19\" Alloy wheels&#xD;• Leather trim&#xD;• Bose® sound system&#xD;•Reversing camera&#xD;• Smart keyless entry&#xD;• Bi-Xenon headlights with AFS",
+            "imageFileName": "thumbnail.png",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": []
+                    }
+                ]
+            }
+        }
+    ],
+    "engines": [
+        {
+            "taxIncrease": 0,
+            "id": "600BMCXPE00",
+            "imageFileName": "thumbnail.png",
+            "fuelType": "Petrol",
+            "name": "2.0l 145ps Petrol Manual",
+            "engineSize": "2.0",
+            "enginePower": "144",
+            "dependencies": {
+                "availability": [
+                    {
+                        "id": "5500",
+                        "type": "bodyStyle",
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "002",
+                                "type": "grade"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2200",
+                        "type": "bodyStyle",
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "001",
+                                "type": "grade"
+                            },
+                            {
+                                "preconditions": [],
+                                "id": "002",
+                                "type": "grade"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "emissions": "CO2 emissions: 131 g/km&#xD;Fuel consumption: 50.4 (5.6) mpg (l/100km)",
+            "transmission": "Manual"
+        },
+        {
+            "taxIncrease": 0,
+            "id": "A00BMC2XPE00",
+            "imageFileName": "thumbnail.png",
+            "fuelType": "Petrol",
+            "name": "2.0l 145ps Petrol Automatic",
+            "engineSize": "2.0",
+            "enginePower": "144",
+            "dependencies": {
+                "availability": [
+                    {
+                        "id": "2200",
+                        "type": "bodyStyle",
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "002",
+                                "type": "grade"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "emissions": "CO2 emissions: 136 g/km&#xD;Fuel consumption: 47.9 (5.9) mpg (l/100km)",
+            "transmission": "Automatic"
+        },
+        {
+            "taxIncrease": 0,
+            "id": "600XPE00",
+            "imageFileName": "thumbnail.png",
+            "fuelType": "Petrol",
+            "name": "2.0l 165ps Petrol Manual",
+            "engineSize": "2.0",
+            "enginePower": "165",
+            "dependencies": {
+                "availability": [
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "003",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "5500",
+                        "type": "bodyStyle"
+                    },
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "003",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "2200",
+                        "type": "bodyStyle"
+                    }
+                ]
+            },
+            "emissions": "CO2 emissions: 136 g/km&#xD;Fuel consumption: 47.9 (5.9) mpg (l/100km)",
+            "transmission": "Manual"
+        },
+        {
+            "taxIncrease": 0,
+            "id": "600BMCXPY00",
+            "imageFileName": "thumbnail.png",
+            "fuelType": "Diesel",
+            "name": "2.2l 150ps Diesel Manual",
+            "engineSize": "2.2",
+            "enginePower": "150",
+            "dependencies": {
+                "availability": [
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "001",
+                                "type": "grade"
+                            },
+                            {
+                                "preconditions": [],
+                                "id": "002",
+                                "type": "grade"
+                            },
+                            {
+                                "preconditions": [],
+                                "id": "003",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "5500",
+                        "type": "bodyStyle"
+                    },
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "001",
+                                "type": "grade"
+                            },
+                            {
+                                "preconditions": [],
+                                "id": "002",
+                                "type": "grade"
+                            },
+                            {
+                                "preconditions": [],
+                                "id": "003",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "2200",
+                        "type": "bodyStyle"
+                    }
+                ]
+            },
+            "emissions": "CO2 emissions: 116 g/km&#xD;Fuel consumption: 64.2 (4.4) mpg (l/100km)",
+            "transmission": "Manual"
+        },
+        {
+            "taxIncrease": 0,
+            "id": "A00BMCXPY00",
+            "imageFileName": "thumbnail.png",
+            "fuelType": "Diesel",
+            "name": "2.2l 150ps Diesel Automatic",
+            "engineSize": "2.2",
+            "enginePower": "150",
+            "dependencies": {
+                "availability": [
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "002",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "5500",
+                        "type": "bodyStyle"
+                    },
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "002",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "2200",
+                        "type": "bodyStyle"
+                    }
+                ]
+            },
+            "emissions": "CO2 emissions: 129 g/km&#xD;Fuel consumption: 57.6 (4.9) mpg (l/100km)",
+            "transmission": "Automatic"
+        },
+        {
+            "taxIncrease": 0,
+            "id": "600XPY00",
+            "imageFileName": "thumbnail.png",
+            "fuelType": "Diesel",
+            "name": "2.2l 175ps Diesel Manual",
+            "engineSize": "2.2",
+            "enginePower": "175",
+            "dependencies": {"availability": [
+                {
+                    "preconditions": [
+                        {
+                            "preconditions": [],
+                            "id": "003",
+                            "type": "grade"
+                        }
+                    ],
+                    "id": "5500",
+                    "type": "bodyStyle"
+                },
+                {
+                    "preconditions": [
+                        {
+                            "preconditions": [],
+                            "id": "003",
+                            "type": "grade"
+                        }
+                    ],
+                    "id": "2200",
+                    "type": "bodyStyle"
+                }
+            ]},
+            "emissions": "CO2 emissions: 121 g/km&#xD;Fuel consumption: 61.4 (4.6) mpg (l/100km)",
+            "transmission": "Manual"
+        },
+        {
+            "taxIncrease": 0,
+            "id": "A00XPY00",
+            "imageFileName": "thumbnail.png",
+            "fuelType": "Diesel",
+            "name": "2.2l 175ps Diesel Automatic",
+            "engineSize": "2.2",
+            "enginePower": "175",
+            "dependencies": {
+                "availability": [
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "003",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "5500",
+                        "type": "bodyStyle"
+                    },
+                    {
+                        "preconditions": [
+                            {
+                                "preconditions": [],
+                                "id": "003",
+                                "type": "grade"
+                            }
+                        ],
+                        "id": "2200",
+                        "type": "bodyStyle"
+                    }
+                ]
+            },
+            "emissions": "CO2 emissions: 129 g/km&#xD;Fuel consumption: 57.6 (4.9) mpg (l/100km)",
+            "transmission": "Automatic"
+        }
+    ],
+    "colours": [
+        {
+            "disclaimer": null,
+            "name": "Arctic White",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "pearlWhite.png",
+            "id": "A4D",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "disclaimer": null,
+            "name": "Aluminium Metallic",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "spiritedGreen.png",
+            "id": "38P",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "disclaimer": null,
+            "name": "Blue Reflex Mica",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "thumbnail.png",
+            "id": "42B",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "disclaimer": null,
+            "name": "Jet Black Mica",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "thumbnail.png",
+            "id": "41W",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "disclaimer": null,
+            "name": "Meteor Gray Mica",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "thumbnail.png",
+            "id": "42A",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "disclaimer": null,
+            "name": "Snowflake White Pearl",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "thumbnail.png",
+            "id": "25D",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "disclaimer": null,
+            "name": "Soul Red Metallic",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "soul_red.png",
+            "id": "41V",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "660.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "660.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "660.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "disclaimer": null,
+            "name": "Stormy Blue Mica",
+            "taxable": false,
+            "description": null,
+            "imageFileName": "aquaBlue.png",
+            "id": "35J",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "5500",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "bodyStyle",
+                        "value": "",
+                        "id": "2200",
+                        "preconditions": [
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "001",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "002",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "grade",
+                                "value": "",
+                                "id": "003",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "530.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        }
+    ],
+    "wheels": [
+        {
+            "name": "17” Alloy wheels",
+            "imageFileName": "whe_01_16_alu.png",
+            "description": "",
+            "id": "WHE_01",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "001",
+                        "preconditions": [
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "A00BMC2XPE00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "A00BMCXPY00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "600BMCXPE00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "600BMCXPY00",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "002",
+                        "preconditions": [
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "A00BMC2XPE00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "A00BMCXPY00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "600BMCXPE00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "600BMCXPY00",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "19” Alloy Wheels",
+            "imageFileName": "whe_05_18_alu.png",
+            "description": "",
+            "id": "WHE_02",
+            "dependencies": {
+                "availability": [
+                    {
+                        "type": "grade",
+                        "value": "",
+                        "id": "003",
+                        "preconditions": [
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "A00XPY00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "600XPE00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "600XPY00",
+                                "preconditions": []
+                            },
+                            {
+                                "type": "engine",
+                                "value": "",
+                                "id": "600BMCXPY00",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "003",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "002",
+                        "preconditions": []
+                    },
+                    {
+                        "type": "grade",
+                        "value": "0.00",
+                        "id": "001",
+                        "preconditions": []
+                    }
+                ]
+            }
+        }
+    ],
+    "trims": [
+        {
+            "id": "GN5",
+            "imageFileName": "thumbnail.png",
+            "name": "Black Cloth",
+            "disclaimer": null,
+            "dependencies": {
+                "availability": [
+                    {
+                        "id": "5500",
+                        "type": "bodyStyle",
+                        "value": "",
+                        "preconditions": [
+                            {
+                                "id": "001",
+                                "type": "grade",
+                                "value": "",
+                                "interorImageFileName": ".jpg",
+                                "preconditions": []
+                            },
+                            {
+                                "id": "002",
+                                "type": "grade",
+                                "value": "",
+                                "interorImageFileName": ".jpg",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2200",
+                        "type": "bodyStyle",
+                        "value": "",
+                        "preconditions": [
+                            {
+                                "id": "001",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            },
+                            {
+                                "id": "002",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "id": "001",
+                        "type": "grade",
+                        "value": "0.00",
+                        "preconditions": []
+                    },
+                    {
+                        "id": "002",
+                        "type": "grade",
+                        "value": "0.00",
+                        "preconditions": []
+                    }
+                ],
+                "selection": [
+                    [
+                        ""
+                    ],
+                    [
+                        ""
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "GN8",
+            "imageFileName": "thumbnail.png",
+            "name": "Black Leather",
+            "disclaimer": null,
+            "dependencies": {
+                "availability": [
+                    {
+                        "id": "5500",
+                        "type": "bodyStyle",
+                        "value": "",
+                        "preconditions": [
+                            {
+                                "id": "003",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2200",
+                        "type": "bodyStyle",
+                        "value": "",
+                        "preconditions": [
+                            {
+                                "id": "001",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            },
+                            {
+                                "id": "003",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            },
+                            {
+                                "id": "001",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "id": "003",
+                        "type": "grade",
+                        "value": "0.00",
+                        "preconditions": []
+                    }
+                ],
+                "selection": [
+                    [
+                        ""
+                    ],
+                    [
+                        ""
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "GN7",
+            "imageFileName": "thumbnail.png",
+            "name": "Light Stone Leather",
+            "disclaimer": null,
+            "dependencies": {
+                "availability": [
+                    {
+                        "id": "5500",
+                        "type": "bodyStyle",
+                        "value": "",
+                        "preconditions": [
+                            {
+                                "id": "003",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2200",
+                        "type": "bodyStyle",
+                        "value": "",
+                        "preconditions": [
+                            {
+                                "id": "003",
+                                "type": "grade",
+                                "value": "",
+                                "preconditions": []
+                            }
+                        ]
+                    }
+                ],
+                "price": [
+                    {
+                        "id": "003",
+                        "type": "grade",
+                        "value": "200.00",
+                        "preconditions": []
+                    }
+                ],
+                "selection": [
+                    [
+                        ""
+                    ],
+                    [
+                        ""
+                    ]
+                ]
+            }
+        }
+    ],
+    "standardFeatures": [
+        {
+            "value": "0028",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Comfort and Convenience",
+            "file": {
+                "filename": "82d14fbe-1d09-432f-9a06-53639a03c791.jpg"
+            },
+            "title": "Front and rear electric windows"
+        },
+        {
+            "value": "0037",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Comfort and Convenience",
+            "file": {
+                "filename": "9a0456ce-0fa4-442a-9287-33ee449491a7.jpg"
+            },
+            "title": "Manual air-conditioning"
+        },
+        {
+            "value": "0038",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Comfort and Convenience",
+            "file": {
+                "filename": "03bb1f26-82fc-49ce-9fb8-07c46dabeb66.jpg"
+            },
+            "title": "Dual-zone climate control air-conditioning"
+        },
+        {
+            "value": "0075",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Comfort and Convenience",
+            "file": {
+                "filename": "6affaa35-f6b3-447e-9bea-c3c80d13361a.jpg"
+            },
+            "title": "Cruise control"
+        },
+        {
+            "value": "0078",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Comfort and Convenience",
+            "file": {
+                "filename": "1ff7f929-b84c-467d-a4fb-aa68550a1565.jpg"
+            },
+            "title": "Smart keyless entry"
+        },
+        {
+            "value": "0081",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Comfort and Convenience",
+            "file": {
+                "filename": "c828aa46-2d3a-4554-b9ba-9a4033843163.jpg"
+            },
+            "title": "Engine push button start"
+        },
+        {
+            "value": "0085",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Comfort and Convenience",
+            "file": {
+                "filename": "4b252ee3-7f16-4fe7-aae0-7ee34da6e075.jpg"
+            },
+            "title": "Remote central locking"
+        },
+        {
+            "value": "0001",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "df3231c0-fc1e-46a5-8017-6b7a6b4b68b8.jpg"
+            },
+            "title": "Halogen headlights"
+        },
+        {
+            "value": "0002",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "b0bd5ab2-7beb-4164-80f7-b27ce4307e80.jpg"
+            },
+            "title": "Bi-Xenon headlights with Adaptive Front Lighting System (AFS)"
+        },
+        {
+            "value": "0003",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "80cec99e-fcbe-4be7-9bea-a97f4b5cd79b.jpg"
+            },
+            "title": "Front fog lights"
+        },
+        {
+            "value": "0004",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "c3672b47-8112-409c-921c-e34e3da39d11.jpg"
+            },
+            "title": "Dusk-sensing lights"
+        },
+        {
+            "value": "0011",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "c5a53d7f-a1e3-4c3a-895e-ab151e0ae428.jpg"
+            },
+            "title": "Privacy glass"
+        },
+        {
+            "value": "0014",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "852a97a0-75ae-4381-9b05-cfb21338c5d7.jpg"
+            },
+            "title": "Power folding, heated door mirrors with integrated indicator light"
+        },
+        {
+            "value": "0016",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "b4e037d2-0782-441b-bfe8-06e8ebfa3457.jpg"
+            },
+            "title": "Heated door mirrors with integrated indicator light"
+        },
+        {
+            "value": "0017",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "677dfd90-43ed-46ba-a535-f131793046ca.jpg"
+            },
+            "title": "Rain-sensing front wipers"
+        },
+        {
+            "value": "0018",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "a4561264-ee1a-4eaf-b390-cd9cbcd96077.jpg"
+            },
+            "title": "Front and rear parking sensors"
+        },
+        {
+            "value": "0073",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "9682f743-61f6-431e-af28-ae8c28e6123e.jpg"
+            },
+            "title": "Reversing camera"
+        },
+        {
+            "value": "0360",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {},
+            "title": "Rear view camera"
+        },
+        {
+            "value": "0511",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "b86460ec-4847-4de2-97d6-f42d8274e760.jpg"
+            },
+            "title": "Daytime running lights"
+        },
+        {
+            "value": "0512",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Exterior",
+            "file": {
+                "filename": "fcf873fe-9dea-481e-82c6-19e4eb0fc08f.jpg"
+            },
+            "title": "LED daytime running lights"
+        },
+        {
+            "value": "0030",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "f53ad7db-d671-4ba8-a6ac-bd8910779679.jpg"
+            },
+            "title": "Integrated Bluetooth®"
+        },
+        {
+            "value": "0032",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "84441bc4-b693-4ef4-915d-b4d9d3ab528b.jpg"
+            },
+            "title": "Trip computer"
+        },
+        {
+            "value": "0033",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "431d96e6-3ffb-4876-82e1-97e6548bce1a.jpg"
+            },
+            "title": "Four speakers"
+        },
+        {
+            "value": "0034",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "2bb0a1c3-eaf0-425a-b9b0-4efc7670d6ed.jpg"
+            },
+            "title": "AM/FM radio with CD player"
+        },
+        {
+            "value": "0035",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "0abff08c-db7d-47ba-a863-900e1a2ec31e.jpg"
+            },
+            "title": "Six speakers"
+        },
+        {
+            "value": "0036",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "e105d544-8411-4f0f-bdc5-188fcbee3fb7.jpg"
+            },
+            "title": "Premium Bose® surround sound system"
+        },
+        {
+            "value": "0039",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "70d66aa1-3e8c-473b-b949-ace3da4cecbf.jpg"
+            },
+            "title": "Auto-dimming rear-view mirror"
+        },
+        {
+            "value": "0041",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "c9bd36ab-89b6-4f85-bef5-06a66ed414c0.jpg"
+            },
+            "title": "Steering wheel audio controls"
+        },
+        {
+            "value": "0042",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "011b9b5d-5313-434f-a816-fe82973405a2.jpg"
+            },
+            "title": "Leather steering wheel"
+        },
+        {
+            "value": "0046",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "9c5764d2-92eb-4847-9949-81bce787caa0.jpg"
+            },
+            "title": "Driver’s seat, reclining and height adjustment"
+        },
+        {
+            "value": "0047",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "350862fb-ffe8-41cc-8e10-d4bdc5bba5c2.jpg"
+            },
+            "title": "Heated front seats"
+        },
+        {
+            "value": "0048",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "39ecff0f-a8f0-413d-8239-6aae0d2e83fb.jpg"
+            },
+            "title": "Leather seat trim"
+        },
+        {
+            "value": "0055",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "97154689-4be1-4d20-9403-fc979f1eb243.jpg"
+            },
+            "title": "Driver’s seat lumbar adjustment"
+        },
+        {
+            "value": "0057",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "d53e7bbe-6f62-4f3c-bf4b-079a9f043402.jpg"
+            },
+            "title": "Sliding centre armrest"
+        },
+        {
+            "value": "0060",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "e0862af7-28c0-4f8c-8a0f-0af62ccc03af.jpg"
+            },
+            "title": "Eleven speakers"
+        },
+        {
+            "value": "0063",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "00a85d51-5c34-4382-a60e-799bd16d25cd.jpg"
+            },
+            "title": "Auxiliary input jack (AUX)"
+        },
+        {
+            "value": "0121",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "28a7aae4-9dad-4d98-9644-0e9022351c30.jpg"
+            },
+            "title": "Cloth seat trim"
+        },
+        {
+            "value": "0158",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {},
+            "title": "6-way driver’s seat power adjustment"
+        },
+        {
+            "value": "0160",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {},
+            "title": "Driver’s seat, power lumbar adjustment"
+        },
+        {
+            "value": "0162",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {},
+            "title": "4-way passenger seat power adjustment"
+        },
+        {
+            "value": "0273",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {},
+            "title": "SEAT-CLO 1;WARMER"
+        },
+        {
+            "value": "0275",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {},
+            "title": "SEAT-CL1;WAR,ARMREST"
+        },
+        {
+            "value": "0276",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {},
+            "title": "SEAT-LEAT+CLO 2;WARM"
+        },
+        {
+            "value": "0315",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {},
+            "title": "AUD-9/100,CD_MP3;SP6"
+        },
+        {
+            "value": "0507",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "dbaff532-a972-4039-bb50-7adfcec7eb7d.jpg"
+            },
+            "title": "Multimedia commander"
+        },
+        {
+            "value": "0508",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "01a604df-5065-42da-8471-caa86166cee6.jpg"
+            },
+            "title": "Integrated 5.8” colour touch screen"
+        },
+        {
+            "value": "0509",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Interior",
+            "file": {
+                "filename": "d3127ce9-522e-444c-a584-dec438ed1049.jpg"
+            },
+            "title": "USB connectivity"
+        },
+        {
+            "value": "0500",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Mechanical",
+            "file": {
+                "filename": "b56f1096-6e78-4e0d-94d8-4b439d26ac80.jpg"
+            },
+            "title": "i-Stop"
+        },
+        {
+            "value": "0501",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Mechanical",
+            "file": {
+                "filename": "d69e0b56-2fb5-47fe-be7a-c464030fea1c.jpg"
+            },
+            "title": "i-ELOOP"
+        },
+        {
+            "value": "0031",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "fc554f9a-42ad-401d-926d-ab73cd5f3849.jpg"
+            },
+            "title": "Tyre Pressure Monitoring System (TPMS)"
+        },
+        {
+            "value": "0071",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "bd4118f9-4faa-4605-9b4b-1ee345377b89.jpg"
+            },
+            "title": "ISOFIX child seat anchorages"
+        },
+        {
+            "value": "0076",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "cd80a21d-cde2-4034-9d53-ce49fda1902a.jpg"
+            },
+            "title": "Thatcham Category 1 alarm and immobiliser"
+        },
+        {
+            "value": "0083",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "f3ca2bca-a2ce-44eb-84b6-a0d4340dfed6.jpg"
+            },
+            "title": "Dynamic Stability Control (DSC) with Traction Control System (TCS)"
+        },
+        {
+            "value": "0084",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "b41ed5b3-a87b-4e5a-9823-c0a1488a7616.jpg"
+            },
+            "title": "Emergency Stop Signalling system (ESS)"
+        },
+        {
+            "value": "0086",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "3aad6ab1-2258-4c7a-9296-c6beb3de0722.jpg"
+            },
+            "title": "Driver and front passenger airbags"
+        },
+        {
+            "value": "0087",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "2ffc5c74-693b-40cd-923c-3d3aed99f61d.jpg"
+            },
+            "title": "Front side airbags"
+        },
+        {
+            "value": "0088",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "e74bbb01-7644-45a2-a121-05e36eba0b0f.jpg"
+            },
+            "title": "Curtain airbags"
+        },
+        {
+            "value": "0089",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "8400ef16-f331-400a-9c3c-b49b8196b28b.jpg"
+            },
+            "title": "Hill Hold Assist"
+        },
+        {
+            "value": "0164",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {},
+            "title": "Passenger airbag cut-off switch"
+        },
+        {
+            "value": "0504",
+            "price": "0.00",
+            "itemBelongsToSpecificationCategory": "Safety and Security",
+            "file": {
+                "filename": "f3184bb0-01d7-4bc1-88ca-6af9ba677b54.jpg"
+            },
+            "title": "Smart City Brake Support (SCBS)"
+        }
+    ],
+    "optionPack": [
+        {
+            "value": "P_01_003",
+            "bodyStyle": "5500",
+            "series": "003",
+            "engine": "600XPE00,600BMCXPY00,600XPY00,A00XPY00",
+            "price": "600.00",
+            "file": {
+                "filename": "05d6b1af-6ef2-475c-880d-9a2d6f11ed77.jpg"
+            },
+            "title": "Navigation",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_01_002",
+            "bodyStyle": "5500",
+            "series": "002",
+            "engine": "600BMCXPE00,600BMCXPY00,A00BMCXPY00",
+            "price": "600.00",
+            "file": {
+                "filename": "05d6b1af-6ef2-475c-880d-9a2d6f11ed77.jpg"
+            },
+            "title": "Navigation",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_01_001",
+            "bodyStyle": "5500",
+            "series": "001",
+            "engine": "600BMCXPY00",
+            "price": "600.00",
+            "file": {
+                "filename": "05d6b1af-6ef2-475c-880d-9a2d6f11ed77.jpg"
+            },
+            "title": "Navigation",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_01_003",
+            "bodyStyle": "2200",
+            "series": "003",
+            "engine": "600XPE00,600BMCXPY00,600XPY00,A00XPY00",
+            "price": "600.00",
+            "file": {
+                "filename": "05d6b1af-6ef2-475c-880d-9a2d6f11ed77.jpg"
+            },
+            "title": "Navigation",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_01_002",
+            "bodyStyle": "2200",
+            "series": "002",
+            "engine": "A00BMC2XPE00,600BMCXPE00,600BMCXPY00,A00BMCXPY00",
+            "price": "600.00",
+            "file": {
+                "filename": "05d6b1af-6ef2-475c-880d-9a2d6f11ed77.jpg"
+            },
+            "title": "Navigation",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_01_001",
+            "bodyStyle": "2200",
+            "series": "001",
+            "engine": "600BMCXPE00,600BMCXPY00",
+            "price": "600.00",
+            "file": {
+                "filename": "05d6b1af-6ef2-475c-880d-9a2d6f11ed77.jpg"
+            },
+            "title": "Navigation",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_02_003",
+            "bodyStyle": "5500",
+            "series": "003",
+            "engine": "600XPE00,600BMCXPY00,600XPY00,A00XPY00",
+            "price": "700.00",
+            "file": {
+                "filename": "08bbcafa-e1bf-41d8-b359-367c47cb0905.jpg"
+            },
+            "title": "Safety Pack",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_02_003",
+            "bodyStyle": "2200",
+            "series": "003",
+            "engine": "600XPE00,600BMCXPY00,600XPY00,A00XPY00",
+            "price": "700.00",
+            "file": {
+                "filename": "08bbcafa-e1bf-41d8-b359-367c47cb0905.jpg"
+            },
+            "title": "Safety Pack",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_03_003",
+            "bodyStyle": "5500",
+            "series": "003",
+            "engine": "A00XPY00",
+            "price": "800.00",
+            "file": {
+                "filename": "e4bae184-b84d-4a8c-971c-767e378b8cf7.jpg"
+            },
+            "title": "Mazda Radar Cruise Control",
+            "disclaimer": ""
+        },
+        {
+            "value": "P_03_003",
+            "bodyStyle": "2200",
+            "series": "003",
+            "engine": "A00XPY00",
+            "price": "800.00",
+            "file": {
+                "filename": "e4bae184-b84d-4a8c-971c-767e378b8cf7.jpg"
+            },
+            "title": "Mazda Radar Cruise Control",
+            "disclaimer": ""
+        }
+    ],
+    "accessories": [
+        {
+            "value": "GHP9-V4-090",
+            "bodyStyle": "5500",
+            "series": "001,002,003",
+            "engine": "600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "140.7400",
+            "file": {
+                "filename": "25ba4cee-953b-464d-a118-938a27398746.jpg"
+            },
+            "title": "Rear bumper step plate",
+            "description": "Protects your rear bumper from scratching when loading and unloading the boot.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GHK1-V4-920 -00",
+            "bodyStyle": "2200",
+            "series": "001,002,003",
+            "engine": "A00BMC2XPE00,600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "296.6400",
+            "file": {
+                "filename": "7ee60705-07d7-484f-8f7d-0143f562e277.jpg"
+            },
+            "title": "Rear spoiler, lip type",
+            "description": "Be sure that your Mazda will have a distinct look to separate you from the masses.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GHP9-V4-920",
+            "bodyStyle": "5500",
+            "series": "001,002,003",
+            "engine": "600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "254.8100",
+            "file": {
+                "filename": "71b70c53-7447-4070-8906-828d3f1a6717.jpg"
+            },
+            "title": "Rear roof spoiler",
+            "description": "Be sure that your Mazda will have a distinct look to separate you from the masses.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GHP9-V4-900",
+            "bodyStyle": "2200,5500",
+            "series": "001,002,003",
+            "engine": "A00BMC2XPE00,600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "418.4200",
+            "file": {
+                "filename": "4abff465-7b2a-4e65-97cf-136456faf125.jpg"
+            },
+            "title": "Front airdam skirt",
+            "description": "Let your Mazda express your personality.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GHP9-V3-450",
+            "bodyStyle": "2200,5500",
+            "series": "001,002,003",
+            "engine": "A00BMC2XPE00,600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "58.1400",
+            "file": {
+                "filename": "fca0f80a-04c9-458d-b6f8-4a1c425242f5.jpg"
+            },
+            "title": "Mud flaps, front",
+            "description": "Keep the outside of your car mud-free with these durable mud flaps.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GHK1-V3-460",
+            "bodyStyle": "2200",
+            "series": "001,002,003",
+            "engine": "A00BMC2XPE00,600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "58.1400",
+            "file": {
+                "filename": "2806bd7c-ea02-4f6f-b6de-7b11af7f3d2d.jpg"
+            },
+            "title": "Mud flaps, rear",
+            "description": "Keep the outside of your car mud-free with these durable mud flaps.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GHP9-V3-460",
+            "bodyStyle": "5500",
+            "series": "001,002,003",
+            "engine": "600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "58.1400",
+            "file": {
+                "filename": "0023cf24-2a5f-4801-a146-962bd72bd4bb.jpg"
+            },
+            "title": "Mud flaps, rear",
+            "description": "Keep the outside of your car mud-free with these durable mud flaps.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GKM1-V0-320",
+            "bodyStyle": "5500",
+            "series": "001,002,003",
+            "engine": "600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "52.5000",
+            "file": {
+                "filename": "15f1f8fa-5f2b-4db8-b982-3648cbd0ab41.jpg"
+            },
+            "title": "Floor mats \"Standard\"",
+            "description": "Keep your car clean and stylish with these tailored embroidered floor mats.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GJA1-V0-320",
+            "bodyStyle": "2200",
+            "series": "001,002,003",
+            "engine": "A00BMC2XPE00,600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "52.5000",
+            "file": {
+                "filename": "51095132-3da1-4adf-bb9a-0df49846a46e.jpg"
+            },
+            "title": "Floor mats \"Standard\"",
+            "description": "Keep your car clean and stylish with these tailored embroidered floor mats.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GHW8-V0-320",
+            "bodyStyle": "2200",
+            "series": "001,002,003",
+            "engine": "A00BMC2XPE00,600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "59.6400",
+            "file": {
+                "filename": "60759a95-3ddc-436b-b245-89ca7665ebd8.jpg"
+            },
+            "title": "Floor mats \"Luxury\"",
+            "description": "Keep your car clean and stylish with these black  logo  floor mats.",
+            "disclaimer": ""
+        },
+        {
+            "value": "GJE8-V0-320",
+            "bodyStyle": "5500",
+            "series": "001,002,003",
+            "engine": "600BMCXPE00,600BMCXPE00,600XPE00,600XPE00,600BMCXPY00,600BMCXPY00,A00BMCXPY00,A00BMCXPY00,600XPY00,600XPY00,A00XPY00,A00XPY00",
+            "unit": "1",
+            "price": "59.6400",
+            "file": {
+                "filename": "2b801dcb-88e9-426d-9a23-b9b488b7f786.jpg"
+            },
+            "title": "Floor mats \"Luxury\"",
+            "description": "Keep your car clean and stylish with these black  logo  floor mats.",
+            "disclaimer": ""
+        }
+    ]
+}

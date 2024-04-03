@@ -1,0 +1,678 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+body {
+  background-color: #e9e9e9;
+  > header.row {
+    display: none;
+  }
+}
+
+.topNav {
+  position: relative;
+  z-index: 0;
+  padding: 10px;
+  height: 50px;
+  background: #2e3639;
+}
+
+.footer {
+  padding: 10px;
+  height: 50px;
+  background: #2e3639;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  .vehicle-details-container {
+    padding: 0;
+    min-height: inherit;
+    background: none;
+  }
+}
+
+.topNav .vehicle-details {
+  .mazda-badge-container {
+    position: static;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 4px;
+    float: left;
+    background: #fff;
+    img {
+      left: -25px;
+      position: relative;
+      width: 80px;
+      max-width: inherit;
+      top: -6px;
+    }
+  }
+  .mobile-nav-divider {
+    float: left;
+    position: relative;
+    margin: 0 10px;
+    height: 30px;
+  }
+  .vehicle-title {
+    float: left;
+    h1 {
+      color: #fff;
+      font-size: 1.5em;
+      margin: 0;
+      line-height: 0.8;
+      font-family: 'InterstateMazdaLight', sans-serif;
+    }
+    p {
+      color: #ccc;
+      font-size: 0.9em;
+      margin: 0;
+      line-height: 0.8;
+    }
+  }
+  .vehicle-price {
+    float: right;
+    .price-value {
+      color: #fff;
+      margin: 0;
+      line-height: 30px;
+      font-size: 2.5em;
+    }
+  }
+}
+
+.car-show-container {
+  height: auto;
+  min-height: 180px;
+  background: #A2A2A2 url('../resources/images/components/carShowBG.jpg') repeat-y center center;
+  position: relative;
+}
+
+.car-show {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  background-size: 120%;
+  background-position: -30px 20px;
+}
+
+.car-image {
+  width: 105%;
+  height: auto;
+  margin-left: -2%;
+}
+
+.car-details-container {
+  min-height: 60px;
+  background: url('../resources/images/components/carDetailsBG.png') repeat-x top left;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding: 5px 0 0;
+}
+
+.car-details {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carTitle {
+  float: left;
+  position: relative;
+}
+
+.carPrice {
+  float: right;
+  text-align: right;
+}
+
+.carTitle h1, .carPrice h2 {
+  margin: 0;
+}
+
+.carTitle h1, .carPrice h2 {
+  font-size: 32px;
+  line-height: 25px;
+}
+
+.carTitle p, .carPrice p {
+  font-size: 14px;
+  color: #485e6c;
+}
+
+.car-options {
+  position: relative;
+}
+
+.ca-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  .ca-nav-prev {
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  .ca-nav-next {
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background: #0091ca url('../resources/images/components/mobileNavArrow.png') no-repeat center center;
+    background-size: 20%;
+    text-indent: -9999px;
+  }
+  .ca-nav-prev {
+    background: #2e3639 url('../resources/images/components/mobileNavArrow.png') no-repeat center center;
+    background-size: 20%;
+    text-indent: -9999px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+.car-options {
+  .show-tray {
+    color: #fff;
+    background: #373E43;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-size: 40%;
+    text-indent: -9999px;
+    > span {
+      position: absolute;
+      top: 7px;
+      right: 15px;
+      display: block;
+      width: 20px;
+      -webkit-box-shadow: 0 10px 0 2px #fff, 0 18px 0 2px #fff, 0 26px 0 2px #fff;
+      box-shadow: 0 10px 0 2px #fff, 0 18px 0 2px #fff, 0 26px 0 2px #fff;
+    }
+  }
+  .ca-wrapper {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    max-width: 100%;
+    min-height: 50px;
+
+    .option {
+      list-style-type: none;
+      background: none;
+
+      header {
+        background: #2e3639 !important;
+        overflow: hidden;
+        height: 50px;
+        z-index: inherit;
+
+        h2 {
+          color: #fff;
+          margin: 0 0 0 60px;
+          text-align: left;
+          line-height: 50px;
+          font-family: 'InterstateMazdaLight', sans-serif;
+
+          > span {
+            font-size: 0.9em;
+            font-family: inherit;
+            color: inherit;
+          }
+        }
+      }
+
+      ul {
+        background: #fff;
+        padding: 0;
+        margin: 15px;
+        overflow: hidden;
+
+        &.swatch {
+          font-size: 0;
+          padding: 10px;
+
+          li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            border-bottom: 0;
+            position: relative;
+            min-height: 174px;
+            min-width: 135px;
+
+            .option-title {
+              height: 35px;
+            }
+
+            .price {
+              margin-bottom: 10px;
+              margin-left: 0;
+              white-space: normal;
+              height: 20px;
+            }
+
+            .thumbnail {
+              display: block;
+              position: relative;
+              padding: 0;
+              background: none;
+              border-radius: 0;
+              margin: 0 auto;
+              max-width: 105px;
+
+              > img {
+                display: block;
+                width: 100%;
+              }
+            }
+
+            &.selected .thumbnail:after {
+              content: "";
+              background-image: url('../resources/images/components/greenTick.png');
+              background-repeat: no-repeat;
+              background-position: top right;
+              height: 32px;
+              width: 34px;
+              position: absolute;
+              top: -8px;
+              right: -8px;
+            }
+          }
+        }
+
+        li {
+          border-bottom: 1px solid #eaebeb;
+          list-style-type: none;
+          padding: 10px;
+          display: block;
+          background: none;
+          min-height: 52px;
+
+          > .tick {
+            position: absolute;
+            right: 10px;
+            top: 16px;
+            height: 20px;
+            width: 20px;
+            border: 1px solid #84949c;
+            border-radius: 50%;
+          }
+
+          > .dropdown {
+            position: absolute;
+            left: 10px;
+            top: 16px;
+            height: 20px;
+            width: 20px;
+            border: 1px solid #84949c;
+            border-radius: 50%;
+          }
+        }
+
+        .selected > .tick {
+          background: url('../resources/images/components/greenTick.png') no-repeat top left;
+          background-size: cover;
+          border: none;
+        }
+      }
+    }
+
+    .wheel ul.swatch li .option-title {
+      height: 50px;
+    }
+  }
+}
+
+.car-options .ca-wrapper .option {
+  ul {
+    li {
+      .option-title {
+        letter-spacing: 0px;
+        color: #666;
+        font-family: 'InterstateMazdaRegular', sans-serif;
+        white-space: normal;
+        margin-left: 0;
+      }
+      .price {
+        font-size: 14px;
+        color: #84949c;
+      }
+      p {
+        line-height: 1;
+        margin: 0;
+        white-space: normal;
+      }
+    }
+    &.summary li {
+      position: relative;
+      text-align: left;
+      padding-right: 54px;
+      &:first-child {
+        .engine-value {
+          line-height: 1;
+        }
+        .grade-value {
+          font-family: 'InterstateMazdaRegular', sans-serif;
+          font-size: 1.6em;
+        }
+      }
+      img {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+      }
+    }
+  }
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-items {
+
+  .summary-dealer {
+    margin: 0 15px;
+    padding: 15px;
+    background: #34414C;
+    overflow: hidden;
+
+    p {
+      float: left;
+      color: #FFF;
+    }
+    a {
+      font-family: 'InterstateMazdaRegular', sans-serif;
+      float: right;
+      color: #E9E9E9;
+    }
+  }
+
+  .engine {
+    .thumbnail {
+      margin-left: 25px;
+    }
+
+    .engine-data {
+      border-radius: 0;
+      display: none;
+      margin: 10px -10px -10px;
+      padding: 0px;
+      background: #f5f5f5;
+      max-height: 300px;
+      overflow: hidden;
+      ul {
+        margin: 0;
+        background: none;
+        padding: 15px;
+        border-top: 1px solid #eaebeb;
+        li {
+          background: none;
+          border: none;
+          padding: 0;
+          min-height: inherit;
+          p {
+            display: inline-block;
+            color: #84949c;
+            vertical-align: top;
+            &:first-child {
+              width: 60%;
+
+            }
+            &:last-child {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+
+    .dropdown {
+      border: none !important;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 2px;
+        background: none;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #2899d9;
+        border-radius: 0;
+      }
+      &.dropdown-up:after {
+        border-bottom: 5px solid #2899d9;
+        border-top: 5px solid transparent;
+        top: 0px;
+      }
+    }
+
+  }
+
+  li {
+
+    text-align: left;
+
+    .thumbnail {
+      margin-right: 25px;
+    }
+
+    .selected > .thumbnail {
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+
+}
+
+.tray {
+  background: #373E43;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  left: -80%;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  li {
+    border-bottom: 1px #455055 solid;
+    height: 50px;
+    position: relative;
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 8.5px 8.5px 8.5px 13.5px;
+    }
+    &.current {
+      background: #0091CA;
+      border-bottom: 0;
+    }
+    &.active {
+      &:before {
+        content: "";
+        width: 5px;
+        height: 50px;
+        background: #0091CA;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .title, .option {
+        color: #fff;
+      }
+    }
+    &.current {
+      .title, .option {
+        color: #fff;
+      }
+    }
+  }
+  .title, .option {
+    color: #84949c;
+    margin: 0;
+  }
+  .title {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+  .option {
+    font-size: 0.9em;
+    line-height: 1;
+  }
+}
+
+.tray-open-page {
+  position: fixed;
+  left: 80%;
+}
+
+.tray-open {
+  left: 0;
+}
+
+.static-car-views {
+  display: none;
+  position: relative;
+  z-index: 1;
+  .slidesjs-container {
+    height: 180px !important;
+    .slidesjs-slide > div {
+      position: relative;
+      max-width: 400px;
+      margin: 20px auto 0;
+      .car, .wheels {
+        position: absolute;
+      }
+    }
+  }
+}
+
+.slidesjs-pagination {
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  text-align: center;
+  li {
+    margin: 0 1px;
+    display: inline-block;
+    a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url('../resources/images/components/pagination.png');
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+      &.active {
+        background-position: 0 -13px;
+      }
+      &:hover {
+        &.active {
+          background-position: 0 -13px;
+        }
+        background-position: 0 -26px;
+      }
+    }
+  }
+}
+
+.car-loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  > div {
+    position: relative;
+    margin: 50px auto;
+    background: url('../resources/images/components/infoPanelBG.png') repeat;
+    padding: 15px;
+    border-radius: 15px;
+    width: 167px;
+  }
+
+  p {
+    margin: 0;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+
+  .spinJs {
+    display: inline-block;
+    margin-left: 10px;
+
+    .spinner {
+      top: -4px !important;
+    }
+  }
+}
+
+#logo {
+  display: none !important;
+}
+
+footer.row {
+  display: none;
+}
+
+
+#postcode{
+  color: #ccc;
+  font-size: 0.68em;
+  margin: 0;
+  line-height: 0.8;
+  top: 0px;
+  position: relative;
+}

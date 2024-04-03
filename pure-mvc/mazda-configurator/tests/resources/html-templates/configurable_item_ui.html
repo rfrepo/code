@@ -1,0 +1,39 @@
+<%
+if(isDefaultSwatch) { %>
+    <li class="option option-default">
+        <div class="option option-main" <%= dataVOIndex %> <%= dataId %> >
+        <div class='<%= selectedClass%>'>
+
+            <% if (isEngine) {%>
+
+            <h4 class="name"><%= engineName %> </h4>
+            <h4 class="transmission"><%= engineTransmission %></h4>
+
+            <% } else { %>
+
+            <h4 class="name"><%= name %></h4>
+
+            <% } %>
+
+            <p class="price"><%= price %></p>
+
+            <p class="availableOnGrade"><%= availabelOnGradeText %></p>
+            <a class='button'><%=callToAction  %></a>
+        </div>
+        </div>
+    </li>
+
+<% } else { %>
+
+    <li class="option">
+        <div class="option option-main" <%= dataVOIndex %> <%= dataId %> >
+        <div class=<%= selectedClass %>>
+            <div class='selected-indicator <%= selectedClass%>'></div>
+            <img class='button' <%= 'src='+ imageURL %> />
+            <h4 class="name"><%= name %></h4>
+            <p class="price"><%= price %></p>
+            <p class="availableOnGrade"><%= availabelOnGradeText %></p>
+        </div>
+        </div>
+    </li>
+<% } %>

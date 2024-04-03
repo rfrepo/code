@@ -1,0 +1,27 @@
+<div class="notification-alert closed hidden">
+    <div class="modal">
+        <div class="notification-alert-details">
+            <header class="detail">
+                <p class="current-config-title"><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.CURRENT_CONFIGURATION %></p>
+                <div class="arrow"></div>
+                <p class="new-config-title"><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.NEW_CONFIGURATION %></p>
+            </header>
+            <section class="configurations detail">
+                <ul class="current-config-values"></ul>
+                <ul class="config-titles"></ul>
+                <ul class="new-config-values"></ul>
+            </section>
+            <section class="actions detail">
+                <div>
+                    <a class="accept"><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.ACCEPT %><span></span></a>
+                    <a class="undo"><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.UNDO %><span></span></a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="prompt">
+        <p class="description"></p>
+        <a class="info"><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.INFO %><span></span></a>
+        <a class="undo"><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.UNDO %><span></span></a>
+    </section>
+</div>

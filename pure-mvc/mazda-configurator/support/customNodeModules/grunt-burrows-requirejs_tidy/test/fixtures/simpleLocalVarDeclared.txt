@@ -1,0 +1,30 @@
+define([
+    'support/class1',
+    'class2'
+], function () {
+    'use strict';
+    puremvc.define({
+
+        bmc.support.class1.CONFIGURABLE_ITEM_UI;
+
+        function thisIsAFunction() {
+            var class1 = bmc.support.class1;
+        };
+
+        function anotherFunction() {
+            var otherVar,
+                class1 = bmc.support.class1;
+         };
+
+         function anotherFunction() {
+            var otherVar,
+                class1 = bmc.support.class1,
+                secondVar;
+         };
+
+        function finalFunction() {
+            var class1 = bmc.support.class1,
+                finalVar;
+        };
+    });
+});

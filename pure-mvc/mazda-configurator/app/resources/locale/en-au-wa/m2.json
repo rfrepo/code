@@ -1,0 +1,1779 @@
+{
+  "modelID": "M2",
+  "modelName": "Mazda2",
+  "startupBaseVehicleId": "DS52RAQ",
+  "baseVehicles": [
+    {
+      "id": "DS52RAQ",
+      "rank": 1,
+      "bodyStyleId": "2400",
+      "gradeId": "008",
+      "engineId": "500XZY00",
+      "keyCriteriaIds": "KC03,KC05,KC08,KC11,KC27",
+      "standardFeatureIds": "0002,0004,0006,0007,0010,0012,0015,0017,0018,0019,0020,0021,0024,0028,0029,0032,0033,0036,0037,0038,0043,0044,0045,0046,0047,0048,0049,0050,0051,0052,0053,0164,0165,0166,0168,0171,0172,0173,0175,0176,0177,0178,0179,0180,0181,0182,0184,0185,0190,0191,0192,0197,0198,0199,0200,0202,0220,0225,0244,0282,0327,0328,0330,0336,BMC2",
+      "capCode": "",
+      "specPage": "ds52raq_specs.xml",
+      "price": 15690.0,
+      "optionPackIds": ""
+    },
+    {
+      "id": "DS54RAQ",
+      "rank": 2,
+      "bodyStyleId": "2400",
+      "gradeId": "008",
+      "engineId": "N00BMCEP3",
+      "keyCriteriaIds": "KC03,KC05,KC08,KC11,KC27",
+      "standardFeatureIds": "0002,0004,0006,0007,0010,0012,0015,0017,0018,0019,0020,0021,0024,0028,0029,0032,0033,0036,0037,0038,0043,0044,0045,0046,0047,0048,0049,0050,0051,0052,0053,0164,0165,0166,0168,0171,0172,0173,0175,0176,0177,0178,0179,0180,0181,0182,0184,0185,0190,0191,0192,0197,0198,0199,0200,0202,0220,0225,0244,0282,0327,0328,0330,0336,BMC2",
+      "capCode": "",
+      "specPage": "ds54raq_specs.xml",
+      "price": 17340.0,
+      "optionPackIds": ""
+    },
+    {
+      "id": "DS52RAP",
+      "rank": 3,
+      "bodyStyleId": "2400",
+      "gradeId": "011",
+      "engineId": "500XZY00",
+      "keyCriteriaIds": "KC04,KC05,KC06,KC08,KC11,KC27",
+      "standardFeatureIds": "0002,0003,0004,0006,0007,0010,0011,0012,0015,0017,0018,0019,0020,0022,0024,0025,0026,0028,0029,0031,0032,0033,0036,0037,0038,0043,0044,0045,0046,0047,0048,0049,0050,0051,0052,0053,0164,0165,0166,0168,0170,0171,0172,0173,0175,0176,0177,0178,0179,0180,0181,0182,0183,0184,0185,0190,0191,0192,0197,0198,0199,0200,0202,0220,0225,0244,0282,0327,0328,0330,0336,BMC2",
+      "capCode": "",
+      "specPage": "ds52rap_specs.xml",
+      "price": 17690.0,
+      "optionPackIds": ""
+    },
+    {
+      "id": "DS54RAP",
+      "rank": 4,
+      "bodyStyleId": "2400",
+      "gradeId": "011",
+      "engineId": "N00BMCEP3",
+      "keyCriteriaIds": "KC04,KC05,KC06,KC08,KC11,KC27",
+      "standardFeatureIds": "0002,0003,0004,0006,0007,0010,0011,0012,0015,0017,0018,0019,0020,0022,0024,0025,0026,0028,0029,0031,0032,0033,0036,0037,0038,0043,0044,0045,0046,0047,0048,0049,0050,0051,0052,0053,0164,0165,0166,0168,0170,0171,0172,0173,0175,0176,0177,0178,0179,0180,0181,0182,0184,0185,0190,0191,0192,0197,0198,0199,0200,0202,0220,0225,0244,0282,0327,0328,0330,0336,BMC2",
+      "capCode": "",
+      "specPage": "ds54rap_specs.xml",
+      "price": 19340.0,
+      "optionPackIds": ""
+    }
+  ],
+  "baseVehicleDefaults": [
+    {
+      "baseVehicleId": "DS52RAQ",
+      "wheelId": "WHE_02",
+      "colourId": "A4A",
+      "trimId": "DM7",
+      "accessoryIds": "null"
+    },
+    {
+      "baseVehicleId": "DS54RAQ",
+      "wheelId": "WHE_02",
+      "colourId": "A4A",
+      "trimId": "DM7",
+      "accessoryIds": "null"
+    },
+    {
+      "baseVehicleId": "DS52RAP",
+      "wheelId": "WHE_02",
+      "colourId": "40E",
+      "trimId": "DT6",
+      "accessoryIds": "null"
+    },
+    {
+      "baseVehicleId": "DS54RAP",
+      "wheelId": "WHE_02",
+      "colourId": "40E",
+      "trimId": "DT6",
+      "accessoryIds": "null"
+    }
+  ],
+  "engines": [
+    {
+      "taxIncrease": 0,
+      "fuelType": "Petrol",
+      "engineSize": "1.5",
+      "enginePower": 76,
+      "transmission": "Manual",
+      "performanceAndEconomy": [
+        {
+          "name": "Powertrain",
+          "bodyStyle": "2400",
+          "specs": [
+            {
+              "group": null,
+              "name": "Engine type",
+              "value": "1.5 litre in-line 4 cylinder 16 valve DOHC S-VT",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (1st)",
+              "value": "3.416",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (4th)",
+              "value": "0.972",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (5th)",
+              "value": "0.775",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (3rd)",
+              "value": "1.290",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (2nd)",
+              "value": "1.842",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (final drive)",
+              "value": "4.105",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (reverse)",
+              "value": "3.214",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Fuel tank capacity (litres)",
+              "value": "42",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Recommended fuel",
+              "value": "Unleaded (91RON or higher) or E10 ",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Emission standard",
+              "value": "Euro stage IV",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Fuel consumption - combined (l/100km) *4",
+              "value": "6.4",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Fuel system",
+              "value": "Electronic fuel injection",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Transmission",
+              "value": "5-speed manual",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Compression ratio",
+              "value": "10.0 : 1",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Maximum torque (Nm @ rpm)",
+              "value": "135 @ 4,000",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Maximum power (kW @ rpm)",
+              "value": "76 @ 6,000",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Throttle control",
+              "value": "Electronic (drive-by-wire)",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Bore x stroke (mm)",
+              "value": "78.0 x 78.4",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Engine capacity (cc)",
+              "value": "1,498",
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": []
+      },
+      "id": "500XZY00",
+      "name": "1.5L I4 Petrol",
+      "thumbnail": "engine_500XZY00.png",
+      "disclaimer": "Suspension: MacPherson strut &#xD;",
+      "description": "5-speed Manual"
+    },
+    {
+      "taxIncrease": 0,
+      "fuelType": "Petrol",
+      "engineSize": "1.5",
+      "enginePower": 76,
+      "transmission": "Automatic",
+      "performanceAndEconomy": [
+        {
+          "name": "Powertrain",
+          "bodyStyle": "2400",
+          "specs": [
+            {
+              "group": null,
+              "name": "Engine type",
+              "value": "1.5 litre in-line 4 cylinder 16 valve DOHC S-VT",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (1st)",
+              "value": "2.816",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (4th)",
+              "value": "0.695",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (3rd)",
+              "value": "1.000",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (2nd)",
+              "value": "1.553",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (final drive)",
+              "value": "4.147",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Gear ratio (reverse)",
+              "value": "2.279",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Fuel tank capacity (litres)",
+              "value": "42",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Recommended fuel",
+              "value": "Unleaded (91RON or higher) or E10 ",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Emission standard",
+              "value": "Euro stage IV",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Fuel consumption - combined (l/100km) *4",
+              "value": "6.8",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Fuel system",
+              "value": "Electronic fuel injection",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Transmission",
+              "value": "4-speed automatic",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Compression ratio",
+              "value": "10.0 : 1",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Maximum torque (Nm @ rpm)",
+              "value": "135 @ 4,000",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Maximum power (kW @ rpm)",
+              "value": "76 @ 6,000",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Throttle control",
+              "value": "Electronic (drive-by-wire)",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Bore x stroke (mm)",
+              "value": "78.0 x 78.4",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "Engine capacity (cc)",
+              "value": "1,498",
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": []
+      },
+      "id": "N00BMCEP3",
+      "name": "1.5L I4 Petrol",
+      "thumbnail": "engine_N00BMCEP3.png",
+      "disclaimer": "Suspension: MacPherson strut &#xD;",
+      "description": "4-speed Automatic"
+    }
+  ],
+  "colours": [
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "34K",
+      "name": "Crystal White Pearl Mica",
+      "thumbnail": "colour_34K.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "38P",
+      "name": "Aluminium Metallic",
+      "thumbnail": "colour_38P.png",
+      "disclaimer": "",
+      "description": "Metallic Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "42B",
+      "name": "Blue Reflex",
+      "thumbnail": "colour_42B.png",
+      "disclaimer": "",
+      "description": "Blue Reflex"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "40E",
+      "name": "Aquatic Blue Mica",
+      "thumbnail": "colour_40E.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "A4A",
+      "name": "True Red",
+      "thumbnail": "colour_A4A.png",
+      "disclaimer": "",
+      "description": "Solid Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "42A",
+      "name": "Meteor Grey Mica",
+      "thumbnail": "colour_42A.png",
+      "disclaimer": "",
+      "description": "Meteor Grey Mica"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "41W",
+      "name": "Jet Black Mica",
+      "thumbnail": "colour_41W.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              },
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAQ"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS52RAP"
+          },
+          {
+            "type": "msc",
+            "value": "0.00",
+            "id": "DS54RAP"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "42M",
+      "name": "Deep Crystal Blue",
+      "thumbnail": "colour_42M.png",
+      "disclaimer": "",
+      "description": ""
+    }
+  ],
+  "bodyStyles": [
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "grade",
+            "id": "008"
+          },
+          {
+            "type": "grade",
+            "id": "011"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": null
+      },
+      "id": "2400",
+      "name": "Hatch",
+      "thumbnail": "bodystyle_2400.png",
+      "disclaimer": "",
+      "description": null
+    }
+  ],
+  "wheels": [
+    {
+      "accessoryCode": "8AD2-37-600",
+      "dependencies": {
+        "availability": [
+          {
+            "type": "grade",
+            "id": "008",
+            "preconditions": [
+              {
+                "type": "engine",
+                "id": "500XZY00"
+              },
+              {
+                "type": "engine",
+                "id": "N00BMCEP3"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "id": "011",
+            "preconditions": [
+              {
+                "type": "engine",
+                "id": "500XZY00"
+              },
+              {
+                "type": "engine",
+                "id": "N00BMCEP3"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "id": "008",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "500XZY00"
+              },
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "N00BMCEP3"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "id": "011",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "500XZY00"
+              },
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "N00BMCEP3"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "whe_02.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "WHE_02",
+      "name": "15\" Alloy wheel",
+      "thumbnail": "wheel_WHE_02.png",
+      "disclaimer": null,
+      "description": ""
+    }
+  ],
+  "grades": [
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": []
+      },
+      "id": "008",
+      "name": "Neo Sport",
+      "thumbnail": "series_008.png",
+      "disclaimer": "<span style=\"color: #8f9498; font-size: 18px;\"><b>Standard Features</b><span style=\"text-align: left; text-transform: none; text-indent: 0px; letter-spacing: normal; display: inline !important; font: 16px/24px 'Times New Roman'; white-space: normal; float: none; color: rgb(143,148,152); word-spacing: 0px; -webkit-text-stroke-width: 0px;\">&#xD;• 15\" Alloy wheels&#xD;•&nbsp;Power mirrors and windows&#xD;•&nbsp;Cruise control&#xD;• Manual air conditioning&#xD;• AM/FM tuner with CD Player and 4 speakers<span style=\"font-size: 16px;\">&#xD;• </span>USB Port<span style=\"font-size: 16px;\">&#xD;• </span>Front,side and curtain airbags</span></span>",
+      "description": null
+    },
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": []
+      },
+      "id": "011",
+      "name": "Maxx Sport",
+      "thumbnail": "series_011.png",
+      "disclaimer": "<b><span style=\"font-size: 18px;\">Standard Features</span></b><span style=\"text-align: left; text-transform: none; text-indent: 0px; letter-spacing: normal; display: inline !important; font: 16px/24px 'Times New Roman'; white-space: normal; float: none; color: rgb(143,148,152); word-spacing: 0px; -webkit-text-stroke-width: 0px;\">&#xD;• Chrome exhaust extensions&#xD;• Rear roof spoiler&#xD;• Single zone climate control&#xD;• Fog lamps (front)&#xD;• Leather-wrapped gear shift knob (manual only) and steering wheel<span style=\"font-size: 16px;\">&#xD;• Trip computer</span><span style=\"font-size: 16px;\">&#xD;• </span>Front,side and curtain airbags</span>",
+      "description": null
+    }
+  ],
+  "trims": [
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "008"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "value": "0.00",
+                "id": "008"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "grade",
+            "value": null,
+            "id": "008",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "008_DM7_manual.jpg",
+                "id": "500XZY00"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "value": null,
+            "id": "008",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "008_DM7_automatic.jpg",
+                "id": "N00BMCEP3"
+              }
+            ]
+          }
+        ],
+        "selection": []
+      },
+      "id": "DM7",
+      "name": "Black Cloth",
+      "thumbnail": "trim_DM7.png",
+      "disclaimer": "",
+      "description": null
+    },
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "value": "0.00",
+                "id": "011"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "grade",
+            "value": null,
+            "id": "011",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "011_DT6_manual.jpg",
+                "id": "500XZY00"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "value": null,
+            "id": "011",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "011_DT6_automatic.jpg",
+                "id": "N00BMCEP3"
+              }
+            ]
+          }
+        ],
+        "selection": []
+      },
+      "id": "DT6",
+      "name": "Black Cloth",
+      "thumbnail": "trim_DT6.png",
+      "disclaimer": "",
+      "description": null
+    }
+  ],
+  "standardFeatures": [
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0002",
+      "name": "Power windows",
+      "thumbnail": "option_0002.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0003",
+      "name": "Fog-lamps (front)",
+      "thumbnail": "option_0003.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0007",
+      "name": "Front and rear bumpers (body coloured)",
+      "thumbnail": "option_0007.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0010",
+      "name": "Door handles (body coloured)",
+      "thumbnail": "option_0010.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0026",
+      "name": "Rear spoiler",
+      "thumbnail": "option_0026.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0038",
+      "name": "Wiper (rear) with intermittent function",
+      "thumbnail": "option_0038.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0164",
+      "name": "Headlamps (Halogen)",
+      "thumbnail": "option_0164.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0168",
+      "name": "Power mirrors (body coloured)",
+      "thumbnail": "option_0168.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0170",
+      "name": "Exhaust extension (chrome)",
+      "thumbnail": "option_0170.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0171",
+      "name": "Mudflaps (front and rear)",
+      "thumbnail": "option_0171.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0172",
+      "name": "Green-tinted windscreen, side and rear windows",
+      "thumbnail": "option_0172.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0173",
+      "name": "Wipers (front) 2-speed with intermittent function",
+      "thumbnail": "option_0173.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0199",
+      "name": "Window demister (rear)",
+      "thumbnail": "option_0199.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Infotainment",
+      "id": "0015",
+      "name": "Speakers (4)",
+      "thumbnail": "option_0015.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Infotainment",
+      "id": "0017",
+      "name": "AM/FM tuner",
+      "thumbnail": "option_0017.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Infotainment",
+      "id": "0018",
+      "name": "CD player, single disc (MP3 compatible)",
+      "thumbnail": "option_0018.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Infotainment",
+      "id": "0019",
+      "name": "Auxiliary-audio input jack (3.5mm mini-stereo)",
+      "thumbnail": "option_0019.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Infotainment",
+      "id": "0029",
+      "name": "Steering wheel-mounted audio controls",
+      "thumbnail": "option_0029.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Infotainment",
+      "id": "0336",
+      "name": "USB input port (iPod® compatible)",
+      "thumbnail": "option_0336.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0006",
+      "name": "12 volt power outlet",
+      "thumbnail": "option_0006.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0011",
+      "name": "Trip computer",
+      "thumbnail": "option_0011.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0012",
+      "name": "Tachometer and electronic odometer/tripmeter",
+      "thumbnail": "option_0012.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0020",
+      "name": "Tilt adjustable steering wheel",
+      "thumbnail": "option_0020.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0021",
+      "name": "Air-conditioning",
+      "thumbnail": "option_0021.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0022",
+      "name": "Air-conditioning (climate control)",
+      "thumbnail": "option_0022.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0025",
+      "name": "Leather-wrapped: steering wheel",
+      "thumbnail": "option_0025.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0028",
+      "name": "Interior illumination: cargo room lamp",
+      "thumbnail": "option_0028.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0031",
+      "name": "Ambient temperature display",
+      "thumbnail": "option_0031.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0037",
+      "name": "Vanity mirrors (front)",
+      "thumbnail": "option_0037.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0044",
+      "name": "Digital Clock     ",
+      "thumbnail": "option_0044.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0045",
+      "name": "Cruise control",
+      "thumbnail": "option_0045.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0166",
+      "name": "Interior release for: fuel filler door",
+      "thumbnail": "option_0166.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0181",
+      "name": "Rear console tray",
+      "thumbnail": "option_0181.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0183",
+      "name": "Leather-wrapped: gear shift knob",
+      "thumbnail": "option_0183.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0184",
+      "name": "Cupholders",
+      "thumbnail": "option_0184.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0185",
+      "name": "Interior illumination: dome lamp",
+      "thumbnail": "option_0185.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0197",
+      "name": "Glove box with magazine rack",
+      "thumbnail": "option_0197.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0200",
+      "name": "Ventilation pollen filter",
+      "thumbnail": "option_0200.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0202",
+      "name": "Passenger assist grip (front)",
+      "thumbnail": "option_0202.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0220",
+      "name": "Low fuel warning light",
+      "thumbnail": "option_0220.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0225",
+      "name": "Lights-left-on audible warning",
+      "thumbnail": "option_0225.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0282",
+      "name": "Instrument panel light dimmer",
+      "thumbnail": "option_0282.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0327",
+      "name": "Door ajar warning light",
+      "thumbnail": "option_0327.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0328",
+      "name": "Door map pockets (front)",
+      "thumbnail": "option_0328.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0330",
+      "name": "Driver's left footrest",
+      "thumbnail": "option_0330.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0024",
+      "name": "Anti-lock Braking System (ABS)",
+      "thumbnail": "option_0024.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0033",
+      "name": "Traction Control System (TCS)",
+      "thumbnail": "option_0033.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0043",
+      "name": "Dynamic Stability Control (DSC)",
+      "thumbnail": "option_0043.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0046",
+      "name": "Triple H safety construction with front and rear crumple zones",
+      "thumbnail": "option_0046.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0047",
+      "name": "Electronic Brake-force Distribution (EBD)",
+      "thumbnail": "option_0047.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0048",
+      "name": "Emergency Brake Assist (EBA)",
+      "thumbnail": "option_0048.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0049",
+      "name": "Airbags SRS: side (front)",
+      "thumbnail": "option_0049.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0050",
+      "name": "Child restraint anchor points and childproof rear door locks",
+      "thumbnail": "option_0050.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0051",
+      "name": "Remote central locking (one transmitter with retractable key)",
+      "thumbnail": "option_0051.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0052",
+      "name": "Whiplash-minimising front seats",
+      "thumbnail": "option_0052.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0053",
+      "name": "Engine immobiliser",
+      "thumbnail": "option_0053.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0165",
+      "name": "One touch (up and down) power window (driver)",
+      "thumbnail": "option_0165.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0175",
+      "name": "Seat-belts 3-point lap-sash (all seats)",
+      "thumbnail": "option_0175.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0176",
+      "name": "Seat-belts (front) with pretensioners, load-limiters and height adjustable shoulder anchorages",
+      "thumbnail": "option_0176.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0177",
+      "name": "Seat-belt warning audible and visual (front)",
+      "thumbnail": "option_0177.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0179",
+      "name": "Airbags SRS: front (driver and passenger)",
+      "thumbnail": "option_0179.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0180",
+      "name": "Airbags SRS: curtain (front and rear)",
+      "thumbnail": "option_0180.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0190",
+      "name": "Collapsible steering column",
+      "thumbnail": "option_0190.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0191",
+      "name": "Intrusion-minimising brake pedal",
+      "thumbnail": "option_0191.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0192",
+      "name": "Side impact door beams",
+      "thumbnail": "option_0192.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0244",
+      "name": "High mount stop lamp     ",
+      "thumbnail": "option_0244.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "BMC2",
+      "name": "Left-hand-side convex (wide angle) exterior mirror",
+      "thumbnail": "option_BMC2.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Seats",
+      "id": "0004",
+      "name": "Rear seats with: adjustable head restraints",
+      "thumbnail": "option_0004.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Seats",
+      "id": "0032",
+      "name": "Rear seats with: 60/40 split fold backrest",
+      "thumbnail": "option_0032.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Seats",
+      "id": "0036",
+      "name": "Front seats with: rake and slide adjustment",
+      "thumbnail": "option_0036.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Seats",
+      "id": "0178",
+      "name": "Front seats with: height adjustment (driver)",
+      "thumbnail": "option_0178.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Seats",
+      "id": "0182",
+      "name": "Front seats with: adjustable head restraints",
+      "thumbnail": "option_0182.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Seats",
+      "id": "0198",
+      "name": "Seat trim: cloth",
+      "thumbnail": "option_0198.png",
+      "disclaimer": null,
+      "description": null
+    }
+  ],
+  "optionPack": [],
+  "accessories": [],
+  "disclaimerDictionary": {
+    "1": "Special Offer while stocks last. Recommended Driveaway Price for 2013 build vehicles."
+  },
+  "disclaimerHeader": {
+    "availability": []
+  },
+  "initialDisclaimer": {
+    "availability": []
+  },
+  "rdpDisclaimer": {
+    "availability": []
+  },
+  "promoDisclaimer": {
+    "availability": [
+      {
+        "type": "msc",
+        "value": "1",
+        "id": "DS52RAQ"
+      },
+      {
+        "type": "msc",
+        "value": "1",
+        "id": "DS52RAP"
+      },
+      {
+        "type": "msc",
+        "value": "1",
+        "id": "DS54RAQ"
+      },
+      {
+        "type": "msc",
+        "value": "1",
+        "id": "DS54RAP"
+      }
+    ]
+  },
+  "colourDisclaimer": {
+    "availability": []
+  }
+}

@@ -1,0 +1,64 @@
+.accordion-header {
+  background: #fff;
+  margin: 0;
+  padding: 4px;
+  color: #0086d3;
+  border-top: 1px solid #ccc;
+  .ui-accordion-header-icon {
+    display: block;
+    float: right;
+    background: url('../resources/images/components/accordionIcon.png') no-repeat top left;
+    height: 16px;
+    width: 16px;
+    margin: 5px;
+  }
+  &.ui-accordion-header-active {
+    border-bottom: 1px solid #ccc;
+    cursor: auto;
+    .ui-accordion-header-icon {
+      background: url('../resources/images/components/accordionIcon.png') no-repeat bottom left;
+    }
+  }
+  font-size: 16px;
+  cursor: pointer;
+  .expand-all {
+    float: right;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.accordion-table {
+  width: 100%;
+  tr {
+    border-top: 1px solid #ccc;
+    &:first-child {
+      border: none;
+    }
+  }
+  td {
+    width: 25%;
+    border-left: 1px solid #ccc;
+    font-family: "InterstateMazdaLight", "Helvetica", "Arial", "sans-serif";
+    font-size: 14px;
+    text-align: left;
+    color: #394a52;
+    padding: 5px 4px;
+    margin: 0;
+
+    p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    &:first-child {
+      border-left: none;
+      text-align: left;
+    }
+  }
+}
+
+.state-table .standardfeature-state {
+  padding-left: 11px;
+}

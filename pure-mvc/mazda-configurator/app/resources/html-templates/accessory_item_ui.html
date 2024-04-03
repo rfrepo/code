@@ -1,0 +1,64 @@
+<div>
+    <%  var configurableItemType,
+        hasOptionPacks,
+        hasAccessories,
+        renderSwatch = function(items,type){
+
+        _.each(items, function(configurableItemVO, index) {
+
+        if(type === configurableItemVO.configurableItemVO.type){
+
+        var dataVOIndex = 'data-vo-index=' + index,
+        name = configurableItemVO.getName(),
+        dataId = 'data-id=' + configurableItemVO.getId(),
+        imageURL = configurableItemVO.getThumbnailURL(),
+        price = configurableItemVO.getFormattedPriceText(),
+        callToAction = configurableItemVO.getCallToActionText(),
+        selectedClass = configurableItemVO.getSelected()?  'selected' : '';%>
+
+        <div class="accessory-container <%= selectedClass%>" <%= dataVOIndex %> <%= dataId %>  >
+
+        <img  width="221px" height="143px" src= <%= imageURL %> />
+
+        <div class="accessory-swatch-details" >
+            <h3 class="name"><%= name %></h3>
+            <p class="price"><%= price %></p>
+            <a class='button'><%=callToAction %></a>
+        </div>
+    </div>
+
+    <% }})};
+
+        _.each(items, function(configurableItemVO, index){
+
+            configurableItemType = configurableItemVO.configurableItemVO.type;
+
+            if(configurableItemType === 'accessories'){
+                hasAccessories = true;
+              }else{
+                hasOptionPacks = true;
+            }
+        });
+
+     if(hasOptionPacks) {%>
+
+    <div class='optionpacks-container'>
+
+        <h2><%= bmc.support.GlobalConfig.getInstance().OPTION_PACKS %></h2>
+
+        <% renderSwatch(items,'optionPack'); %>
+
+    </div>
+    <% } %>
+
+    <% if(hasAccessories) { %>
+
+    <div class='accessories-container'>
+
+        <h2><%= bmc.support.GlobalConfig.getInstance().OPTIONAL_ACCESSORIES %></h2>
+
+        <% renderSwatch(items,'accessories'); %>
+
+    </div>
+    <% } %>
+</div>

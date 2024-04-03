@@ -1,0 +1,27 @@
+.standfeatures-table-container {
+  overflow: hidden;
+  position: relative;
+  z-index: 0; }
+  .standfeatures-table-container td p, .standfeatures-table-container td:first-child {
+    width: 237px;
+    display: block; }
+  .standfeatures-table-container td {
+    width: 237px;
+    padding: 5px 0px;
+    border-left: 1px solid #ccc; }
+  .standfeatures-table-container .accordion-table {
+    background-color: #e9e9e9;
+    width: auto; }
+  .standfeatures-table-container .name-table {
+    z-index: 1;
+    width: 237px;
+    position: relative; }
+    .standfeatures-table-container .name-table td:first-child {
+      width: 237px; }
+  .standfeatures-table-container .state-table {
+    top: 0px;
+    z-index: 0;
+    position: absolute; }
+    .standfeatures-table-container .state-table .standfeature-name {
+      width: 237px;
+      visibility: hidden; }

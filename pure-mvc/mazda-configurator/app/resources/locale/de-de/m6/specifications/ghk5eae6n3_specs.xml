@@ -1,0 +1,215 @@
+<h3 class="accordion-header">Fahrleistungen und Verbräuche</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Abgasnorm</td>
+       <td></td>
+       <td>Euro5 </td>
+      </tr>
+      <tr>
+       <td>Beschleunigung [0–100 km/h in Sek.]</td>
+       <td></td>
+       <td>9,1 s</td>
+      </tr>
+      <tr>
+       <td>CO2-Effizienz**</td>
+       <td>En-Eff.Klasse**</td>
+       <td>C </td>
+      </tr>
+      <tr>
+       <td>CO2-Emissionen kombiniert*</td>
+       <td></td>
+       <td>139 g/km</td>
+      </tr>
+      <tr>
+       <td>Höchstgeschwindigkeit</td>
+       <td></td>
+       <td>216 km/h</td>
+      </tr>
+      <tr>
+       <td>Kraftstoffart</td>
+       <td></td>
+       <td>Super bleifrei nach DIN EN 228 (min. 95 ROZ) </td>
+      </tr>
+      <tr>
+       <td>Kraftstoffverbrauch*</td>
+       <td>außerorts</td>
+       <td>5,0 l/100km</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>innerorts</td>
+       <td>7,7 l/100km</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>kombiniert</td>
+       <td>6,0 l/100km</td>
+      </tr>
+      <tr>
+       <td>Tankinhalt</td>
+       <td></td>
+       <td>62 l</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Kraftübertragung</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Achsübersetzung:</td>
+       <td></td>
+       <td>4.388 </td>
+      </tr>
+      <tr>
+       <td>Getriebeübersetzung:</td>
+       <td>1. Gang</td>
+       <td>3.363 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>2. Gang</td>
+       <td>1.947 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>3. Gang</td>
+       <td>1.300 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>4. Gang</td>
+       <td>1.029 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>5. Gang</td>
+       <td>0.837 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>6. Gang</td>
+       <td>0.680 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>Rückwärtsgang</td>
+       <td>3.385 </td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Lenkung</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Lenkgetriebe</td>
+       <td></td>
+       <td>Elektrohydraulische Servolenkung </td>
+      </tr>
+      <tr>
+       <td>Minimaler Wendekreisdurchmesser, m</td>
+       <td></td>
+       <td>12,0 m</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Maße und Gewichte</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Bodenfreiheit zwischen den Achsen, unbeladen</td>
+       <td></td>
+       <td>165 mm</td>
+      </tr>
+      <tr>
+       <td>Bremsen</td>
+       <td>Durchmesser innenbelüftete Scheibenbremsen vorne</td>
+       <td>297 mm</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>Durchmesser Scheibenbremsen hinten</td>
+       <td>278 mm</td>
+      </tr>
+      <tr>
+       <td>Fahrzeuglänge/-breite/-höhe, mm</td>
+       <td></td>
+       <td>4.865 / 1.840 / 1.450 mm</td>
+      </tr>
+      <tr>
+       <td>Kofferraumvolumen, l nach VDA</td>
+       <td></td>
+       <td>489 l</td>
+      </tr>
+      <tr>
+       <td>Leergewicht einschl. Fahrer (75 kg)</td>
+       <td></td>
+       <td>1.375-1.447 kg</td>
+      </tr>
+      <tr>
+       <td>Max. Anhängelast</td>
+       <td>gebremst 8 % Steigung</td>
+       <td>1.700 kg</td>
+      </tr>
+      <tr>
+       <td>Max. Anhängelast, kg:</td>
+       <td>gebremst 12 % Steigung</td>
+       <td>1.500 kg</td>
+      </tr>
+      <tr>
+       <td>Radstand</td>
+       <td></td>
+       <td>2.830 mm</td>
+      </tr>
+      <tr>
+       <td>Spur vorne / Spur hinten</td>
+       <td></td>
+       <td>1.585 / 1.575 mm</td>
+      </tr>
+      <tr>
+       <td>Zul. Achslast vorne/hinten</td>
+       <td></td>
+       <td>1.015 / 1.030 kg</td>
+      </tr>
+      <tr>
+       <td>Zulässiges Gesamtgewicht</td>
+       <td></td>
+       <td>1.945 kg</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Motor</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Anzahl Zylinder/Anzahl Ventile</td>
+       <td></td>
+       <td>4 / 16 </td>
+      </tr>
+      <tr>
+       <td>Bohrung x Hub</td>
+       <td></td>
+       <td>83,5 x 91,2 mm</td>
+      </tr>
+      <tr>
+       <td>Hubraum</td>
+       <td></td>
+       <td>1.998 ccm</td>
+      </tr>
+      <tr>
+       <td>Maximales Drehmoment</td>
+       <td></td>
+       <td>210 Nm / 4.000 rpm </td>
+      </tr>
+      <tr>
+       <td>Nennleistung</td>
+       <td></td>
+       <td>121 kW (165 PS) / 6.000 rpm kW (PS) / rpm</td>
+      </tr>
+      <tr>
+       <td>Verdichtungsverhältnis</td>
+       <td></td>
+       <td>14,0 : 1 </td>
+      </tr>
+   </table>
+</div>

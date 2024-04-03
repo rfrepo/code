@@ -1,0 +1,187 @@
+{
+    "LOCALE_CODE": "de-de",
+
+    "MARKET_HOME_PAGE": "http://www.mazda.de/",
+
+    "OPTIONAL_ACCESSORIES": "Optional Accessories",
+
+    "OPTION_PACKS": "Option Packs",
+
+    "DEALER_LOCATOR_LINK": "https://www.mazda.de/haendler/",
+    "DEALER_LOCATOR_TEXT": "Händlersuche",
+    "DEALER_LOCATOR_TITLE": "Händler suchen",
+
+    "OFFERS_LINK": "http://www.mazda.de/angebote/aktuelle-finanzierungsangebote/?teaser=small_finanzierungsangebote",
+    "OFFERS_TEXT": "Aktuelle Angebote",
+    "OFFERS_TITLE": "Angebote",
+
+    "MODEL_DATA_LOCATION": {
+        "path": "resources/locale/de-de/",
+        "extension": ".json"
+    },
+
+    "SPECIFICATION_LOCATION": "resources/locale/de-de/[[vehicleId]]/specifications/",
+
+    "VEHICLE_IMAGES_LOCATION": "resources/locale/de-de/[[vehicleId]]/images/exterior/",
+    "INTERIOR_IMAGES_LOCATION": "resources/locale/de-de/[[vehicleId]]/images/interior/",
+    "APPLICATION_IMAGE_BASE_PATH": "resources/locale/de-de/images/",
+    "VEHICLE_SPECIFIC_IMAGE_BASE_PATH": "resources/locale/de-de/[[vehicleId]]/images/",
+
+    "CURRENCY_SYMBOL": "€",
+    "THOUSAND_DELIMINATOR": ".",
+    "CURRENCY_PRECISION": "2",
+    "DECIMAL_DELIMINATOR": ",",
+
+    "VEHICLE_PARTS": {
+        "BODYSTYLE": "bodyStyle",
+        "GRADE": "grade",
+        "ENGINE": "engine",
+        "COLOUR": "colour",
+        "WHEEL": "wheel",
+        "TRIM": "trim",
+        "OPTIONPACKS": "optionpacks",
+        "ACCESSORIES": "accessories"
+    },
+
+    "SUMMARY": "summary",
+
+    "DEFAULT_MODEL_THUMBNAILS": {
+        "M2": "resources/locale/de-de/images/model_thumnbnail/mazda2.png",
+        "M3": "resources/locale/de-de/images/model_thumnbnail/mazda3.png",
+        "M5": "resources/locale/de-de/images/model_thumnbnail/mazda5.png",
+        "M6": "resources/locale/de-de/images/model_thumnbnail/mazda6.png",
+        "MX5": "resources/locale/de-de/images/model_thumnbnail/mazdamx5.png",
+        "CX5": "resources/locale/de-de/images/model_thumnbnail/mazdacx5.png",
+        "CX7": "resources/locale/de-de/images/model_thumnbnail/mazdacx7.png"
+    },
+
+    "SWATCHES": "resources/locale/de-de/[[vehicleId]]/images/ui/",
+
+    "LANGUAGE": {
+        "model": "Karosserieform          ",
+        "grade": "Ausstattungsvariante",
+        "engine": "Motor",
+        "trim": "Innenausstattung ",
+        "colour": "Farbe",
+        "wheel": "Felgen",
+        "summary": "Zusammenfassung",
+        "accessories": "Zubehör",
+
+        "disclaimers": {
+            "M3": {
+                "grades": "<B>Mazda3</B><BR><BR>Wählen Sie die favorisierte Variante für Ihren Mazda3 aus! Zwischen Benziner oder Diesel, zwischen Schalt- oder Automatikgetriebe, z.B.  den 2.0 l MZR 110 kW (150 PS) oder den 1.6 l MZR-CD 85 kW (115 PS)!<BR><BR>Kraftstoffverbrauch im kombinierten Testzyklus: 7,6 - 4,4 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 175 - 117 g/km.<BR><BR><B>Mazda3 MPS</B><BR><BR>Kraftstoffverbrauch (innerorts/außerorts/kombiniert): 13,2/7,5/9,6 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 224 g/km.<BR><BR>Die Abbildungen der Fahrzeuge sind jeweils exemplarisch und unverbindlich. Insbesondere hinsichtlich einzelner Fahrzeugteile kann es zu optischen, farblichen und technischen Abweichungen bei einem tatsächlich zusammengestellten Fahrzeug kommen. Die Abbildungen zeigen teilweise optional verfügbare und aufpreispflichtige Sonderausstattungen. Sie enthalten gegebenenfalls auch Ausstattungsdetails, die nicht auf dem deutschen Markt oder nicht in der abgebildeten Kombination erhältlich sind.<BR><BR>Ihr Mazda Vertragshändler informiert Sie gerne über die konkrete Verfügbarkeit, Lieferfristen und natürlich den Endpreis mit Finanzierungsmöglichkeiten Ihres Wunschfahrzeugs.<BR><BR>Bei den angegebenen Fahrzeug- und Ausstattungspreisen handelt es sich jeweils um die unverbindliche Preisempfehlung der Mazda Motors (Deutschland) GmbH inklusive 19% Mehrwertsteuer ab Auslieferungslager. Überführungskosten fallen zusätzlich an. Den verbindlichen Preis Ihres künftigen Fahrzeugs wird Ihnen Ihr Vertragshändler mitteilen.<BR><BR>Die angegebenen Werte wurden nach den vorgeschriebenen Messverfahren (RL 80/1268/EWG in der gegenwärtig geltenden Fassung) ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des unverbindlichen Angebotes, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen. Der Kraftstoffverbrauch und die CO<sub>2</sub>-Emission eines Fahrzeugs hängen nicht nur von der effizienten Ausnutzung des Kraftstoffs durch das Fahrzeug ab, sondern werden auch von dem Fahrverhalten und anderen nichttechnischen Faktoren beeinflusst. CO<sub>2</sub> ist das für die Erderwärmung hauptsächlich verantwortliche Treibhausgas. Abweichende Werte können sich in der Praxis auch durch Umwelteinflüsse, Straßen- und Verkehrsverhältnisse sowie Fahrzeugzustand, zusätzliche Ausstattung und Beladung ergeben. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO<sub>2</sub>-Emissionen neuer Personenkraftwagen können dem 'Leitfaden über den Kraftstoffverbrauch und die CO<sub>2</sub>-Emissionen neuer Personenkraftwagen' entnommen werden, der bei allen Mazda Vertragshändlern und bei der Mazda Motors (Deutschland) GmbH, Hitdorfer Straße 73, 51371 Leverkusen unentgeltlich erhältlich ist. Der Leitfaden ist ebenfalls im Internet unter <a href='www.dat.de'>www.dat.de</a> verfügbar.",
+                "engines": "<B>Mazda3</B><BR><BR>Wählen Sie die favorisierte Variante für Ihren Mazda3 aus! Zwischen Benziner oder Diesel, zwischen Schalt- oder Automatikgetriebe, z.B.  den 2.0 l MZR 110 kW (150 PS) oder den 1.6 l MZR-CD 85 kW (115 PS)!<BR><BR>Kraftstoffverbrauch im kombinierten Testzyklus: 7,6 - 4,4 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 175 - 117 g/km.<BR><BR><B>Mazda3 MPS</B><BR><BR>Kraftstoffverbrauch (innerorts/außerorts/kombiniert): 13,2/7,5/9,6 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 224 g/km.<BR><BR>Die Abbildungen der Fahrzeuge sind jeweils exemplarisch und unverbindlich. Insbesondere hinsichtlich einzelner Fahrzeugteile kann es zu optischen, farblichen und technischen Abweichungen bei einem tatsächlich zusammengestellten Fahrzeug kommen. Die Abbildungen zeigen teilweise optional verfügbare und aufpreispflichtige Sonderausstattungen. Sie enthalten gegebenenfalls auch Ausstattungsdetails, die nicht auf dem deutschen Markt oder nicht in der abgebildeten Kombination erhältlich sind.<BR><BR>Ihr Mazda Vertragshändler informiert Sie gerne über die konkrete Verfügbarkeit, Lieferfristen und natürlich den Endpreis mit Finanzierungsmöglichkeiten Ihres Wunschfahrzeugs.<BR><BR>Bei den angegebenen Fahrzeug- und Ausstattungspreisen handelt es sich jeweils um die unverbindliche Preisempfehlung der Mazda Motors (Deutschland) GmbH inklusive 19% Mehrwertsteuer ab Auslieferungslager. Überführungskosten fallen zusätzlich an. Den verbindlichen Preis Ihres künftigen Fahrzeugs wird Ihnen Ihr Vertragshändler mitteilen.<BR><BR>Die angegebenen Werte wurden nach den vorgeschriebenen Messverfahren (RL 80/1268/EWG in der gegenwärtig geltenden Fassung) ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des unverbindlichen Angebotes, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen. Der Kraftstoffverbrauch und die CO<sub>2</sub>-Emission eines Fahrzeugs hängen nicht nur von der effizienten Ausnutzung des Kraftstoffs durch das Fahrzeug ab, sondern werden auch von dem Fahrverhalten und anderen nichttechnischen Faktoren beeinflusst. CO<sub>2</sub> ist das für die Erderwärmung hauptsächlich verantwortliche Treibhausgas. Abweichende Werte können sich in der Praxis auch durch Umwelteinflüsse, Straßen- und Verkehrsverhältnisse sowie Fahrzeugzustand, zusätzliche Ausstattung und Beladung ergeben. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO<sub>2</sub>-Emissionen neuer Personenkraftwagen können dem 'Leitfaden über den Kraftstoffverbrauch und die CO<sub>2</sub>-Emissionen neuer Personenkraftwagen' entnommen werden, der bei allen Mazda Vertragshändlern und bei der Mazda Motors (Deutschland) GmbH, Hitdorfer Straße 73, 51371 Leverkusen unentgeltlich erhältlich ist. Der Leitfaden ist ebenfalls im Internet unter <a href='www.dat.de'>www.dat.de</a> verfügbar.",
+
+                "colours": "<B>Mazda3</B><BR><BR>Wählen Sie die favorisierte Variante für Ihren Mazda3 aus! Zwischen Benziner oder Diesel, zwischen Schalt- oder Automatikgetriebe, z.B.  den 2.0 l MZR 110 kW (150 PS) oder den 1.6 l MZR-CD 85 kW (115 PS)!<BR><BR>Kraftstoffverbrauch im kombinierten Testzyklus: 7,6 - 4,4 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 175 - 117 g/km.<BR><BR><B>Mazda3 MPS</B><BR><BR>Kraftstoffverbrauch (innerorts/außerorts/kombiniert): 13,2/7,5/9,6 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 224 g/km.<BR><BR>Die Abbildungen der Fahrzeuge sind jeweils exemplarisch und unverbindlich. Insbesondere hinsichtlich einzelner Fahrzeugteile kann es zu optischen, farblichen und technischen Abweichungen bei einem tatsächlich zusammengestellten Fahrzeug kommen. Bei einigen unserer modernen Metallicfarben werden bewusst unterschiedliche Farb-Pigmente verwendet. Dadurch können unter bestimmten Lichtverhältnissen, z.B. direktes Sonnenlicht, attraktive Farbeffekte erzielt werden. Zum Teil kann die Farbe changieren, z.B. von schwarz zu dunkelblau. Bei den hier abgebildeten Farbdarstellungen kann es schon aufgrund Ihres verwendeten Monitor- und/oder Grafikkartentyps zu Abweichungen zu den Originalfarben kommen. Weitere Informationen zu den Farbeffekten und Grundfarben gibt Ihnen gerne Ihr Mazda Vertragshändler. Die Abbildungen zeigen teilweise optional verfügbare und aufpreispflichtige Sonderausstattungen. Sie enthalten gegebenenfalls auch Ausstattungsdetails, die nicht auf dem deutschen Markt oder nicht in der abgebildeten Kombination erhältlich sind.<BR><BR>Ihr Mazda Vertragshändler informiert Sie gerne über die konkrete Verfügbarkeit, Lieferfristen und natürlich den Endpreis mit Finanzierungsmöglichkeiten Ihres Wunschfahrzeugs.<BR><BR>Bei den angegebenen Fahrzeug- und Ausstattungspreisen handelt es sich jeweils um die unverbindliche Preisempfehlung der Mazda Motors (Deutschland) GmbH inklusive 19% Mehrwertsteuer ab Auslieferungslager. Überführungskosten fallen zusätzlich an. Den verbindlichen Preis Ihres künftigen Fahrzeugs wird Ihnen Ihr Vertragshändler mitteilen.<BR><BR>Die angegebenen Werte wurden nach den vorgeschriebenen Messverfahren (RL 80/1268/EWG in der gegenwärtig geltenden Fassung) ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des unverbindlichen Angebotes, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen. Der Kraftstoffverbrauch und die CO<sub>2</sub>-Emission eines Fahrzeugs hängen nicht nur von der effizienten Ausnutzung des Kraftstoffs durch das Fahrzeug ab, sondern werden auch von dem Fahrverhalten und anderen nichttechnischen Faktoren beeinflusst. CO<sub>2</sub> ist das für die Erderwärmung hauptsächlich verantwortliche Treibhausgas. Abweichende Werte können sich in der Praxis auch durch Umwelteinflüsse, Straßen- und Verkehrsverhältnisse sowie Fahrzeugzustand, zusätzliche Ausstattung und Beladung ergeben. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO<sub>2</sub>-Emissionen neuer Personenkraftwagen können dem 'Leitfaden über den Kraftstoffverbrauch und die CO<sub>2</sub>-Emissionen neuer Personenkraftwagen' entnommen werden, der bei allen Mazda Vertragshändlern und bei der Mazda Motors (Deutschland) GmbH, Hitdorfer Straße 73, 51371 Leverkusen unentgeltlich erhältlich ist. Der Leitfaden ist ebenfalls im Internet unter <a href='www.dat.de'>www.dat.de</a> verfügbar.",
+                "wheels": "<B>Mazda3</B><BR><BR>Wählen Sie die favorisierte Variante für Ihren Mazda3 aus! Zwischen Benziner oder Diesel, zwischen Schalt- oder Automatikgetriebe, z.B.  den 2.0 l MZR 110 kW (150 PS) oder den 1.6 l MZR-CD 85 kW (115 PS)!<BR><BR>Kraftstoffverbrauch im kombinierten Testzyklus: 7,6 - 4,4 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 175 - 117 g/km.<BR><BR><B>Mazda3 MPS</B><BR><BR>Kraftstoffverbrauch (innerorts/außerorts/kombiniert): 13,2/7,5/9,6 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 224 g/km.<BR><BR>Die Abbildungen der Fahrzeuge sind jeweils exemplarisch und unverbindlich. Insbesondere hinsichtlich einzelner Fahrzeugteile kann es zu optischen, farblichen und technischen Abweichungen bei einem tatsächlich zusammengestellten Fahrzeug kommen. Die Abbildungen zeigen teilweise optional verfügbare und aufpreispflichtige Sonderausstattungen. Sie enthalten gegebenenfalls auch Ausstattungsdetails, die nicht auf dem deutschen Markt oder nicht in der abgebildeten Kombination erhältlich sind. Je nach Felge kann eine neue Bereifung erforderlich sein, wodurch zusätzliche Kosten entstehen können.<BR><BR>Ihr Mazda Vertragshändler informiert Sie gerne über die konkrete Verfügbarkeit, Lieferfristen und natürlich den Endpreis mit Finanzierungsmöglichkeiten Ihres Wunschfahrzeugs.<BR><BR>Bei den angegebenen Fahrzeug- und Ausstattungspreisen handelt es sich jeweils um die unverbindliche Preisempfehlung der Mazda Motors (Deutschland) GmbH inklusive 19% Mehrwertsteuer ab Auslieferungslager. Überführungskosten fallen zusätzlich an. Den verbindlichen Preis Ihres künftigen Fahrzeugs wird Ihnen Ihr Vertragshändler mitteilen.<BR><BR>Die angegebenen Werte wurden nach den vorgeschriebenen Messverfahren (RL 80/1268/EWG in der gegenwärtig geltenden Fassung) ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des unverbindlichen Angebotes, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen. Der Kraftstoffverbrauch und die CO<sub>2</sub>-Emission eines Fahrzeugs hängen nicht nur von der effizienten Ausnutzung des Kraftstoffs durch das Fahrzeug ab, sondern werden auch von dem Fahrverhalten und anderen nichttechnischen Faktoren beeinflusst. CO<sub>2</sub> ist das für die Erderwärmung hauptsächlich verantwortliche Treibhausgas. Abweichende Werte können sich in der Praxis auch durch Umwelteinflüsse, Straßen- und Verkehrsverhältnisse sowie Fahrzeugzustand, zusätzliche Ausstattung und Beladung ergeben. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO<sub>2</sub>-Emissionen neuer Personenkraftwagen können dem 'Leitfaden über den Kraftstoffverbrauch und die CO<sub>2</sub>-Emissionen neuer Personenkraftwagen' entnommen werden, der bei allen Mazda Vertragshändlern und bei der Mazda Motors (Deutschland) GmbH, Hitdorfer Straße 73, 51371 Leverkusen unentgeltlich erhältlich ist. Der Leitfaden ist ebenfalls im Internet unter <a href='www.dat.de'>www.dat.de</a> verfügbar.",
+                "trims": "<B>Mazda3</B><BR><BR>Wählen Sie die favorisierte Variante für Ihren Mazda3 aus! Zwischen Benziner oder Diesel, zwischen Schalt- oder Automatikgetriebe, z.B.  den 2.0 l MZR 110 kW (150 PS) oder den 1.6 l MZR-CD 85 kW (115 PS)!<BR><BR>Kraftstoffverbrauch im kombinierten Testzyklus: 7,6 - 4,4 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 175 - 117 g/km.<BR><BR><B>Mazda3 MPS</B><BR><BR>Kraftstoffverbrauch (innerorts/außerorts/kombiniert): 13,2/7,5/9,6 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 224 g/km.<BR><BR>Die Abbildungen der Fahrzeuge sind jeweils exemplarisch und unverbindlich. Insbesondere hinsichtlich einzelner Fahrzeugteile kann es zu optischen, farblichen und technischen Abweichungen bei einem tatsächlich zusammengestellten Fahrzeug kommen. Die Abbildungen zeigen teilweise optional verfügbare und aufpreispflichtige Sonderausstattungen. Sie enthalten gegebenenfalls auch Ausstattungsdetails, die nicht auf dem deutschen Markt oder nicht in der abgebildeten Kombination erhältlich sind.<BR><BR>Ihr Mazda Vertragshändler informiert Sie gerne über die konkrete Verfügbarkeit, Lieferfristen und natürlich den Endpreis mit Finanzierungsmöglichkeiten Ihres Wunschfahrzeugs.<BR><BR>Bei den angegebenen Fahrzeug- und Ausstattungspreisen handelt es sich jeweils um die unverbindliche Preisempfehlung der Mazda Motors (Deutschland) GmbH inklusive 19% Mehrwertsteuer ab Auslieferungslager. Überführungskosten fallen zusätzlich an. Den verbindlichen Preis Ihres künftigen Fahrzeugs wird Ihnen Ihr Vertragshändler mitteilen.<BR><BR>Die angegebenen Werte wurden nach den vorgeschriebenen Messverfahren (RL 80/1268/EWG in der gegenwärtig geltenden Fassung) ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des unverbindlichen Angebotes, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen. Der Kraftstoffverbrauch und die CO<sub>2</sub>-Emission eines Fahrzeugs hängen nicht nur von der effizienten Ausnutzung des Kraftstoffs durch das Fahrzeug ab, sondern werden auch von dem Fahrverhalten und anderen nichttechnischen Faktoren beeinflusst. CO<sub>2</sub> ist das für die Erderwärmung hauptsächlich verantwortliche Treibhausgas. Abweichende Werte können sich in der Praxis auch durch Umwelteinflüsse, Straßen- und Verkehrsverhältnisse sowie Fahrzeugzustand, zusätzliche Ausstattung und Beladung ergeben. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO<sub>2</sub>-Emissionen neuer Personenkraftwagen können dem 'Leitfaden über den Kraftstoffverbrauch und die CO<sub>2</sub>-Emissionen neuer Personenkraftwagen' entnommen werden, der bei allen Mazda Vertragshändlern und bei der Mazda Motors (Deutschland) GmbH, Hitdorfer Straße 73, 51371 Leverkusen unentgeltlich erhältlich ist. Der Leitfaden ist ebenfalls im Internet unter <a href='www.dat.de'>www.dat.de</a> verfügbar.",
+                "accessories": "<B>Mazda3</B><BR><BR>Wählen Sie die favorisierte Variante für Ihren Mazda3 aus! Zwischen Benziner oder Diesel, zwischen Schalt- oder Automatikgetriebe, z.B.  den 2.0 l MZR 110 kW (150 PS) oder den 1.6 l MZR-CD 85 kW (115 PS)!<BR><BR>Kraftstoffverbrauch im kombinierten Testzyklus: 7,6 - 4,4 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 175 - 117 g/km.<BR><BR><B>Mazda3 MPS</B><BR><BR>Kraftstoffverbrauch (innerorts/außerorts/kombiniert): 13,2/7,5/9,6 l/100 km;<BR>CO<sub>2</sub>-Emissionen im kombinierten Testzyklus: 224 g/km.<BR><BR>Die Abbildungen der Fahrzeuge sind jeweils exemplarisch und unverbindlich. Insbesondere hinsichtlich einzelner Fahrzeugteile kann es zu optischen, farblichen und technischen Abweichungen bei einem tatsächlich zusammengestellten Fahrzeug kommen. Die Abbildungen zeigen teilweise optional verfügbare und aufpreispflichtige Sonderausstattungen. Sie enthalten gegebenenfalls auch Ausstattungsdetails, die nicht auf dem deutschen Markt oder nicht in der abgebildeten Kombination erhältlich sind. Bitte beachten Sie, dass je nach ausgewähltem Zubehör gegebenenfalls zusätzliche Kosten für Einbaumaterial, Lackierung und Montage anfallen können.<BR><BR>Unverbindliche Preisempfehlung (inklusive MwSt.)<BR><BR>Ihr Mazda Vertragshändler informiert Sie gerne über die konkrete Verfügbarkeit, Lieferfristen und natürlich den Endpreis mit Finanzierungsmöglichkeiten Ihres Wunschfahrzeugs.<BR><BR>Bei den angegebenen Fahrzeug- und Ausstattungspreisen handelt es sich jeweils um die unverbindliche Preisempfehlung der Mazda Motors (Deutschland) GmbH inklusive 19% Mehrwertsteuer ab Auslieferungslager. Überführungskosten fallen zusätzlich an. Den verbindlichen Preis Ihres künftigen Fahrzeugs wird Ihnen Ihr Vertragshändler mitteilen.<BR><BR>Die angegebenen Werte wurden nach den vorgeschriebenen Messverfahren (RL 80/1268/EWG in der gegenwärtig geltenden Fassung) ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des unverbindlichen Angebotes, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen. Der Kraftstoffverbrauch und die CO<sub>2</sub>-Emission eines Fahrzeugs hängen nicht nur von der effizienten Ausnutzung des Kraftstoffs durch das Fahrzeug ab, sondern werden auch von dem Fahrverhalten und anderen nichttechnischen Faktoren beeinflusst. CO<sub>2</sub> ist das für die Erderwärmung hauptsächlich verantwortliche Treibhausgas. Abweichende Werte können sich in der Praxis auch durch Umwelteinflüsse, Straßen- und Verkehrsverhältnisse sowie Fahrzeugzustand, zusätzliche Ausstattung und Beladung ergeben. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO<sub>2</sub>-Emissionen neuer Personenkraftwagen können dem 'Leitfaden über den Kraftstoffverbrauch und die CO<sub>2</sub>-Emissionen neuer Personenkraftwagen' entnommen werden, der bei allen Mazda Vertragshändlern und bei der Mazda Motors (Deutschland) GmbH, Hitdorfer Straße 73, 51371 Leverkusen unentgeltlich erhältlich ist. Der Leitfaden ist ebenfalls im Internet unter <a href='www.dat.de'>www.dat.de</a> verfügbar."
+            },
+            "Default": {
+                "grades": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "engines": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "colours": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "wheels": "Model shown may not be to Mazda UK specification. Changing the wheel size will require new tyres at an additional cost. Price quoted is for replacement alloy wheels only. An increase or decrease in the diameter of the wheels fitted to your vehicle will also necessitate the fitment of new tyres at additional cost to that displayed here.",
+                "trims": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "accessories": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model."
+            }
+        },
+
+        "Date": "Datum",
+
+        "M2": "Mazda2",
+        "M3": "Mazda3",
+        "M5": "Mazda5",
+        "M6": "Mazda6",
+        "MX5": "Mazda MX-5",
+        "CX5": "Mazda CX-5",
+        "CX7": "Mazda CX-7",
+
+        "NO_MATCHING_VEHICLES": "No Matching Vehicles",
+
+        "ENGINE": {
+            "POWER_SUFFIX": "ps"
+        },
+
+        "PDF": {
+            "DOCUMENT_FILENAME": "[modelName]Zusammenfassung.pdf",
+            "DOCUMENT_TITLE": "Ihre Mazda Konfiguration",
+            "INTERIOR_TITLE": "Innenausstattung",
+            "EXTERIOR_TITLE": "Außenausstattung",
+            "ACCESSORIES_TITLE": "Sonderausstattung und Zubehor",
+            "TECHNICAL_DATA_TITLE": "Technische Daten",
+            "TRIM_TITLE": "Innenausstattung",
+            "PRINT_DESCRIPTION": "Glückwunsch zur Konfiguration Ihres neuen (XXXXXX). Hier ist eine Zusammenfassung der Standardausstattung und der Sonderausstattung, die Sie ausgewählt haben.",
+            "SUMMARY_DISCLAIMER": "Information über Kraftstoffverbrauch, CO2-Emission und Stromverbrauch i.S.d. Pkw-EnVKV. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren (§ 2 Nrn. 5, 6, 6a Pkw-EnVKV in der gegenwärtig geltenden Fassung) ermittelt. CO2-Emissionen, die durch die Produktion und Bereitstellung des Kraftstoffs bzw. anderer Energieträger entstehen, werden bei der Ermittlung der CO2-Emissionen gemäß der Richtlinie 1999/94/EG nicht berücksichtigt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des Angebots, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen. Der Kraftstoffverbrauch und die CO2-Emissionen eines Fahrzeugs hängen nicht nur von der effizienten Ausnutzung des Kraftstoffs durch das Fahrzeug ab, sondern werden auch vom Fahrverhalten und anderen nichttechnischen Faktoren beeinflusst. Abweichende Werte können sich in der Praxis auch durch Umwelteinflüsse, Straßen und Verkehrsverhältnisse sowie Fahrzeugzustand, zusätzliche Ausstattung und Fahrzeugbeladung ergeben. CO2 ist das für die Erderwärmung hauptsächlich verantwortliche Treibhausgas.Die gezeigten Abbildungen entsprechen möglicherweise nicht den deutschen Spezifikationen. Mazda Motors (Deutschland) GmbH behält sich bei Spezifikationen und Ausstattungen das Recht auf Änderungen vor, da die Produkte ständigen Änderungen unterliegen. Farben und Komponenten der Außen- und oder Innenansicht können am Bildschirm von der tatsächlichen Spezifikation abweichen.*Aufpreis für Metallic/Mica-Lack und händlerbezogene Kosten.Alle neuen Mazda Fahrzeuge haben eine Herstellergarantie von 3 Jahren oder bis zu 100.000km je nach dem, welcher Fall zuerst eintritt. Daneben gibt es den Mazda Europe Service. Nähere Einzelheiten hierzu erfahren Sie bei Ihrem Mazda-Händler.In den angegebenen Preisen für Sonderausstattungen und optionale Felgen sind keine Arbeits- und Zusatzkosten enthalten.Bose® and Centerpoint® sind eingetragene Markennamen der Bose Corporation in den USA und in anderen Ländern. Verwendung mit freundlicher Genehmigung. Die Bluetooth ®-Wortmarke und Logos sind eingetragene Marken der Bluetooth SIG, Inc. Die Verwendung dieser Marken durch Mazda Motors (Deutschland) GmbH erfolgt unter Lizenz. Andere Marken und Markennamen gehören den jeweiligen Eigentümern.Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO2-Emissionen neuer Personenkraftwagen können dem „Leitfaden über den Kraftstoffverbrauch, die CO2-Emissionen und den Stromverbrauch neuer Personenkraftwagen“ entnommen werden, der an allen Verkaufsstellen und der bei allen Mazda Vertragshändlern und bei der Mazda Motors (Deutschland) GmbH, Hitdorfer Straße 73, 51371 Leverkusen unentgeltlich erhältlich ist.",
+            "STANDARD_FEATURES": "Serienausstattung"
+        },
+
+        "SPECIFICATION_SUMMARY_COPYRIGHT": "© Copyright Mazda Motors (Deutschland) GmbH",
+
+        "SELECT": "Auswahlen",
+
+        "PRICE_TYPE_FULL": "Unverbindliche Preisempfehlung",
+        "PRICE_TYPE_ACRONYM": "UVP",
+        "PRICE_DISCLAIMER": "Unverbindliche Preisempfehlung Alle Preise sind unverbindliche Preisempfehlungen der Mazda Motors (Deutschland) GmbH ab Auslieferungslager inklusive 19% Mehrwertsteuer zzgl. Überführungskosten.",
+
+        "SHOW_MORE": "Mehr",
+        "CHANGE_MODEL": " Modelle",
+
+        "RECENT_CONFIGURATIONS": "Voherige Konfiguration",
+        "RECENT_CONFIGURATIONS_BODY": "Um voherige Konfigurationen auf anderen Geraten zu sehen, klicken Sie die folgenden URLs",
+
+        "CHANGE_GRADE": "Ausstattungsvariante andern",
+
+        "NO_COST_OPTION": "Keine zusaetzlichen Kosten",
+
+        "UNDO": "Ruckgangig machen",
+        "PRICE": "Preis",
+        "FROM": "Von",
+        "ACCEPT": "Akzeptieren",
+        "INFO": "Info",
+        "CONFLICT_PROMPT": "Ihre [[configurableType]] wurde zu [[conflictValue]] geandert",
+
+        "CURRENT_CONFIGURATION": "Aktuelle Konfiguration",
+        "NEW_CONFIGURATION": "Neue Konfiguration",
+
+        "OVERVIEW": "Übersicht",
+        "NEAREST_DEALER": "Händler Suchen",
+
+        "EDIT_YOUR_CONFIGURATION": "Editieren Sie Ihre Konfiguration",
+        "STANDARD_FEATURES": "Serienausstattung",
+        "COMFORT_AND_CONVENIENCE": "Komfort und Sicherheit",
+        "EXTERIOR": "Außenausstattung",
+        "INTERIOR": "Innenausstattung",
+        "SAFETY_AND_SECURITY": "Sicherheitsausstattung",
+        "NOT_AVAILABLE": "Nicht verfügbar",
+
+        "TECHNICAL_DATA": "Technische Daten",
+
+        "BOOT_TEXT_SEQUENCE": [
+            "Berechnung Fahrzeug Matrix",
+            "Anreißen Noten",
+            "Montage Motoren",
+            "Rendering Farben",
+            "Moulding Räder",
+            "Texturising trimmt",
+            "Abstellen des Fahrzeuges"
+        ],
+
+        "OPTIONAL": "Optional",
+        "STANDARD": "Standard",
+
+        "DEALER_LOCATOR_TITLE": "Suchen Händlersuche",
+        "GO": "Gehe",
+
+        "LOADING_IMAGE": "Bild wird geladen",
+        "LOADING_PDF": "PDF",
+
+        "DOWNLOAD_PRINT_SAVE": "Herunterladen, drucken, speichern",
+
+        "REMOVE": "Entfernen",
+
+        "ADD": "Hinzufügen",
+
+        "NO_ACCESSORIES_AND_OPTIONPACKS_MESSAGE": "Sonderausstattung ist für die gewählte Ausstattungsvariante nicht verfügbar"
+    }
+}

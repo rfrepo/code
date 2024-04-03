@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-type="example" data-id="object-movie-animation-sprite">
+<head>
+    <title>Mazda Vehicle 360 Spin</title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-type'/>
+
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src='http://code.vostrel.cz/jquery.reel-1.2.1-bundle.js' type='text/javascript'></script>
+
+    <style>
+
+        body {
+            text-align: center;
+        }
+
+        #vehicleDisplay {
+            position: relative;
+            margin: 0 auto;
+            width: 718px;
+            border: 1px #fff30a solid;
+        }
+
+        .carPart {
+            position: absolute !important;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<h1>Mazda 3 360</h1>
+
+<div id='vehicleDisplay'>
+    <img id="base" src='resources/images/CX5/cx5_grade_selection_zeal_red.jpg' width="718" height="290"/>
+    <img id="wheel" src='resources/images/CX5/cx5_wheels_accessory_19_inch_alloy.png' width="718" height="290"/>
+</div>
+<script>
+    function createReel(id) {
+        return jQuery('#' + id).reel
+        ({
+            frames: 12,
+            frame: 2,
+            footage: 3,
+            suffix: '_spritesheet',
+            loops: false,
+            klass: 'carPart'
+        });
+    }
+
+
+        var base = createReel('base');
+
+        var wheel = createReel('wheel');
+
+        wheel.bind('fractionChange', function (e, a, b) {
+            base.reel('fraction', b);
+        });
+
+
+</script>
+
+</body>
+</html>
+

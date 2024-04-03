@@ -1,0 +1,29 @@
+define([
+    'support/class1',
+    'class2'
+], function () {
+    'use strict';
+    var class1 = arguments[0];
+
+    puremvc.define({
+
+        class1.CONFIGURABLE_ITEM_UI;
+
+        function thisIsAFunction() {
+            
+        };
+
+        function anotherFunction() {
+            var otherVar;
+         };
+
+         function anotherFunction() {
+            var otherVar,
+                secondVar;
+         };
+
+        function finalFunction() {
+            var finalVar;
+        };
+    });
+});

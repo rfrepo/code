@@ -1,0 +1,2785 @@
+{
+  "modelID": "M2",
+  "modelName": "Mazda2",
+  "startupBaseVehicleId": "DP97BAL",
+  "baseVehicles": [
+    {
+      "id": "DP97BAL",
+      "rank": 1,
+      "bodyStyleId": "2400",
+      "gradeId": "001",
+      "engineId": "500XZJ00",
+      "keyCriteriaIds": "KC03,KC08",
+      "standardFeatureIds": "0002,0005,0006,0018,0019,0021,0031,0047,0048,0050,0051,0053,0164,0225,0252,0327,0336",
+      "capCode": "",
+      "specPage": "dp97bal_specs.xml",
+      "price": 11195.0000,
+      "optionPackIds": ""
+    },
+    {
+      "id": "DP99BAM",
+      "rank": 6,
+      "bodyStyleId": "2400",
+      "gradeId": "002",
+      "engineId": "500BMCEP2",
+      "keyCriteriaIds": "KC03,KC05,KC06,KC08,KC13,KC27",
+      "standardFeatureIds": "0002,0006,0008,0011,0015,0018,0019,0021,0029,0030,0032,0047,0048,0049,0050,0051,0053,0166,0168,0172,0198,0244,0252,0282,0336",
+      "capCode": "MA2 13TAM5HPIM  2",
+      "specPage": "dp99bam_specs.xml",
+      "price": 12295.0000,
+      "optionPackIds": ""
+    },
+    {
+      "id": "DP99BAUAL2",
+      "rank": 10,
+      "bodyStyleId": "2400",
+      "gradeId": "007",
+      "engineId": "500BMCEP2",
+      "keyCriteriaIds": "KC04,KC05,KC06,KC08,KC10,KC13,KC16,KC27",
+      "standardFeatureIds": "0001,0002,0003,0006,0008,0009,0011,0015,0018,0019,0022,0029,0030,0032,0047,0048,0049,0050,0051,0053,0165,0166,0168,0172,0220,0225,0244,0252,0282,0329,0336,0337,0338,0339,0341",
+      "capCode": "",
+      "specPage": "dp99baual2_specs.xml",
+      "price": 13395.0000,
+      "optionPackIds": ""
+    },
+    {
+      "id": "DR96BAGAL2",
+      "rank": 18,
+      "bodyStyleId": "2400",
+      "gradeId": "010",
+      "engineId": "N00BMCEP3",
+      "keyCriteriaIds": "KC03,KC05,KC06,KC08,KC10,KC13,KC27",
+      "standardFeatureIds": "0002,0006,0011,0015,0018,0019,0021,0029,0030,0032,0043,0047,0048,0049,0050,0051,0053,0164,0168,0172,0220,0225,0244,0252,0336,0338,0341",
+      "capCode": "",
+      "specPage": "dr96bagal2_specs.xml",
+      "price": 13395.0000,
+      "optionPackIds": ""
+    }
+  ],
+  "baseVehicleDefaults": [
+    {
+      "baseVehicleId": "DP97BAL",
+      "wheelId": "WHE_02",
+      "colourId": "A4A",
+      "trimId": "DM7",
+      "accessoryIds": "null"
+    },
+    {
+      "baseVehicleId": "DP99BAM",
+      "wheelId": "WHE_03",
+      "colourId": "A4A",
+      "trimId": "DM7",
+      "accessoryIds": "null"
+    },
+    {
+      "baseVehicleId": "DP99BAUAL2",
+      "wheelId": "WHE_06",
+      "colourId": "A4A",
+      "trimId": "DV0",
+      "accessoryIds": "null"
+    },
+    {
+      "baseVehicleId": "DR96BAGAL2",
+      "wheelId": "WHE_03",
+      "colourId": "A4A",
+      "trimId": "DM7",
+      "accessoryIds": "null"
+    }
+  ],
+  "engines": [
+    {
+      "taxIncrease": 0,
+      "fuelType": "Petrol",
+      "engineSize": "1.3",
+      "enginePower": 75,
+      "transmission": "Manual",
+      "performanceAndEconomy": [
+        {
+          "name": "Performance and Economy",
+          "bodyStyle": "2400",
+          "specs": [
+            {
+              "group": null,
+              "name": "EC emission level",
+              "value": "EC Stage V",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "CO2 emissions g/km",
+              "value": "115",
+              "unit": "g/km"
+            },
+            {
+              "group": null,
+              "name": "Top speed",
+              "value": "104",
+              "unit": "mph"
+            },
+            {
+              "group": null,
+              "name": "Acceleration (0-62mph)",
+              "value": "14.9",
+              "unit": "sec."
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Combined",
+              "value": "56.5 (5.0)",
+              "unit": "mpg (l/100km)"
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Extra Urban",
+              "value": "65.7 (4.3)",
+              "unit": "mpg (l/100km)"
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Urban",
+              "value": "45.6 (6.2)",
+              "unit": "mpg (l/100km)"
+            }
+          ]
+        }
+      ],
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              }
+            ]
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": []
+      },
+      "id": "500XZJ00",
+      "name": "1.3 75 PS Petrol",
+      "thumbnail": "engine_500XZJ00.png",
+      "disclaimer": "CO2 emissions g/km: 115 g/km&#xD;Fuel consumption (l/100km): 56.5 (5.0) mpg (l/100km)",
+      "description": "5 Speed Manual"
+    },
+    {
+      "taxIncrease": 0,
+      "fuelType": "Petrol",
+      "engineSize": "1.3",
+      "enginePower": 84,
+      "transmission": "Manual",
+      "performanceAndEconomy": [
+        {
+          "name": "Performance and Economy",
+          "bodyStyle": "2400",
+          "specs": [
+            {
+              "group": null,
+              "name": "EC emission level",
+              "value": "EC Stage V",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "CO2 emissions g/km",
+              "value": "115",
+              "unit": "g/km"
+            },
+            {
+              "group": null,
+              "name": "Top speed",
+              "value": "106",
+              "unit": "mph"
+            },
+            {
+              "group": null,
+              "name": "Acceleration (0-62mph)",
+              "value": "13.6",
+              "unit": "sec."
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Combined",
+              "value": "56.5 (5.0)",
+              "unit": "mpg (l/100km)"
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Extra Urban",
+              "value": "65.7 (4.3)",
+              "unit": "mpg (l/100km)"
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Urban",
+              "value": "45.6 (6.2)",
+              "unit": "mpg (l/100km)"
+            }
+          ]
+        }
+      ],
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": []
+      },
+      "id": "500BMCEP2",
+      "name": "1.3 84 PS Petrol",
+      "thumbnail": "engine_500BMCEP2.png",
+      "disclaimer": "CO2 emissions g/km: 115 g/km&#xD;Fuel consumption (l/100km): 56.5 (5.0) mpg (l/100km)",
+      "description": "5 Speed Manual"
+    },
+    {
+      "taxIncrease": 0,
+      "fuelType": "Petrol",
+      "engineSize": "1.5",
+      "enginePower": 102,
+      "transmission": "Automatic",
+      "performanceAndEconomy": [
+        {
+          "name": "Performance and Economy",
+          "bodyStyle": "2400",
+          "specs": [
+            {
+              "group": null,
+              "name": "EC emission level",
+              "value": "EC Stage V",
+              "unit": ""
+            },
+            {
+              "group": null,
+              "name": "CO2 emissions g/km",
+              "value": "145",
+              "unit": "g/km"
+            },
+            {
+              "group": null,
+              "name": "Top speed",
+              "value": "105",
+              "unit": "mph"
+            },
+            {
+              "group": null,
+              "name": "Acceleration (0-62mph)",
+              "value": "11.9",
+              "unit": "sec."
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Combined",
+              "value": "44.8 (6.3)",
+              "unit": "mpg (l/100km)"
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Extra Urban",
+              "value": "53.3 (5.3)",
+              "unit": "mpg (l/100km)"
+            },
+            {
+              "group": "fuel consumption",
+              "name": "Urban",
+              "value": "34.9 (8.1)",
+              "unit": "mpg (l/100km)"
+            }
+          ]
+        }
+      ],
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "010"
+              }
+            ]
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": []
+      },
+      "id": "N00BMCEP3",
+      "name": "1.5 102 PS Petrol Automatic",
+      "thumbnail": "engine_N00BMCEP3.png",
+      "disclaimer": "CO2 emissions g/km: 145 g/km&#xD;Fuel consumption (l/100km): 44.8 (6.3) mpg (l/100km)",
+      "description": "4 Speed Automatic"
+    }
+  ],
+  "colours": [
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "0.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "0.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "0.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "0.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "A4A",
+      "name": "True Red",
+      "thumbnail": "colour_A4A.png",
+      "disclaimer": "",
+      "description": "Solid Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "34K",
+      "name": "Crystal White Pearlescent",
+      "thumbnail": "colour_34K.png",
+      "disclaimer": "",
+      "description": "Pearlescent Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "42A",
+      "name": "Meteor Grey Mica",
+      "thumbnail": "colour_42A.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "28W",
+      "name": "Radiant Ebony Mica",
+      "thumbnail": "colour_28W.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "40E",
+      "name": "Aquatic Blue Mica",
+      "thumbnail": "colour_40E.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "38P",
+      "name": "Aluminium Silver  Metallic",
+      "thumbnail": "colour_38P.png",
+      "disclaimer": "",
+      "description": "Metallic Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "41G",
+      "name": "Zeal Red Mica",
+      "thumbnail": "colour_41G.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "41W",
+      "name": "Jet Black",
+      "thumbnail": "colour_41W.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              },
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "42M",
+      "name": "Deep Crystal Blue Mica",
+      "thumbnail": "colour_42M.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    },
+    {
+      "taxable": false,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "value": "500.00",
+            "id": "007"
+          }
+        ],
+        "render": [],
+        "selection": null
+      },
+      "id": "42S",
+      "name": "Titanium Flash Mica",
+      "thumbnail": "colour_42S.png",
+      "disclaimer": "",
+      "description": "Mica Body Colour"
+    }
+  ],
+  "bodyStyles": [
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "grade",
+            "id": "001"
+          },
+          {
+            "type": "grade",
+            "id": "002"
+          },
+          {
+            "type": "grade",
+            "id": "010"
+          },
+          {
+            "type": "grade",
+            "id": "007"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": null
+      },
+      "id": "2400",
+      "name": "5 Dr Hatchback",
+      "thumbnail": "bodystyle_2400.png",
+      "disclaimer": "",
+      "description": null
+    }
+  ],
+  "wheels": [
+    {
+      "accessoryCode": "8AD2-37-600",
+      "dependencies": {
+        "availability": [
+          {
+            "type": "grade",
+            "id": "001",
+            "preconditions": [
+              {
+                "type": "engine",
+                "id": "500XZJ00"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "id": "001",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "500XZJ00"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "whe_02.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "WHE_02",
+      "name": "15\" Alloy wheel",
+      "thumbnail": "wheel_WHE_02.png",
+      "disclaimer": null,
+      "description": ""
+    },
+    {
+      "accessoryCode": "9965-B4-6560",
+      "dependencies": {
+        "availability": [
+          {
+            "type": "grade",
+            "id": "002",
+            "preconditions": [
+              {
+                "type": "engine",
+                "id": "500BMCEP2"
+              },
+              {
+                "type": "engine",
+                "id": "N00BMCEP3"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "id": "010",
+            "preconditions": [
+              {
+                "type": "engine",
+                "id": "500BMCEP2"
+              },
+              {
+                "type": "engine",
+                "id": "N00BMCEP3"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "id": "002",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "500BMCEP2"
+              },
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "N00BMCEP3"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "id": "010",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "500BMCEP2"
+              },
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "N00BMCEP3"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "whe_03.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "WHE_03",
+      "name": "16\" Alloy wheel",
+      "thumbnail": "wheel_WHE_03.png",
+      "disclaimer": null,
+      "description": ""
+    },
+    {
+      "accessoryCode": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "grade",
+            "id": "007",
+            "preconditions": [
+              {
+                "type": "engine",
+                "id": "500BMCEP2"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "grade",
+            "id": "007",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "0.00",
+                "id": "500BMCEP2"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "whe_06.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "WHE_06",
+      "name": "16” bright finish alloy wheels",
+      "thumbnail": "wheel_WHE_06.png",
+      "disclaimer": null,
+      "description": "16” bright finish alloy wheels"
+    },
+    {
+      "accessoryCode": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "619.2500",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_1517-V3-810.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "1517-V3-810",
+      "name": "15\" 8-spoke design alloy wheel",
+      "thumbnail": "wheel_1517-V3-810.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "accessoryCode": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "770.6900",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_8AD2-37-600.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "8AD2-37-600",
+      "name": "15\" 8-spoke design alloy wheel",
+      "thumbnail": "wheel_8AD2-37-600.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "accessoryCode": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "852.2400",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "m2_acc_whe_d45a.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "DF71-V3-810B",
+      "name": "16\" 8-spoke design alloy wheel, finished in Titanium Grey",
+      "thumbnail": "wheel_DF71-V3-810B.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "accessoryCode": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "742.9900",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_DF71-V3-810_-SB.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "DF71-V3-810 -SB",
+      "name": "16\" 8-spoke design alloy wheel, finished in Black/Silver",
+      "thumbnail": "wheel_DF71-V3-810 -SB.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "accessoryCode": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "594.6200",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_9965-B4-6560.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "9965-B4-6560",
+      "name": "16\" 10-spoke design alloy wheel",
+      "thumbnail": "wheel_9965-B4-6560.png",
+      "disclaimer": null,
+      "description": null
+    }
+  ],
+  "grades": [
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": null
+      },
+      "id": "001",
+      "name": "SE Air Con",
+      "thumbnail": "series_001.png",
+      "disclaimer": "<b>Standard Features</b>&#xD;• 15\" Alloy wheels&nbsp;&#xD;•&nbsp;Rear&nbsp;roof spoiler&nbsp;&#xD;•&nbsp;&nbsp;AM/FM radio, CD player with Auxiliary input jack (AUX) and USB port &#xD;• Driver and front passenger airbags &#xD;• Electric front windows &#xD;• Electrically adjustable door mirrors &#xD;• Manual air-conditioning",
+      "description": null
+    },
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": null
+      },
+      "id": "002",
+      "name": "Tamura",
+      "thumbnail": "series_002.png",
+      "disclaimer": "<b>Standard Features as&nbsp;SE Air Con&nbsp;model plus:</b>&#xD;• 16\" Alloy wheels &#xD;• Heated power-folding door mirrors &#xD;• Side skirts &#xD;• Four cylinder sports headlights&#xD;• Privacy glass&#xD;• Leather steering wheel with audio controls",
+      "description": null
+    },
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": null
+      },
+      "id": "010",
+      "name": "Tamura Nav Auto",
+      "thumbnail": "series_010.png",
+      "disclaimer": "<b>Standard Features as&nbsp;SE Air Con&nbsp;model plus:</b>&#xD;• 6.1\" Mazda Navigation System&#xD;•&nbsp;16\" Alloy wheels &#xD;• Heated power-folding door mirrors &#xD;•&nbsp;Privacy glass&#xD;• Leather steering wheel with audio controls&#xD;• Dynamic Stability Control (DSC) with Traction Control System (TCS)",
+      "description": null
+    },
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400"
+          }
+        ],
+        "price": [],
+        "render": [],
+        "selection": null
+      },
+      "id": "007",
+      "name": "Sport Venture",
+      "thumbnail": "series_007.png",
+      "disclaimer": "<b>Standard Features as Tamura model plus:</b>&#xD;•&nbsp;6.1\" Mazda Navigation System&#xD;•&nbsp;Integrated Bluetooth® &#xD;•&nbsp;Black sports cloth&#xD;• 16\" Bright alloy wheels&#xD;• Climate control air-conditioning&#xD;•&nbsp;Privacy glass&#xD;• Front fog lights&#xD;• Rear parking sensors",
+      "description": null
+    }
+  ],
+  "trims": [
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "id": "010"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "value": "0.00",
+                "id": "001"
+              },
+              {
+                "type": "grade",
+                "value": "0.00",
+                "id": "002"
+              },
+              {
+                "type": "grade",
+                "value": "0.00",
+                "id": "010"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "grade",
+            "value": null,
+            "id": "001",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "001_DM7_manual.jpg",
+                "id": "500XZJ00"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "value": null,
+            "id": "002",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "002_DM7_automatic.jpg",
+                "id": "N00BMCEP3"
+              }
+            ]
+          },
+          {
+            "type": "grade",
+            "value": null,
+            "id": "010",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "010_DM7_manual.jpg",
+                "id": "500BMCEP2"
+              }
+            ]
+          }
+        ],
+        "selection": []
+      },
+      "id": "DM7",
+      "name": "Black cloth",
+      "thumbnail": "trim_DM7.png",
+      "disclaimer": "Standard on TS,TS2,Tamura",
+      "description": null
+    },
+    {
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "value": "0.00",
+                "id": "007"
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "grade",
+            "value": null,
+            "id": "007",
+            "preconditions": [
+              {
+                "type": "engine",
+                "value": "007_DV0_manual.jpg",
+                "id": "500BMCEP2"
+              }
+            ]
+          }
+        ],
+        "selection": []
+      },
+      "id": "DV0",
+      "name": "Black Cloth with Grey Stitch and Black Piping",
+      "thumbnail": "trim_DV0.png",
+      "disclaimer": "",
+      "description": null
+    }
+  ],
+  "standardFeatures": [
+    {
+      "price": 0.00,
+      "Category": "Comfort and Convenience",
+      "id": "0002",
+      "name": "Front electric windows",
+      "thumbnail": "option_0002.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Comfort and Convenience",
+      "id": "0021",
+      "name": "Manual air-conditioning",
+      "thumbnail": "option_0021.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Comfort and Convenience",
+      "id": "0022",
+      "name": "Climate control air-conditioning",
+      "thumbnail": "option_0022.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Comfort and Convenience",
+      "id": "0051",
+      "name": "Remote central locking",
+      "thumbnail": "option_0051.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Comfort and Convenience",
+      "id": "0165",
+      "name": "Rear electric windows",
+      "thumbnail": "option_0165.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0001",
+      "name": "Dusk-sensing lights",
+      "thumbnail": "option_0001.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0003",
+      "name": "Front fog lights",
+      "thumbnail": "option_0003.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0005",
+      "name": "Electrically adjustable black door mirrors",
+      "thumbnail": "option_0005.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0008",
+      "name": "Side skirts",
+      "thumbnail": "option_0008.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0009",
+      "name": "Rain-sensing front wipers",
+      "thumbnail": "option_0009.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0164",
+      "name": "Halogen headlights",
+      "thumbnail": "option_0164.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0166",
+      "name": "Four cylinder sports halogen headlights",
+      "thumbnail": "option_0166.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0168",
+      "name": "Power folding, heated door mirrors",
+      "thumbnail": "option_0168.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0172",
+      "name": "Privacy glass",
+      "thumbnail": "option_0172.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0252",
+      "name": "Rear roof spoiler     ",
+      "thumbnail": "option_0252.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0329",
+      "name": "Rear parking sensors",
+      "thumbnail": "option_0329.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Exterior",
+      "id": "0337",
+      "name": "Silver door mirrors",
+      "thumbnail": "option_0337.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0006",
+      "name": "Driver, reclining and height adjustment",
+      "thumbnail": "option_0006.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0011",
+      "name": "Trip computer",
+      "thumbnail": "option_0011.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0015",
+      "name": "Four speakers",
+      "thumbnail": "option_0015.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0018",
+      "name": "AM/FM radio with CD player",
+      "thumbnail": "option_0018.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0019",
+      "name": "Auxiliary input jack (AUX)",
+      "thumbnail": "option_0019.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0029",
+      "name": "Steering wheel audio controls",
+      "thumbnail": "option_0029.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0030",
+      "name": "Leather steering wheel",
+      "thumbnail": "option_0030.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0031",
+      "name": "One-piece fold rear bench",
+      "thumbnail": "option_0031.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0032",
+      "name": "60/40 split rear seats",
+      "thumbnail": "option_0032.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0198",
+      "name": "Cloth seat trim",
+      "thumbnail": "option_0198.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0220",
+      "name": "Integrated Bluetooth®",
+      "thumbnail": "option_0220.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0225",
+      "name": "Cloth seat trim",
+      "thumbnail": "option_0225.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0282",
+      "name": "Leather gear knob ",
+      "thumbnail": "option_0282.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0327",
+      "name": "Two speakers  ",
+      "thumbnail": "option_0327.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0336",
+      "name": "USB connectivity",
+      "thumbnail": "option_0336.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0338",
+      "name": "Glossy dark grey audio panel",
+      "thumbnail": "option_0338.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0339",
+      "name": "Glossy dark grey steering wheel spokes",
+      "thumbnail": "option_0339.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Interior",
+      "id": "0341",
+      "name": "6.1\" Mazda Navigation System ",
+      "thumbnail": "option_0341.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0043",
+      "name": "Dynamic Stability Control (DSC) with Traction Control System (TCS)",
+      "thumbnail": "option_0043.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0047",
+      "name": "Four-wheel Anti-lock Braking System (4W-ABS) with Electronic Brake-force Distribution (EBD) and Emergency Brake Assist (EBA)",
+      "thumbnail": "option_0047.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0048",
+      "name": "Driver and front passenger airbags",
+      "thumbnail": "option_0048.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0049",
+      "name": "Curtain airbags",
+      "thumbnail": "option_0049.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0050",
+      "name": "ISOFIX child seat anchorages",
+      "thumbnail": "option_0050.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0053",
+      "name": "Thatcham Category 1 alarm and immobiliser",
+      "thumbnail": "option_0053.png",
+      "disclaimer": null,
+      "description": null
+    },
+    {
+      "price": 0.00,
+      "Category": "Safety and Security",
+      "id": "0244",
+      "name": "Front side airbags       ",
+      "thumbnail": "option_0244.png",
+      "disclaimer": null,
+      "description": null
+    }
+  ],
+  "optionPack": [],
+  "accessories": [
+    {
+      "unit": 1,
+      "group": "Door Mirrors",
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "83.2100",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_DP75-V3-650.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "DP75-V3-650",
+      "name": "Door mirror cover",
+      "thumbnail": "accessories_DP75-V3-650.png",
+      "disclaimer": "",
+      "description": ""
+    },
+    {
+      "unit": 1,
+      "group": "Door Mirrors",
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "92.5700",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_GS1D-V3-650F.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "GS1D-V3-650F",
+      "name": "Chrome door mirror cover",
+      "thumbnail": "accessories_GS1D-V3-650F.png",
+      "disclaimer": "",
+      "description": "Add style to your Mazda with this chrome mirror cover."
+    },
+    {
+      "unit": 1,
+      "group": "Door Mirrors",
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "83.2100",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_DP75-V3-650.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "DP74-V3-650",
+      "name": "Carbon Fibre effect door mirror cover",
+      "thumbnail": "accessories_DP74-V3-650.png",
+      "disclaimer": "",
+      "description": ""
+    },
+    {
+      "unit": 1,
+      "group": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "199.2000",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_DF71-V4-930.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "DF71-V4-930",
+      "name": "Rear bumper sports trim",
+      "thumbnail": "accessories_DF71-V4-930.png",
+      "disclaimer": "",
+      "description": ""
+    },
+    {
+      "unit": 1,
+      "group": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "default",
+            "id": ""
+          }
+        ],
+        "price": [
+          {
+            "type": "default",
+            "value": "323.8700",
+            "id": ""
+          }
+        ],
+        "render": [
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_38P.png",
+            "id": "38P"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_40E.png",
+            "id": "40E"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_A3F.png",
+            "id": "41W"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_34K.png",
+            "id": "34K"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_40B.png",
+            "id": "40B"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_36C.png",
+            "id": "36C"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_28W.png",
+            "id": "28W"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_36A.png",
+            "id": "36A"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_22V.png",
+            "id": "22V"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_A4A.png",
+            "id": "A4A"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_35J.png",
+            "id": "35J"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_39T.png",
+            "id": "39T"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_40F.png",
+            "id": "40F"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_42A.png",
+            "id": "42A"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_42B.png",
+            "id": "42B"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_41G.png",
+            "id": "41G"
+          },
+          {
+            "type": "colour",
+            "value": "2400_DF71-V4-920G_42M.png",
+            "id": "42M"
+          }
+        ],
+        "selection": []
+      },
+      "id": "DF71-V4-920G",
+      "name": "Sporty rear roof spoiler",
+      "thumbnail": "accessories_DF71-V4-920G.png",
+      "disclaimer": "",
+      "description": "Be sure that your Mazda will have a distinct look to separate you from the masses."
+    },
+    {
+      "unit": 1,
+      "group": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500XZJ00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "396.6200",
+                    "id": "500XZJ00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_38P.png",
+                "id": "38P"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_40E.png",
+                "id": "40E"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_41W.png",
+                "id": "41W"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_34K.png",
+                "id": "34K"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_40B.png",
+                "id": "40B"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_36C.png",
+                "id": "36C"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_28W.png",
+                "id": "28W"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_36A.png",
+                "id": "36A"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_A4A.png",
+                "id": "A4A"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_35J.png",
+                "id": "35J"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_39T.png",
+                "id": "39T"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_40F.png",
+                "id": "40F"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_42A.png",
+                "id": "42A"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_42B.png",
+                "id": "42B"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_41G.png",
+                "id": "41G"
+              }
+            ]
+          },
+          {
+            "type": "bodyStyle",
+            "value": null,
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "colour",
+                "value": "2400_DF71-V4-910F_42M.png",
+                "id": "42M"
+              }
+            ]
+          }
+        ],
+        "selection": []
+      },
+      "id": "DF71-V4-910F",
+      "name": "Side airdam skirt",
+      "thumbnail": "accessories_DF71-V4-910F.png",
+      "disclaimer": "",
+      "description": "Maximize the sporty look of your Mazda!"
+    },
+    {
+      "unit": 1,
+      "group": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500XZJ00"
+                  },
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  },
+                  {
+                    "type": "engine",
+                    "id": "N00BMCEP3"
+                  }
+                ]
+              },
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500XZJ00"
+                  },
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  },
+                  {
+                    "type": "engine",
+                    "id": "N00BMCEP3"
+                  }
+                ]
+              },
+              {
+                "type": "grade",
+                "id": "010",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500XZJ00"
+                  },
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  },
+                  {
+                    "type": "engine",
+                    "id": "N00BMCEP3"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "001",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "500XZJ00"
+                  },
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "500BMCEP2"
+                  },
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "N00BMCEP3"
+                  }
+                ]
+              },
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "500XZJ00"
+                  },
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "500BMCEP2"
+                  },
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "N00BMCEP3"
+                  }
+                ]
+              },
+              {
+                "type": "grade",
+                "id": "010",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "500XZJ00"
+                  },
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "500BMCEP2"
+                  },
+                  {
+                    "type": "engine",
+                    "value": "303.8000",
+                    "id": "N00BMCEP3"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [],
+        "selection": []
+      },
+      "id": "4100-78-491",
+      "name": "Sebring Sport exhaust",
+      "thumbnail": "accessories_4100-78-491.png",
+      "disclaimer": "",
+      "description": "Kick the sportiness up a notch!"
+    },
+    {
+      "unit": 1,
+      "group": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "43.6000",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [
+          {
+            "type": "default",
+            "value": "2400_G22B-V3-770F.png",
+            "id": ""
+          }
+        ],
+        "selection": []
+      },
+      "id": "G22B-V3-770F",
+      "name": "Chrome side indicator bezel",
+      "thumbnail": "accessories_G22B-V3-770F.png",
+      "disclaimer": "",
+      "description": "A garnish that proves your attention to detail."
+    },
+    {
+      "unit": 1,
+      "group": null,
+      "dependencies": {
+        "availability": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "price": [
+          {
+            "type": "bodyStyle",
+            "id": "2400",
+            "preconditions": [
+              {
+                "type": "grade",
+                "id": "002",
+                "preconditions": [
+                  {
+                    "type": "engine",
+                    "value": "37.7600",
+                    "id": "500BMCEP2"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "render": [],
+        "selection": []
+      },
+      "id": "DF83-V0-320B",
+      "name": "Luxury carpet mats in Black",
+      "thumbnail": "accessories_DF83-V0-320B.png",
+      "disclaimer": "",
+      "description": ""
+    }
+  ]
+}

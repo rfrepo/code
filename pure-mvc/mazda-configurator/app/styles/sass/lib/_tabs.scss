@@ -1,0 +1,126 @@
+.navigation-tabs {
+  .summary-navigation-container {
+    display: none;
+  }
+
+  &.summary {
+
+    .summary-navigation-container {
+      display: block;
+    }
+
+    .tabsNavContainer, notification-alert-container {
+      display: none;
+    }
+  }
+}
+
+
+.tabsNavContainer {
+  width: 100%
+}
+
+.tabsNav {
+  background: url('../resources/images/components/tabsNavBG.png') repeat-x center left;
+  ul {
+    height: 60px;
+    max-width: 975px;
+    margin: 0 auto;
+    padding-left: 15px;
+    position: static;
+    z-index: 0;
+    li {
+      float: left;
+      list-style: none;
+      display: block;
+      height: 100%;
+      width: 152px;
+      position: relative;
+      margin-left: -15px;
+      background: url('../resources/images/components/tabsNavArrow.png') no-repeat top left;
+      &:focus, a:focus {
+        outline: 0;
+      }
+      &:hover, &:active {
+        background-position: left -60px;
+        a {
+          background: none;
+        }
+      }
+      a {
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        padding: 9.5px;
+        display: block;
+        cursor: pointer;
+        background: none;
+        position: static;
+        z-index: 0;
+        font-size: inherit;
+        margin: 0;
+        p {
+          margin: 0;
+          line-height: 1.6;
+          color: #fff;
+        }
+        > span {
+          background: none;
+        }
+      }
+      &.ui-state-active:after {
+        position: absolute;
+        display: inline-block;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #e3ebf0;
+        border-left: 6px solid transparent;
+        content: '';
+        bottom: 0;
+        left: 45%;
+      }
+
+      &.summary {
+        background: none;
+
+        .tabTitle {
+          margin-top: 9px;
+          margin-left: 5px;
+        }
+
+        .tabSelection {
+          display: none;
+        }
+        
+        .icon {
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          background-image: url(../resources/images/components/tabsNavSummaryArrow.png);
+          background-repeat: no-repeat;
+          position: relative;
+          top: 4px;
+          left: 8px;
+        }
+      }
+      > span {
+        background: none;
+      }
+    }
+  }
+  .tabTitle {
+    font-size: 0.9em;
+  }
+
+  .tabSelection {
+    font-size: 0.8em;
+  }
+  .summaryTitle {
+    margin: 0;
+    float: left;
+  }
+}
+
+.progress-bar {
+  background: url('../resources/images/components/blueBar.png') no-repeat bottom left !important;
+}

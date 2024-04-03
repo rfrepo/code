@@ -1,0 +1,175 @@
+<h3 class="accordion-header">Dimensions and Weights</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Cargo volume, acc. to VDA (including under floor storage space)</td>
+       <td>2-seat mode</td>
+       <td>1263 l</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>5-seat mode</td>
+       <td>364 l</td>
+      </tr>
+      <tr>
+       <td>Front headroom / leg room / shoulder room</td>
+       <td></td>
+       <td>981 / 1073 / 1452 mm</td>
+      </tr>
+      <tr>
+       <td>Front track / rear track</td>
+       <td></td>
+       <td>1555 / 1560 mm</td>
+      </tr>
+      <tr>
+       <td>Ground clearance between the axles - unladen</td>
+       <td></td>
+       <td>155 mm</td>
+      </tr>
+      <tr>
+       <td>Kerb weight (kg) incl. driver (75kg)</td>
+       <td></td>
+       <td>1405 </td>
+      </tr>
+      <tr>
+       <td>Maximum roof load</td>
+       <td></td>
+       <td>75 kg</td>
+      </tr>
+      <tr>
+       <td>Overall length / width / height</td>
+       <td></td>
+       <td>4465 / 1795 / 1450 mm</td>
+      </tr>
+      <tr>
+       <td>Permitted axle load, front / rear</td>
+       <td></td>
+       <td>1075 / 930 kg</td>
+      </tr>
+      <tr>
+       <td>Permitted gross vehicle weight</td>
+       <td>Front / rear</td>
+       <td>1050 / 880 kg</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>Total</td>
+       <td>1930 kg</td>
+      </tr>
+      <tr>
+       <td>Rear headroom / leg room / shoulder room</td>
+       <td></td>
+       <td>955 / 909 / 1382 mm</td>
+      </tr>
+      <tr>
+       <td>Towing limit</td>
+       <td>Braked (12% gradient)</td>
+       <td>1500 kg</td>
+      </tr>
+      <tr>
+       <td>Wheelbase</td>
+       <td></td>
+       <td>2700 mm</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Engine Type</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Bore x stroke</td>
+       <td></td>
+       <td>86.0 x 94.3 mm</td>
+      </tr>
+      <tr>
+       <td>Compression ratio</td>
+       <td></td>
+       <td>14:1 </td>
+      </tr>
+      <tr>
+       <td>Displacement</td>
+       <td></td>
+       <td>2191 cc</td>
+      </tr>
+      <tr>
+       <td>Maximum output</td>
+       <td></td>
+       <td>150 (110) / 4500 ps (kW) / rpm</td>
+      </tr>
+      <tr>
+       <td>Maximum torque</td>
+       <td></td>
+       <td>380 / 1800 Nm / rpm</td>
+      </tr>
+      <tr>
+       <td>Valves per cylinder</td>
+       <td></td>
+       <td>4 </td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Performance and Economy</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Acceleration (0-62mph in sec.)</td>
+       <td></td>
+       <td>9.7 </td>
+      </tr>
+      <tr>
+       <td>CO2 emissions</td>
+       <td></td>
+       <td>127 g/km</td>
+      </tr>
+      <tr>
+       <td>EC emission level</td>
+       <td></td>
+       <td>Euro VI </td>
+      </tr>
+      <tr>
+       <td>Fuel consumption</td>
+       <td>Combined</td>
+       <td>58.9 (4.8) mpg (l/100km)</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>Extra Urban</td>
+       <td>68.9 (4.1) mpg (l/100km)</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>Urban</td>
+       <td>47.1 (6.0) mpg (l/100km)</td>
+      </tr>
+      <tr>
+       <td>Fuel tank capacity</td>
+       <td></td>
+       <td>51 l</td>
+      </tr>
+      <tr>
+       <td>Recommended fuel</td>
+       <td></td>
+       <td>Diesel </td>
+      </tr>
+      <tr>
+       <td>Top speed</td>
+       <td></td>
+       <td>125 mph</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Steering</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Minimum turning circle: wall to wall</td>
+       <td></td>
+       <td>11.4 m</td>
+      </tr>
+      <tr>
+       <td>Steering gear</td>
+       <td></td>
+       <td>Electronic Power Assist System (EPAS) rack and pinion </td>
+      </tr>
+   </table>
+</div>

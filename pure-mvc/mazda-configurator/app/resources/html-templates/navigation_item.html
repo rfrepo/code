@@ -1,0 +1,10 @@
+<% _.each(items, function(navigationVO, index) { %>
+<li <%= 'data-nav-vo-index="' + index + '"' %> <%= index === items.length - 1 ? 'class="summary"' : 'class=""' %> >
+	<a>
+		<p class="tabTitle mazdaStrong"><%= navigationVO.getPrintableType() %>
+            <%= index === items.length - 1 ? '<span class="icon"></span>' : '' %>
+        </p>
+		<p class="tabSelection"><%= navigationVO.getCarouselSectionJourneyDetails() %></p>
+	</a>
+</li>
+<% }); %>

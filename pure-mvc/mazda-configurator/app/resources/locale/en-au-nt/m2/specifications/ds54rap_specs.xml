@@ -1,0 +1,240 @@
+<h3 class="accordion-header">Chassis</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Brake type</td>
+       <td>front</td>
+       <td>Ventilated disc </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>rear</td>
+       <td>Drum </td>
+      </tr>
+      <tr>
+       <td>Steering type</td>
+       <td></td>
+       <td>Electric power assist steering </td>
+      </tr>
+      <tr>
+       <td>Steering wheel turns lock to lock</td>
+       <td></td>
+       <td>2.7 </td>
+      </tr>
+      <tr>
+       <td>Suspension</td>
+       <td>front</td>
+       <td>MacPherson strut </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>rear</td>
+       <td>Torsion beam </td>
+      </tr>
+      <tr>
+       <td>Turning circle kerb to kerb (m)</td>
+       <td></td>
+       <td>9.8 </td>
+      </tr>
+      <tr>
+       <td>Tyre index</td>
+       <td></td>
+       <td>82V </td>
+      </tr>
+      <tr>
+       <td>Tyre size</td>
+       <td></td>
+       <td>185/55 R15 </td>
+      </tr>
+      <tr>
+       <td>Wheel size</td>
+       <td></td>
+       <td>15 x 6.0 J </td>
+      </tr>
+      <tr>
+       <td>Wheel type</td>
+       <td></td>
+       <td>Alloy </td>
+      </tr>
+      <tr>
+       <td>Wheel type (spare)</td>
+       <td></td>
+       <td>Steel (temporary) </td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Dimensions</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Ground clearance laden (mm)</td>
+       <td></td>
+       <td>119 </td>
+      </tr>
+      <tr>
+       <td>Overall height (mm)</td>
+       <td></td>
+       <td>1,475 </td>
+      </tr>
+      <tr>
+       <td>Overall length (mm)</td>
+       <td></td>
+       <td>3,900 </td>
+      </tr>
+      <tr>
+       <td>Overall width (mm)</td>
+       <td></td>
+       <td>1,695 </td>
+      </tr>
+      <tr>
+       <td>Track (mm)</td>
+       <td>front</td>
+       <td>1,475 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>rear</td>
+       <td>1,465 </td>
+      </tr>
+      <tr>
+       <td>Wheelbase (mm)</td>
+       <td></td>
+       <td>2,490 </td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Powertrain</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Bore x stroke (mm)</td>
+       <td></td>
+       <td>78.0 x 78.4 </td>
+      </tr>
+      <tr>
+       <td>Compression ratio</td>
+       <td></td>
+       <td>10.0 : 1 </td>
+      </tr>
+      <tr>
+       <td>Emission standard</td>
+       <td></td>
+       <td>Euro stage IV </td>
+      </tr>
+      <tr>
+       <td>Engine capacity (cc)</td>
+       <td></td>
+       <td>1,498 </td>
+      </tr>
+      <tr>
+       <td>Engine type</td>
+       <td></td>
+       <td>1.5 litre in-line 4 cylinder 16 valve DOHC S-VT </td>
+      </tr>
+      <tr>
+       <td>Fuel consumption (l/ 100km)</td>
+       <td>combined</td>
+       <td>6.8 </td>
+      </tr>
+      <tr>
+       <td>Fuel system</td>
+       <td></td>
+       <td>Electronic fuel injection </td>
+      </tr>
+      <tr>
+       <td>Fuel tank capacity (litres)</td>
+       <td></td>
+       <td>42 </td>
+      </tr>
+      <tr>
+       <td>Gear ratio:</td>
+       <td>1st</td>
+       <td>2.816 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>2nd</td>
+       <td>1.553 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>3rd</td>
+       <td>1.000 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>4th</td>
+       <td>0.695 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>final drive</td>
+       <td>4.147 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>reverse</td>
+       <td>2.279 </td>
+      </tr>
+      <tr>
+       <td>Maximum power (kW @ rpm)</td>
+       <td></td>
+       <td>76 @ 6,000 </td>
+      </tr>
+      <tr>
+       <td>Maximum torque (Nm @ rpm)</td>
+       <td></td>
+       <td>135 @ 4,000 </td>
+      </tr>
+      <tr>
+       <td>Recommended fuel</td>
+       <td></td>
+       <td>Unleaded (91RON or higher) or E10 </td>
+      </tr>
+      <tr>
+       <td>Throttle control</td>
+       <td></td>
+       <td>Electronic (drive-by-wire) </td>
+      </tr>
+      <tr>
+       <td>Transmission</td>
+       <td></td>
+       <td>4-speed automatic </td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Weights and Capacities</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Cargo volume VDA (litres)</td>
+       <td></td>
+       <td>250 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>measured with rear seats folded down</td>
+       <td>469 </td>
+      </tr>
+      <tr>
+       <td>Kerb weight (kg)</td>
+       <td></td>
+       <td>1,032 </td>
+      </tr>
+      <tr>
+       <td>Tow-ball download maximum (kg)</td>
+       <td></td>
+       <td>70 </td>
+      </tr>
+      <tr>
+       <td>Towing capacity (kg)</td>
+       <td>braked</td>
+       <td>700 </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>unbraked</td>
+       <td>500 </td>
+      </tr>
+   </table>
+</div>

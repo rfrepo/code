@@ -1,0 +1,93 @@
+<%
+    var globalConfig = bmc.support.GlobalConfig.getInstance(),
+       categoryNames = [],
+       categories = {};
+
+    _.each(standardFeatures, function(standardFeature, index) {
+            var categoryList = categories[standardFeature.getCategory()];
+
+            if (!categoryList) {
+                categoryList = categories[standardFeature.getCategory()] = [];
+                categoryNames.push(standardFeature.getCategory());
+            }
+
+            categories[standardFeature.getCategory()].push(standardFeature);
+    });
+
+    categoryNames.sort(function (a, b) {
+        if (a.name < b.name) {
+            return -1;
+        }
+        if (b.name < a.name) {
+            return 1;
+        }
+        return 0;
+    });
+
+%>
+<div id="features" class="summary-features summary-container">
+    <h2><%= globalConfig.LANGUAGE.STANDARD_FEATURES %></h2>
+    <div class="accordion">
+        <%
+            var categorisedStandardFeatures;
+
+            _.each(categoryNames, function(name, index) {
+                categorisedStandardFeatures = categories[name];
+
+                if (!categorisedStandardFeatures || categorisedStandardFeatures.length === 0) {
+                    return false;
+                }
+
+            categorisedStandardFeatures.sort(function (a, b) {
+                if (a.name < b.name) {
+                    return -1;
+                }
+                if (b.name < a.name) {
+                    return 1;
+                }
+                return 0;
+            });
+
+            %>
+                <h3 class="accordion-header"><%= name %></h3>
+                <div>
+                    <table class="accordion-table summary-table">
+            <%
+                _.each(categorisedStandardFeatures, function(standardFeature, index) {
+                    if (standardFeature.getCategory() === name) {
+                    %>
+                        <tr>
+                            <td><%= standardFeature.getName() %></td>
+                            <td>
+                                <%
+                                var baseVehicle = configuration.getBaseVehicleVO(),
+                                    gradeId = baseVehicle.getGradeVO().getId();
+
+                                if (standardFeature.isStandardOnGrades(gradeId)) {
+                                    %>
+                                    <p><span class="availability-icon"></span><%= globalConfig.LANGUAGE.STANDARD %></p>
+                                    <%
+                                } else if(standardFeature.isOptionalOnGrades(gradeId)) {
+                                    %>
+                                    <p><span class="availability-icon optional"></span><%= globalConfig.LANGUAGE.OPTIONAL %></p>
+                                    <%
+                                } else {
+                                    %>
+                                    <p><span class="availability-icon not-available"></span><%= globalConfig.LANGUAGE.NOT_AVAILABLE %></p>
+                                    <%
+                                }
+                                %>
+                            </td>
+                        </tr>
+                    <%
+                    }
+                });
+
+            %>
+                    </table>
+                </div>
+            <%
+            });
+        %>
+    </div>
+</div>

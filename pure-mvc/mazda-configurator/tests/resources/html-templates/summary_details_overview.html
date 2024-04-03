@@ -1,0 +1,67 @@
+<% var globalConfig = bmc.support.GlobalConfig.getInstance(),
+        StringUtils = bmc.support.StringUtils;
+
+    function getPriceString(configurableItem) {
+        var priceNum = configurableItem.getPrice();
+
+        if (priceNum > 0) {
+            return StringUtils.formatPrice(priceNum);
+        } else {
+            return globalConfig.LANGUAGE.NO_COST_OPTION;
+        }
+    }
+
+    function getSwatchImageURLFromVO(vo){
+
+        var type = vo.getType();
+        return bmc.support.UrlBuilder.getCompletedSwatchImagePath(type + '/' + vo.getThumbnail());
+    }
+
+    function getColourSwatchImageURL(vo){
+        return getSwatchImageURLFromVO(vo.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.COLOUR));
+    }
+
+    function getWheelSwatchImageURL(vo){
+        return getSwatchImageURLFromVO(vo.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.WHEEL));
+    }
+
+    function getTrimSwatchImageURL(vo){
+        return getSwatchImageURLFromVO(vo.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.TRIM));
+    }
+%>
+<div id="overview" class="summary-overview summary-container">
+    <div class="left">
+        <h2><%= globalConfig.LANGUAGE[configuration.getVehicleId()] %></h2>
+        <p><%= globalConfig.getBodyStyleVO().getName() %>, <%= configuration.getBaseVehicleVO().getGradeVO().getName() %></p>
+        <p><%= configuration.getBaseVehicleVO().getEngineVO().getName() %></p>
+        <a href="#" class="button edit-configuration-button"><%= globalConfig.LANGUAGE.EDIT_YOUR_CONFIGURATION %></a>
+    </div>
+    <div class="right">
+        <ul>
+            <li>
+                <div>
+                    <img src="<%= getColourSwatchImageURL(configuration)%>"/>
+                    <p class="mazdaStrong"><%= globalConfig.LANGUAGE.colour %></p>
+                    <p class="mazdaStrong"><%= configuration.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.COLOUR).getName() %></p>
+                    <p><%= getPriceString(configuration.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.COLOUR)) %></p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="<%= getWheelSwatchImageURL(configuration)%>"/>
+                    <p class="mazdaStrong"><%= globalConfig.LANGUAGE.wheel %></p>
+                    <p class="mazdaStrong"><%= configuration.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.WHEEL).getName() %></p>
+                    <p><%= getPriceString(configuration.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.WHEEL)) %></p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="<%= getTrimSwatchImageURL(configuration)%>"/>
+                    <p class="mazdaStrong"><%= globalConfig.LANGUAGE.trim %></p>
+                    <p class="mazdaStrong"><%= configuration.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.TRIM).getName() %></p>
+                    <p><%= getPriceString(configuration.getConfigurableItemVO(globalConfig.VEHICLE_PARTS.TRIM)) %></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

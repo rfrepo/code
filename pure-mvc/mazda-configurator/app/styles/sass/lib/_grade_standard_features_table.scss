@@ -1,0 +1,45 @@
+.standfeatures-table-container {
+
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  td p, td:first-child {
+
+    width: 237px;
+    display: block;
+  }
+
+  td {
+    width: 237px;
+    padding: 5px 0px;
+    border-left: 1px solid #ccc;
+  }
+
+  .accordion-table {
+    background-color: #e9e9e9;
+    width: auto;
+  }
+
+  .name-table {
+    z-index: 1;
+    width: 237px;
+
+    position: relative;
+    td:first-child {
+      width: 237px;
+    }
+  }
+
+  .state-table {
+
+    top: 0px;
+    z-index: 0;
+    position: absolute;
+
+    .standfeature-name {
+      width: 237px;
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/*
+Syntax error: Invalid CSS after "...der: 1px solid ": expected ";", was "#z;"
+        on line 21 of _accessories_panel.scss
+
+16:     border: lightgreen 1px solid;
+17:   }
+18: 
+19:   .accessory-container img {
+20: 
+21:     border: 1px solid #z;
+22:     -webkit-border-radius: 8px;
+23:     -moz-border-radius: 8px;
+24:     border-radius: 8px;
+25:     display: inline-block;
+26:     vertical-align: bottom;
+
+Backtrace:
+_accessories_panel.scss:21
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1146:in `expected'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1084:in `expected'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1079:in `tok!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:586:in `block in declaration_or_ruleset'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1122:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1122:in `rethrow'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:554:in `block_child'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:543:in `block_contents'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:535:in `block'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:529:in `ruleset'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1122:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:1122:in `rethrow'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:554:in `block_child'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:546:in `block_contents'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:535:in `block'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:529:in `ruleset'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:553:in `block_child'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:543:in `block_contents'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:82:in `stylesheet'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/scss/parser.rb:27:in `parse'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:342:in `_to_tree'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin.rb:81:in `update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:425:in `watch_or_update'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:307:in `process_result'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:41:in `parse'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:21:in `parse!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.7/bin/scss:9:in `<top (required)>'
+C:/Ruby200/bin/scss:23:in `load'
+C:/Ruby200/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...der: 1px solid \": expected \";\", was \"#z;\"\A         on line 21 of _accessories_panel.scss\A \A 16:     border: lightgreen 1px solid;\A 17:   }\A 18: \A 19:   .accessory-container img {\A 20: \A 21:     border: 1px solid #z;\A 22:     -webkit-border-radius: 8px;\A 23:     -moz-border-radius: 8px;\A 24:     border-radius: 8px;\A 25:     display: inline-block;\A 26:     vertical-align: bottom;"; }

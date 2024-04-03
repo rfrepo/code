@@ -1,0 +1,165 @@
+<h3 class="accordion-header">Fahrleistungen und Verbräuche</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Abgasnorm</td>
+       <td></td>
+       <td>Euro 5 </td>
+      </tr>
+      <tr>
+       <td>Beschleunigung (0–100 km/h in Sek.)</td>
+       <td></td>
+       <td>10,6 sec.</td>
+      </tr>
+      <tr>
+       <td>CO2-Effizienz**</td>
+       <td>En-Eff.Klasse**</td>
+       <td>E </td>
+      </tr>
+      <tr>
+       <td>CO2-Emissionen kombiniert*</td>
+       <td></td>
+       <td>175 g/km</td>
+      </tr>
+      <tr>
+       <td>Höchstgeschwindigkeit</td>
+       <td></td>
+       <td>205 km/h</td>
+      </tr>
+      <tr>
+       <td>Kraftstoffart</td>
+       <td></td>
+       <td>Super, bleifrei </td>
+      </tr>
+      <tr>
+       <td>Kraftstoffverbrauch*</td>
+       <td>außerorts</td>
+       <td>5,8 l/100km</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>innerorts</td>
+       <td>10,6 l/100km</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>kombiniert</td>
+       <td>7,6 l/100km</td>
+      </tr>
+      <tr>
+       <td>Tankinhalt</td>
+       <td></td>
+       <td>55 l</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Kraftübertragung</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Getriebe:</td>
+       <td></td>
+       <td>5-Stufen Activematic </td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Lenkung</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Lenkgetriebe</td>
+       <td></td>
+       <td>Elektrohydraulische Servolenkung </td>
+      </tr>
+      <tr>
+       <td>Wendekreisdurchmesser</td>
+       <td></td>
+       <td>10,9 m</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Maße und Gewichte</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Fahrzeuglänge/-breite/-höhe, mm:</td>
+       <td></td>
+       <td>4.460/1.755/1.470 mm</td>
+      </tr>
+      <tr>
+       <td>Kofferraumvolumen, l nach VDA</td>
+       <td></td>
+       <td>340 (300 i.V. mit Bose) l</td>
+      </tr>
+      <tr>
+       <td>Leergewicht einschl. Fahrer (75 kg)</td>
+       <td></td>
+       <td>1.342 - 1.388 kg</td>
+      </tr>
+      <tr>
+       <td>Max. Anhängelast</td>
+       <td>gebremst 12 % Steigung</td>
+       <td>1.300 kg</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>gebremst 8 % Steigung</td>
+       <td>1.600 kg</td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>ungebremst</td>
+       <td>550 kg</td>
+      </tr>
+      <tr>
+       <td>Maximale Dach-/Stützlast</td>
+       <td></td>
+       <td>75/75 kg</td>
+      </tr>
+      <tr>
+       <td>Radstand</td>
+       <td></td>
+       <td>2.640 mm</td>
+      </tr>
+      <tr>
+       <td>Zulässiges Gesamtgewicht</td>
+       <td></td>
+       <td>1.835 kg</td>
+      </tr>
+   </table>
+</div>
+<h3 class="accordion-header">Motor</h3>
+<div>
+   <table class="accordion-table">
+      <tr>
+       <td>Anzahl Zylinder / Anzahl Ventile</td>
+       <td></td>
+       <td>4 / 16 </td>
+      </tr>
+      <tr>
+       <td>Bohrung x Hub</td>
+       <td></td>
+       <td>87,5 x 83,1 mm</td>
+      </tr>
+      <tr>
+       <td>Hubraum</td>
+       <td></td>
+       <td>1.999 cm3</td>
+      </tr>
+      <tr>
+       <td>Max. Drehmoment</td>
+       <td></td>
+       <td>187 / 4.000 Nm / rpm</td>
+      </tr>
+      <tr>
+       <td>Nennleistung</td>
+       <td></td>
+       <td>110 (150) / 6.500 kW (PS) / rpm</td>
+      </tr>
+      <tr>
+       <td>Verdichtungsverhältnis</td>
+       <td></td>
+       <td>10,0 </td>
+      </tr>
+   </table>
+</div>

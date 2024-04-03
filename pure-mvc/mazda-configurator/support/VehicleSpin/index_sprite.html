@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-type="example" data-id="object-movie-animation-sprite">
+  <head>
+    <title>Mazda Vehicle 360 Spin</title>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-type' />
+
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src='http://code.vostrel.cz/jquery.reel-1.2.1-bundle.js' type='text/javascript'></script>
+
+    <!-- Common examples style (gray background, thin fonts etc.) -->
+
+  </head>
+  <body>
+    <h1>Mazda 360</h1>
+
+    <img id="image" src='resources/images/M6%20New/Renders/Base/m6_base_sedan_frame_1.png' width="1436" height="580" />
+    <script>
+      $(function(){ // when DOM ready
+
+        $('#image').reel({
+         // indicator:   5, // For no indicator just remove this line
+          frames:      25,
+          frame:       1,
+         // footage:     4,
+          image:      'resources/images/M6%20New/Renders/Base/m6_base_sedan.png',
+         // speed:       0.4,
+          //looping: false
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
+

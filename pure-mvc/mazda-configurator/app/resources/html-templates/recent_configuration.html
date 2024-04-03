@@ -1,0 +1,6 @@
+<% _.each(items, function(item, index) { %>
+    <div id="<%= item.vehicleId %>" class="column4 recent-configuration">
+        <img class="template-image" src="<%= item.imageUrl %>" width="205px"/>
+        <h3 class="vehicle-name"><%= item.vehicleNiceName %></h3>
+    </div>
+<% }); %>

@@ -1,0 +1,190 @@
+{
+    "LOCALE_CODE": "en-gb",
+
+    "MARKET_HOME_PAGE": "http://www.mazda.co.uk/",
+
+    "OPTIONAL_ACCESSORIES": "Optional Accessories",
+
+    "OPTION_PACKS": "Option Packs",
+
+    "DEALER_LOCATOR_LINK": "https://www.mazda.co.uk/find-a-dealer/",
+    "DEALER_LOCATOR_TEXT": "Locate Dealer",
+    "DEALER_LOCATOR_TITLE": "Locate Nearest Dealer",
+
+    "OFFERS_LINK": "http://www.mazda.co.uk/",
+    "OFFERS_TEXT": "View Offers",
+    "OFFERS_TITLE": "Offers",
+
+    "FINANCE_CALCULATOR_LINK": "http://mazda-uk-financecalculator-dev.azurewebsites.net/#/index",
+    "FINANCE_CALCULATOR_TEXT": "Finance Calculator",
+    "FINANCE_CALCULATOR_TITLE": "Finance Calculator",
+
+    "MODEL_DATA_LOCATION": {
+        "path": "resources/locale/en-gb/",
+        "extension": ".json"
+    },
+
+    "SPECIFICATION_LOCATION": "resources/locale/en-gb/[[vehicleId]]/specifications/",
+
+    "VEHICLE_IMAGES_LOCATION": "resources/locale/en-gb/[[vehicleId]]/images/exterior/",
+    "INTERIOR_IMAGES_LOCATION": "resources/locale/en-gb/[[vehicleId]]/images/interior/",
+    "APPLICATION_IMAGE_BASE_PATH": "resources/locale/en-gb/images/",
+    "VEHICLE_SPECIFIC_IMAGE_BASE_PATH": "resources/locale/en-gb/[[vehicleId]]/images/",
+
+
+    "CURRENCY_SYMBOL": "£",
+    "THOUSAND_DELIMINATOR": ",",
+    "CURRENCY_PRECISION": "2",
+    "DECIMAL_DELIMINATOR": ".",
+
+    "VEHICLE_PARTS": {
+        "BODYSTYLE": "bodyStyle",
+        "GRADE": "grade",
+        "ENGINE": "engine",
+        "COLOUR": "colour",
+        "WHEEL": "wheel",
+        "TRIM": "trim",
+        "OPTIONPACKS": "optionpacks",
+        "ACCESSORIES": "accessories"
+    },
+
+    "SUMMARY": "summary",
+
+    "DEFAULT_MODEL_THUMBNAILS": {
+        "M2": "resources/locale/en-gb/images/model_thumnbnail/mazda2.png",
+        "M3": "resources/locale/en-gb/images/model_thumnbnail/mazda3.png",
+        "M5": "resources/locale/en-gb/images/model_thumnbnail/mazda5.png",
+        "M6": "resources/locale/en-gb/images/model_thumnbnail/mazda6.png",
+        "MX5": "resources/locale/en-gb/images/model_thumnbnail/mazdamx5.png",
+        "CX5": "resources/locale/en-gb/images/model_thumnbnail/mazdacx5.png",
+        "CX7": "resources/locale/en-gb/images/model_thumnbnail/mazdacx7.png"
+    },
+
+    "SWATCHES": "resources/locale/en-gb/[[vehicleId]]/images/ui/",
+
+    "LANGUAGE": {
+
+        "model": "Model",
+        "bodyStyle": "Bodystyle",
+        "grade": "Grade",
+        "engine": "Engine",
+        "trim": "Trim",
+        "colour": "Colour",
+        "wheel": "Wheel",
+        "summary": "Summary",
+        "accessories": "Accessories",
+
+        "disclaimers": {
+            "Default": {
+                "grades": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "engines": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "colours": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "wheels": "Model shown may not be to Mazda UK specification. Changing the wheel size will require new tyres at an additional cost. Price quoted is for replacement alloy wheels only. An increase or decrease in the diameter of the wheels fitted to your vehicle will also necessitate the fitment of new tyres at additional cost to that displayed here.",
+                "trims": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model.",
+                "accessories": "Model shown may not be to Mazda UK specification. Colours and some exterior and/or interior elements may differ on screen from the actual model."
+            }
+        },
+
+        "Date": "Date",
+
+        "M2": "Mazda2",
+        "M3": "Mazda3",
+        "M5": "Mazda5",
+        "M6": "Mazda6",
+        "MX5": "Mazda MX-5",
+        "CX5": "Mazda CX-5",
+        "CX7": "Mazda CX-7",
+
+        "NO_MATCHING_VEHICLES": "No Matching Vehicles",
+
+        "ENGINE": {
+            "POWER_SUFFIX": "ps",
+            "Automatic": "Automatic",
+            "Manual": "Manual"
+        },
+
+        "PDF": {
+            "DOCUMENT_FILENAME": "[modelName]Summary.pdf",
+            "DOCUMENT_TITLE": "Your Configured Mazda",
+            "INTERIOR_TITLE": "Interior",
+            "EXTERIOR_TITLE": "Exterior",
+            "ACCESSORIES_TITLE": "Options and Accessories",
+            "TECHNICAL_DATA_TITLE": "Technical Data",
+            "TRIM_TITLE": "Interior Trim",
+            "PRINT_DESCRIPTION": "Congratulations on configuring your new [vehicle name]. Here’s a summary showing the standard features and optional accessories you have chosen.",
+            "SUMMARY_DISCLAIMER": "Model shown may not be to Mazda Motors UK specification. Mazda Motors UK Limited reserves the right to introduce changes in specification and equipment due to its ongoing product development. colour and exterior and/or interior elements may differ on screen from the actual specification. *Metallic/Mica paint and dealer related charges extra. All new Mazda cars come with a 3 year or 100,000km manufacturer warranty and 3 years' European Roadside Assistance. Prices quoted for optional accessories and optional wheel do not include labour or associated costs, please consult your local Mazda Dealer. Bose® and Centerpoint® are registered trademarks of Bose Corporation in the U.S. and other countries. Used with permission.  The Bluetooth® word mark and logos are owned by the Bluetooth SIG, Inc. and any use of such marks by Mazda  Motor Company is under licence. Other trademarks and trade names are those of their respective owners.",
+            "STANDARD_FEATURES": "Standard Features"
+        },
+
+        "SPECIFICATION_SUMMARY_COPYRIGHT": "© Copyright Mazda Motors UK",
+
+        "SELECT": "Select",
+
+        "PRICE_TYPE_FULL": "On the Road",
+        "PRICE_TYPE_ACRONYM": "OTR",
+        "PRICE_DISCLAIMER": "On the road includes number plates, delivery, 12 months' road fund licence, 1st Registration fee, 3 year or 60,000 mile warranty and three years' Road Side Assistance.",
+
+        "SHOW_MORE": "Show More",
+        "CHANGE_MODEL": "Change Model",
+
+        "RECENT_CONFIGURATIONS": "Recent configurations",
+        "RECENT_CONFIGURATIONS_BODY": "Use the links to view recent configuration on other devices",
+
+        "CHANGE_GRADE": "Change Grade",
+
+        "NO_COST_OPTION": "No Cost",
+
+        "UNDO": "Undo",
+        "PRICE": "Price",
+        "FROM": "From",
+        "ACCEPT": "Accept",
+        "INFO": "Info",
+        "CONFLICT_PROMPT": "Your [[configurableType]] has changed to [[conflictValue]]",
+
+        "CURRENT_CONFIGURATION": "Current Configuration",
+
+        "NEW_CONFIGURATION": "New Configuration",
+
+        "OVERVIEW": "Overview",
+        "NEAREST_DEALER": "Nearest Dealer",
+
+        "EDIT_YOUR_CONFIGURATION": "Edit your configuration",
+        "STANDARD_FEATURES": "Standard Features",
+        "COMFORT_AND_CONVENIENCE": "Comfort and Convenience",
+        "EXTERIOR": "Exterior",
+        "INTERIOR": "Interior",
+        "SAFETY_AND_SECURITY": "Safety and Security",
+        "NOT_AVAILABLE": "Not available",
+
+        "TECHNICAL_DATA": "Technical Data",
+
+        "ACCESSORIES": "Accessories",
+
+        "BOOT_TEXT_SEQUENCE": [
+            "Calculating vehicle matrix",
+            "Marking out grades",
+            "Assembling engines",
+            "Rendering colour",
+            "Moulding wheel",
+            "Texturising trim",
+            "Garaging vehicle"
+        ],
+
+        "OPTIONAL": "Optional",
+        "STANDARD": "Standard",
+
+        "DEALER_LOCATOR_TITLE": "Locate Nearest Dealer",
+        "GO": "Go",
+
+        "LOADING_IMAGE": "Loading image",
+        "LOADING_PDF": "Loading PDF",
+
+        "DOWNLOAD_PRINT_SAVE": "Download, Print, Share",
+
+        "REMOVE": "Remove",
+
+        "ADD": "Add",
+
+        "NO_ACCESSORIES_AND_OPTIONPACKS_MESSAGE": "Your current grade choice does not any accessories or option packs available."
+    }
+}

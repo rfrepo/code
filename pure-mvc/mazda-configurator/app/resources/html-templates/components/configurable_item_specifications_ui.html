@@ -1,0 +1,45 @@
+<section class="configurable-item-specification">
+
+    <div class="accordion">
+
+        <% _.each(sections, function(data, index) { %>
+
+        <h3 class="accordion-header"><%= data.title %></h3>
+
+        <div>
+
+            <table class="accordion-table title-table">
+
+                <% _.each(data.table.rows, function(row, index) { %>
+
+                <tr>
+                    <td><%= row.title %></td>
+                </tr>
+
+                <% }); %>
+
+            </table>
+
+            <table  class="accordion-table scroll-target">
+
+                <% _.each(data.table.rows, function(row, index) { %>
+
+                <tr>
+                    <td><span></span><%= row.title %></td>
+
+                    <% _.each(row.values, function(value){ %>
+
+                    <td><span></span><%= cellRenderer({value:value}) %></td>
+
+                    <% }); %>
+                </tr>
+
+                <% }); %>
+
+            </table>
+
+        </div>
+
+        <% }); %>
+    </div>
+</section>

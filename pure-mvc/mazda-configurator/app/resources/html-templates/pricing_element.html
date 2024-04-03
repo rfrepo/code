@@ -1,0 +1,14 @@
+<% var postcode = bmc.support.GlobalConfig.getInstance().LOCALE_POSTCODE %>
+<div id="vehiclePricing" class="vehicle-price">
+    <h2 class="price-value"></h2>
+
+    <% if(postcode) {%>
+    <p class="postcode"><%= postcode %> </p>
+    <% } %>
+    <p class="otr"><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.PRICE_TYPE_FULL %>
+        <span class="disclaimer-button"></span>
+    </p>
+    <div class="disclaimer disclaimer-hidden">
+        <p><%= bmc.support.GlobalConfig.getInstance().LANGUAGE.PRICE_DISCLAIMER %></p>
+    </div>
+</div>
