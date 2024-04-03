@@ -10,6 +10,9 @@ ___
 5. [Electron](#electron)
 6. [Browser Extension](#browserextensions)
 
+<br/>
+<br/>
+
 <div id="react"/> 
 # React
 Mobile first responsive desktop components and features
@@ -50,7 +53,8 @@ https://github.com/rfrepo/code/assets/160714309/37cc7d2c-019b-458d-a944-040e6fef
 <br/>
 <br/>
 
-#  <a name="angular"/> Angular
+<div id="angular"/>
+# Angular
 
 Angular components and directives, spanning from the earlier versions 1 and 2
 ___
@@ -58,7 +62,8 @@ ___
 <br/>
 <br/>
 
-#  <a name="puremvc"/> PureMVC
+<div id="puremvc"/>
+# PureMVC
 
 __Mazda Configurator__ - *desktop web experience*
 
@@ -75,7 +80,8 @@ ___
 <br/>
 <br/>
 
-#  <a name="electron"/> Electron
+<div id="electron"/>
+# Electron
 
 __FontFace__ personal project simplifying font selection/visualisation by browsing and previewing all locally installed fonts
 
@@ -85,7 +91,8 @@ ___
 <br/>
 <br/>
 
-#  <a name="browserextensions"/> Browser Extensions
+<div id="browserextensions"/>
+# Browser Extensions
 
 __Bookmark Search__ - personal project Chrome extension for searching through bookmarks.
 
