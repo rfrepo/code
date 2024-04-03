@@ -1,18 +1,16 @@
 ___
 This repository houses a collection of features and code from various previous engagements, each showcasing expertise across different frameworks and platforms. It emphasizes clean code, design patterns, and reuse while prioritising the end user's experience.
 ___
-### React 
+## React 
 Mobile first responsive desktop components and features
-___
 
 Feature : **Sign up & detail management**
 
 https://github.com/rfrepo/code/assets/160714309/11369b19-42ed-433f-b41e-289c08f7b3a1
 
 ___
-### React Native 
+## React Native 
 Native mobile apps with React
-___
 
 Feature : **Bitcoin Buying**
 
@@ -31,14 +29,12 @@ Feature : __Withdraw Funds__
 https://github.com/rfrepo/code/assets/160714309/37cc7d2c-019b-458d-a944-040e6fefbf8f
 ___
 
-### Angular
-___
+## Angular
 
 Angular components and directives, spanning from the earlier versions 1 and 2
 ___
 
-### PureMVC
-___
+## PureMVC
 
 __Mazda Configurator__ - *desktop web experience*
 
@@ -49,16 +45,14 @@ __Mazda Configurator__ - *adaptive web mobile experience*
 https://github.com/rfrepo/code/assets/160714309/a0d470b7-d86d-4ebe-ac28-645081b60a88
 
 ___
-### Electron
-___
+## Electron
 
 __FontFace__ personal project simplifying font selection/visualisation by browsing and previewing all locally installed fonts
 
 https://github.com/rfrepo/code/assets/160714309/3056776e-34ce-4458-9f9e-f8d8f35db2cb
 
 ___
-### Browser Extension
-___
+## Browser Extension
 
 __Bookmark Search__ - personal project Chrome extension for searching through bookmarks.
 
