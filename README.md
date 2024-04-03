@@ -2,7 +2,7 @@
 This repository houses a collection of features and code from various previous engagements, each showcasing expertise across different frameworks and platforms. It emphasizes clean code, design patterns, and reuse while prioritising the end user's experience.
 ___
 
-# Table of Contents
+#Table of Contents
 1. [React](#react)
 2. [React Native](#reactnative)
 3. [Angular](#angular)
@@ -13,8 +13,8 @@ ___
 <br/>
 <br/>
 
-<div id="react"/> 
-# React
+<a name="react"/> 
+#React
 Mobile first responsive desktop components and features
 
 Feature : **Sign up details**
@@ -25,8 +25,8 @@ ___
 <br/>
 <br/>
 
-<div id="reactnative"/>
-# React Native
+<a name="reactnative"/>
+#React Native
 
 Feature : **Bitcoin Buying**
 
@@ -53,8 +53,8 @@ https://github.com/rfrepo/code/assets/160714309/37cc7d2c-019b-458d-a944-040e6fef
 <br/>
 <br/>
 
-<div id="angular"/>
-# Angular
+<a name="angular"/>
+#Angular
 
 Angular components and directives, spanning from the earlier versions 1 and 2
 ___
@@ -62,8 +62,8 @@ ___
 <br/>
 <br/>
 
-<div id="puremvc"/>
-# PureMVC
+<a name="puremvc"/>
+#PureMVC
 
 __Mazda Configurator__ - *desktop web experience*
 
@@ -80,8 +80,8 @@ ___
 <br/>
 <br/>
 
-<div id="electron"/>
-# Electron
+<a name="electron"/>
+#Electron
 
 __FontFace__ personal project simplifying font selection/visualisation by browsing and previewing all locally installed fonts
 
@@ -91,8 +91,8 @@ ___
 <br/>
 <br/>
 
-<div id="browserextensions"/>
-# Browser Extensions
+<a name="browserextensions"/>
+#Browser Extensions
 
 __Bookmark Search__ - personal project Chrome extension for searching through bookmarks.
 
