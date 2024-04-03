@@ -3,8 +3,6 @@ ___
 This repository houses a collection of features and code from various previous engagements, each showcasing expertise across different frameworks and platforms. It emphasizes clean code, design patterns, and reuse while prioritising the end user's experience.
 ___
 
-<br/>
-
 ## Content
 
 1. [React](#react)
@@ -14,7 +12,6 @@ ___
 5. [Electron](#electron)
 6. [Browser Extension](#browserextensions)
 
-<br/>
 <br/>
 
 <a name="react"></a> 
