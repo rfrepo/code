@@ -1,8 +1,12 @@
+___
 
 This repository houses a collection of features and code from various previous engagements, each showcasing expertise across different frameworks and platforms. It emphasizes clean code, design patterns, and reuse while prioritising the end user's experience.
 ___
 
-#Table of Contents
+<br/>
+
+## Content
+
 1. [React](#react)
 2. [React Native](#reactnative)
 3. [Angular](#angular)
@@ -28,7 +32,11 @@ ___
 <a name="reactnative"><a/>
 # React Native
 
+<br/>
+
 Feature : **Bitcoin Buying**
+
+<br/>
 
 https://github.com/rfrepo/code/assets/160714309/2d57d337-d86a-4db2-b051-b38e36b0dfc5
 
@@ -36,11 +44,15 @@ https://github.com/rfrepo/code/assets/160714309/2d57d337-d86a-4db2-b051-b38e36b0
 
 Feature : __Spin Squad__ *(referral program)*
 
+<br/>
+
 https://github.com/rfrepo/code/assets/160714309/09221356-1cdb-477c-a579-03e27d66c81a
 
 <br/>
 
 Feature : __Spin Wheel__
+
+<br/>
 
 https://github.com/rfrepo/code/assets/160714309/0014b1ee-6aba-45a9-a960-ada6c38ec899
 
@@ -48,7 +60,10 @@ https://github.com/rfrepo/code/assets/160714309/0014b1ee-6aba-45a9-a960-ada6c38e
 
 Feature : __Withdraw Funds__
 
+<br/>
+
 https://github.com/rfrepo/code/assets/160714309/37cc7d2c-019b-458d-a944-040e6fefbf8f
+___
 
 <br/>
 <br/>
