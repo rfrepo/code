@@ -1,0 +1,25 @@
+<script id="/rf-validation-error-display.html" type="text/ng-template">
+
+    <div panel-style="error"
+         panel-has-tail
+         rf-notification-panel
+         ng-show="isVisible()">
+
+        <p>{{getErrorMessage()}}</p>
+
+    </div>
+
+</script>
+
+<script id="/rf-notification-panel.html" type="text/ng-template">
+
+    <div ng-class="{'tail': panelHasTail, 'icon':panelHasIcon}"
+         class="notification-panel notification-panel--{{panelStyle}}">
+
+        <i ng-if="panelHasIcon"
+           class="notification-panel__icon icon--{{panelStyle}}"></i>
+
+        <div class="notification-panel__content" ng-transclude></div>
+    </div>
+
+</script>

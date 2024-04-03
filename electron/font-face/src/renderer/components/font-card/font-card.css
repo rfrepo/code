@@ -1,0 +1,51 @@
+
+.card {
+    z-index: 0;
+    flex-grow: 1;
+    margin: 2rem;
+    width: 14rem;
+    color: #f1f2fd;
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    border-radius: .5rem;
+    box-sizing: content-box;
+    backdrop-filter: blur(4px);
+    border: 1px solid #2D304C;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.050),
+    0 2px 4px rgba(0, 0, 0, 0.050), 0 4px 8px rgba(0, 0, 0, 0.050),
+    0 8px 16px rgba(0, 0, 0, 0.050), 0 16px 32px rgba(0, 0, 0, 0.050), 0 32px 64px rgba(0, 0, 0, 0.050);
+}
+
+
+.card hgroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.card-heading {
+    border-bottom: rgba(211, 211, 211, .2) 1px solid;
+}
+
+.card-heading * {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: .6rem;
+    text-align: left;
+    text-wrap: normal;
+    border-radius: 2rem;
+    padding: .3rem 1.4rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .6);
+    background: rgba(27, 29, 46, .4);
+    font-family: "Roboto Regular", sans-serif;
+}
+
+.sample-text-container {
+    padding: 0 .5rem;
+    color: rgba(255, 255, 255, .9);
+    border-bottom: 1px solid rgba(211, 211, 211, .2);
+}

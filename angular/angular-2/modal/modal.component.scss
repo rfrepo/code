@@ -1,0 +1,47 @@
+@import "../../../../styles/__base/variables";
+
+.modal,
+.modal__black-out {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: $modal-zIndex;
+}
+
+.modal__black-out {
+  opacity: .3;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: $color-black;
+}
+
+.modal__content {
+  position: relative;
+  text-align: center;
+  z-index: $modal-zIndex + 1;
+}
+
+.centered-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  white-space: nowrap;
+
+  &::before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.centered-content {
+  position: relative;
+  white-space: normal;
+  display: inline-block;
+  vertical-align: middle;
+}

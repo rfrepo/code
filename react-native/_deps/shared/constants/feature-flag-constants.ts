@@ -1,0 +1,5 @@
+export const MY_SPIN_SQUAD = 'my_spin_squad'
+export const FOLD_CARD_TRANSACTION_FEES = 'fold_card_tx_fees'
+export const FOLD_PHYSICAL_CARD = 'fold_physical_card'
+export const FORTRESS_MIGRATION_AGREEMENT = 'fortress_migration_agreement'
+export const CARD_BOOSTS = 'card_boosts'

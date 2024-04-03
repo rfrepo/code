@@ -1,0 +1,226 @@
+@mixin createArrow($border-width, $color) {
+
+  width: 0;
+  top: 100%;
+  height: 0;
+  left: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: $color;
+  border-width: $border-width;
+
+  @if $border-width == 7px {
+    margin-left: 1px;
+    margin-top: -1px;
+  }
+}
+
+@mixin createTail($border-color, $background-color) {
+
+  &.tail {
+
+    &::before {
+      @include createArrow(8px, $border-color);
+    }
+
+    &::after {
+      @include createArrow(7px, $background-color);
+    }
+  }
+}
+
+.notification-panel {
+
+  @include rem(padding, 15px 10px 7px 10px);
+  @include rem(margin-bottom, 20px);
+
+  background: $color__brand--white;
+  border: 1px solid $color__brand--black;
+  position: relative;
+
+  @include media-query-small {
+    @include rem(padding, 17px 25px 17px 17px);
+  }
+
+  &.icon {
+    @include rem(padding-left, 54px);
+  }
+
+  &.notification-panel--no-margin {
+    @include rem(margin-bottom, 0);
+  }
+
+  &.notification-panel--change-address-msg {
+    @include rem(margin-bottom, 24px);
+  }
+
+  p {
+
+    @include media-query-small {
+      margin: 0;
+    }
+  }
+}
+
+.notification-panel--information {
+
+  background: $color__brand--warning-bg;
+  border: 1px solid $color__brand--warning;
+
+  &.tail {
+
+    &::before {
+      @include createArrow(8px, $color__brand--warning);
+    }
+
+    &::after {
+      @include createArrow(7px, $color__brand--warning-bg);
+    }
+  }
+}
+
+.notification-panel--error {
+
+  background: $color__brand--error-bg;
+  border: 1px solid $color__brand--error;
+
+  &.tail {
+
+    &::before {
+      @include createArrow(8px, $color__brand--error);
+    }
+
+    &::after {
+      @include createArrow(7px, $color__brand--error-bg);
+    }
+  }
+}
+
+.notification-panel--success {
+
+  background: $color__brand--success-bg;
+  border: 1px solid $color__brand--success;
+
+  &.tail {
+
+    &::before {
+      @include createArrow(8px, $color__brand--success);
+    }
+
+    &::after {
+      @include createArrow(7px, $color__brand--success-bg);
+    }
+  }
+}
+
+.notification-panel__item--em,
+.notification-panel__product-title {
+  font-weight: bold;
+}
+
+.notification-panel__icon {
+
+  @include rem(top, 15px);
+  @include rem(left, 10px);
+  @include rem(font-size, 26px);
+
+  display: none;
+  position: absolute;
+
+  @include media-query-small {
+    @include rem(left, 15px);
+  }
+
+  [class*='notification-panel--'] & {
+    display: block;
+  }
+
+  .notification-panel--error & {
+    color: $color__brand--error;
+  }
+
+  .notification-panel--success & {
+    color: $color__brand--success;
+  }
+
+  .notification-panel--information & {
+    color: $color__brand--warning;
+  }
+}
+
+.notification-panel__close {
+
+  @include rem(padding, 10px);
+  @include rem(font-size, 20px);
+
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.notification-panel__title {
+
+  @include rem(font-size, 16px);
+  @include rem(margin, 0 0 12px 0);
+
+  font-family: $font__helvetica--light;
+
+  @include media-query-small {
+    @include rem(font-size, 18px);
+  }
+
+  .notification-panel--error & {
+    color: $color__brand--error;
+  }
+
+  .notification-panel--success & {
+    color: $color__brand--black;
+  }
+
+  .notification-panel--information & {
+    color: $color__brand--black;
+  }
+
+}
+
+.notification-panel__content {
+
+  @include rem(font-size, 14px);
+  @include rem(line-height, 22px);
+
+  font-family: $font__helvetica--roman;
+
+  .notification-panel--error & {
+    color: $color__brand--error;
+  }
+
+  .notification-panel--success & {
+    color: $color__brand--dark-grey;
+  }
+
+  .notification-panel--information & {
+    color: $color__brand--dark-grey;
+  }
+
+  ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.notification-panel__link {
+
+  @include rem(padding-left, 9px);
+  @include rem(padding-right, 9px);
+}
+
+.notification-panel__cta-links {
+
+  top: 0;
+  right: 0;
+  position: absolute;
+}

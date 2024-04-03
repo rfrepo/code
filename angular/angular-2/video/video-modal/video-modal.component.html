@@ -1,0 +1,26 @@
+<div class="video-modal">
+  <!--<div class="video-modal__header">
+
+    <div class="video-modal__back-button" appCloseModal>
+      <i class="material-icons">keyboard_backspace</i>
+    </div>
+
+    <h1>{{data.content.title}}</h1>
+
+    <div class="video-modal__social">
+      <a href><i class="material-icons">_share</i></a>
+    </div>
+  </div>-->
+
+  <div class="video-modal__close-button" appCloseModal>
+    <i class="material-icons">close</i>
+  </div>
+
+  <app-video-player
+    [title]="data.content.title"
+    [dimensions]="data.dimensions"
+    [video_url]="data.content.videoId"
+    (playerStateChange)="handlePlayerStateChange($event)">
+  </app-video-player>
+
+</div>

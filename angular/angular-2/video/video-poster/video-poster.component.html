@@ -1,0 +1,36 @@
+<script src="../video-asset/states/inline-video-state.service.ts"></script>
+<div class="video-poster">
+  <!--
+       [style.background-image]="'url(' + content.imageURL + ')'">
+  -->
+
+  <div class="video-poster__meta" *ngIf="showMeta">
+    <div class="video-poster__content-icon">
+      <i class="material-icons">videocam</i>
+      Video
+    </div>
+
+    <div class="video-poster__access-time">
+      <i class="material-icons">access_time</i>
+      {{content.eta}} min
+    </div>
+
+    <div class="video-poster__social">
+      <a href><i class="material-icons">share</i></a>
+    </div>
+  </div>
+
+  <h1 class="video-poster__title" *ngIf="showMeta">{{content.title}}</h1>
+
+  <div class="video-poster__cta"
+       *ngIf="isPlayButtonVisible"
+       (click)="requestPlayOut($event)"
+       [ngClass]="{'no-meta':!showMeta}">
+    <i class="material-icons">play_circle_outline</i>
+  </div>
+
+  <img [alt]="title"
+       [src]="image_url"
+       [style.width.px]="dimensions.width"
+       [style.height.px]="dimensions.height"/>
+</div>

@@ -1,0 +1,22 @@
+.video-modal {
+  text-align: left;
+  display: inline-block;
+
+  &__close-button {
+    top: -5%;
+    width: 30px;
+    right: -3%;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    color: $color-white;
+    border-radius: 100px;
+    background: $color-black;
+
+    .material-icons {
+      line-height: 3.1rem;
+      font-size: 1.8rem;
+    }
+  }
+}

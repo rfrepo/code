@@ -1,0 +1,34 @@
+<script id="/carousel.html" type="text/ng-template">
+    <div class="carousel">
+        <div class="carousel__content">
+            <div ng-transclude></div>
+        </div>
+    </div>
+    <div class="carousel__button-container">
+    </div>
+</script>
+
+<script id="/previous-btn.html" type="text/ng-template">
+
+    <div class="carousel__btn--previous"
+         ng-mouseover="previousBtnVM.showPageInfo = true"
+         ng-mouseleave="previousBtnVM.showPageInfo = false"
+         ng-class="{ 'carousel__btn--disabled' : !previousBtnVM.isVisible() }">
+
+        <i class="icon-arrow"></i>
+
+        <p ng-bind="previousBtnVM.getPagingText()" ng-if="previousBtnVM.showPageInfo"></p>
+    </div>
+</script>
+
+<script id="/next-btn.html" type="text/ng-template">
+    <div class="carousel__btn--next"
+         ng-mouseover="nextBtnVM.showPageInfo = true"
+         ng-mouseleave="nextBtnVM.showPageInfo = false"
+         ng-class="{ 'carousel__btn--disabled' : !nextBtnVM.isVisible()}">
+
+        <p ng-bind="nextBtnVM.getPagingText()" ng-if="nextBtnVM.showPageInfo"></p>
+
+        <i class="icon-arrow"></i>
+    </div>
+</script>

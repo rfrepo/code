@@ -1,0 +1,39 @@
+.dropdown {
+  @extend %clearfix;
+  @include rem(padding, 10px 20px);
+  @include rem(width, 230px);
+  display: none;
+  background: $color__brand--white;
+  float: left;
+
+  @include media-query-xsmall {
+    display: block;
+    border: 1px solid $color__brand--black;
+    position: relative;
+  }
+
+  @include media-query-medium {
+    position: relative;
+    top: -1px;
+  }
+
+  a {
+    @include rem(padding, 7px 0);
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.dropdown__panel-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-table;
+  padding-top: 2px;
+  top: -1px;
+  width: 100%;
+  z-index: 999;
+}

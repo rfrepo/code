@@ -1,0 +1,66 @@
+.carousel {
+  overflow: hidden;
+}
+
+.carousel__content {
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.carousel__btn {
+  left: -1%;
+  top: -96px;
+  padding: 3px;
+  cursor: pointer;
+  display: table;
+  position: relative;
+  user-select: none;
+  background: $color__brand--white;
+  font-family: $font__helvetica--roman;
+  border: $color__brand--light-grey 1px solid;
+
+  p {
+    display: inline;
+    padding: 0 3px;
+  }
+
+}
+
+.carousel__btn--next {
+  @extend .carousel__btn;
+  left: 95.5%;
+  top: -120px;
+
+  .icon-arrow {
+
+    &::before {
+      top: 1px;
+      content: '\e60f';
+      margin: 0 5px;
+      position: relative;
+    }
+  }
+}
+
+.carousel__btn--previous {
+  @extend .carousel__btn;
+
+  .icon-arrow {
+
+    &::before {
+      top: 1px;
+      position: relative;
+      content: '\e60f';
+      display: inline-block;
+      margin: 0 5px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.carousel__btn--disabled {
+  pointer-events: none;
+}

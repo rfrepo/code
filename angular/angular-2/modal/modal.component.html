@@ -1,0 +1,12 @@
+<div class="modal" *ngIf="shouldShow()">
+
+  <div class="modal__content">
+    <div class="centered-wrapper" appCloseModal>
+      <div class="centered-content">
+        <app-component-renderer [configurationVO]="getConfigurationVO()"></app-component-renderer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__black-out"></div>
+</div>

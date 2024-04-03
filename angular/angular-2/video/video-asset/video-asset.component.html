@@ -1,0 +1,21 @@
+<div class="video-asset">
+  <app-video-poster
+    [title]="title"
+    [image_url]="image_url"
+    [dimensions]="dimensions"
+    *ngIf="isPosterVisible"
+    (playOutRequested)="handlePlayOutRequest()"
+    [ngClass]="{'no-video':!isPlayerVisible}"
+    [isPlayButtonVisible]="isPlayButtonVisible">
+  </app-video-poster>
+
+  <app-video-player
+    [title]="title"
+    [video_url]="video_url"
+    [dimensions]="dimensions"
+    *ngIf="isPlayerVisible"
+    (playerReady)="handlePlayerReady()"
+    (playerStateChange)="handlePlayerStateChange($event)">
+  </app-video-player>
+
+</div>
