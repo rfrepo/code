@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0;url=https://drive.google.com/file/d/1xV5pFqgR7z8rzwLoHiWPCjsBxu_dcqh6/view?usp=sharing">
-  <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
 </head>
 <body>
-<p>If you are not redirected automatically, <a href="https://drive.google.com/file/d/1xV5pFqgR7z8rzwLoHiWPCjsBxu_dcqh6/view?usp=sharing">click here</a>.</p>
+<script>
+  const params = new URLSearchParams(window.location.search)
+
+  const redirectUrl = params.get('v') === 'sev1'
+    ? 'https://github.com/rfrepo/code'
+    : 'https://drive.google.com/file/d/1xV5pFqgR7z8rzwLoHiWPCjsBxu_dcqh6/view?usp=sharing'
+
+  setTimeout(() => {
+    window.location.href = redirectUrl
+  }, 3000)
+</script>
+<p>You are being redirected. If it doesn't happen automatically,
+    <a id="redirect-link" href="https://github.com/rfrepo/code">click here</a>.</p>
+
+<script>
+  document.getElementById('redirect-link').href = redirectUrl
+</script>
 </body>
 </html>
