@@ -4,14 +4,25 @@ This repository houses a collection of features and code from various previous e
 ___
 
 ## Content
+1. [AI harness TUI](#harness)
+2. [React](#react)
+3. [React Native](#reactnative)
+4. [Angular](#angular)
+5. [PureMVC](#puremvc)
+6. [Electron](#electron)
+7. [Browser Extension](#browserextensions)
 
-1. [React](#react)
-2. [React Native](#reactnative)
-3. [Angular](#angular)
-4. [PureMVC](#puremvc)
-5. [Electron](#electron)
-6. [Browser Extension](#browserextensions)
+<br/>
 
+<a name="harness"></a> 
+# Agent Harness TUI
+
+<br/>
+
+https://github.com/user-attachments/assets/c21518bb-2b4e-43b0-97d3-3e5f5b7cd612
+___
+
+<br/>
 <br/>
 
 <a name="react"></a> 
