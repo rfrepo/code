@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Enforcement Map — where a write actually gets stopped</title>
+<style>
+  :root{
+    --bg:#0d1117;--panel:#141a22;--panel2:#1a222c;--line:#26303d;
+    --ink:#e6edf3;--dim:#8b98a5;--faint:#5a6673;
+    --block:#3fb98a;--blockd:#1d5340;      /* code that refuses */
+    --report:#6ba8e8;--reportd:#22405e;    /* code that reports */
+    --prose:#d9a441;--prosed:#5c471c;      /* prose that asks */
+    --absent:#e0704a;--absentd:#5c2f1f;    /* nothing there */
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:44px 26px 80px}
+  .eyebrow{font:600 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-bottom:13px}
+  h1{margin:0 0 10px;font-size:28px;font-weight:650;letter-spacing:-.02em}
+  .sub{color:var(--dim);max-width:74ch;margin:0}
+  code{font:12.5px var(--mono);background:var(--panel2);padding:1px 5px;border-radius:3px;color:#9dc4ea}
+  .why{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--report);
+    border-radius:6px;padding:15px 19px;margin:24px 0 30px;color:var(--dim);font-size:14px}
+  .why b{color:var(--ink)}
+  h2{font-size:12px;font-family:var(--mono);font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--faint);margin:38px 0 14px;border-bottom:1px solid var(--line);padding-bottom:8px}
+
+  .legend{display:flex;gap:20px;flex-wrap:wrap;margin:0 0 22px;font:12px var(--mono);color:var(--dim)}
+  .legend span{display:flex;align-items:center;gap:7px}
+  .sw{width:11px;height:11px;border-radius:2px;display:inline-block}
+
+  .toggle{display:flex;margin:0 0 24px;border:1px solid var(--line);border-radius:7px;overflow:hidden;width:fit-content}
+  .toggle button{background:var(--panel);border:0;color:var(--dim);font:600 12.5px/1 var(--mono);
+    padding:10px 20px;cursor:pointer;border-right:1px solid var(--line);transition:.15s}
+  .toggle button:last-child{border-right:0}
+  .toggle button:hover{color:var(--ink);background:var(--panel2)}
+  .toggle button.on{background:var(--panel2);color:var(--ink)}
+
+  .lanes{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .lanes.solo{grid-template-columns:1fr;max-width:760px}
+  @media(max-width:900px){.lanes{grid-template-columns:1fr}}
+  .lane{border:1px solid var(--line);border-radius:9px;background:var(--panel);overflow:hidden}
+  .lane.hidden{display:none}
+  .lhead{padding:13px 17px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
+  .lhead .n{font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase}
+  .lhead .c{font:600 11px/1 var(--mono);color:var(--faint)}
+  .now .lhead{background:linear-gradient(90deg,rgba(224,112,74,.12),transparent)}
+  .now .lhead .n{color:var(--absent)}
+  .aft .lhead{background:linear-gradient(90deg,rgba(63,185,138,.12),transparent)}
+  .aft .lhead .n{color:var(--block)}
+
+  .chain{padding:14px 17px}
+  .cp{position:relative;padding:0 0 0 26px;margin-bottom:2px}
+  .cp:before{content:'';position:absolute;left:5px;top:20px;bottom:-6px;width:1px;background:var(--line)}
+  .cp:last-child:before{display:none}
+  .dot{position:absolute;left:0;top:6px;width:11px;height:11px;border-radius:50%;border:2px solid var(--bg)}
+  .row{padding:6px 0 12px}
+  .name{font:600 13px/1.4 var(--mono);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .tag{font:600 9.5px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;padding:3px 6px;border-radius:3px}
+  .t-block{background:var(--blockd);color:#bff0dc} .t-report{background:var(--reportd);color:#c3ddf7}
+  .t-prose{background:var(--prosed);color:#f2dda6} .t-absent{background:var(--absentd);color:#ffc4ae}
+  .meta{font:11.5px/1.55 var(--mono);color:var(--dim);margin-top:5px}
+  .meta em{color:var(--faint);font-style:normal}
+  .verdict{color:var(--block)} .no{color:var(--absent)}
+  .boundary{font:600 9.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+    margin:16px 0 8px;padding-top:12px;border-top:1px dashed var(--line)}
+  .boundary:first-child{border-top:0;padding-top:0;margin-top:0}
+
+  .punch{margin-top:32px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:22px 24px}
+  .punch h3{margin:0 0 16px;font:600 12px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
+  table{width:100%;border-collapse:collapse;font:12.5px/1.5 var(--mono)}
+  th{text-align:left;color:var(--faint);font-weight:600;font-size:10.5px;letter-spacing:.09em;
+    text-transform:uppercase;padding:8px 12px;border-bottom:1px solid var(--line)}
+  td{padding:9px 12px;border-bottom:1px solid rgba(38,48,61,.5);color:var(--dim)}
+  tr:last-child td{border-bottom:0}
+  td:first-child{color:var(--ink)}
+  .bar{display:inline-block;height:9px;border-radius:2px;vertical-align:middle;margin-right:7px}
+  .caveat{margin-top:28px;padding:15px 19px;border:1px solid var(--line);border-left:3px solid var(--prose);
+    border-radius:6px;background:var(--panel);color:var(--dim);font-size:13.5px}
+  .caveat b{color:var(--ink)}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--faint);font:11.5px/1.7 var(--mono)}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="eyebrow">Skills System Blueprint · enforcement</div>
+<h1>Where a write actually gets stopped</h1>
+<p class="sub">Every checkpoint between the agent deciding to change a file and that change reaching <code>main</code> — what fires it, what it can refuse, and whether it is code or a polite request.</p>
+
+<div class="why">
+  <b>Why not a call graph or a folder tree.</b> A call graph shows what invokes what — but four of these checkpoints are invoked by the <i>client</i>, not by your code, and two don't exist yet, so they'd have no node. A folder tree shows where files sit, not when they fire or what they refuse. Enforcement is neither topology nor layout: it's <b>a sequence of checkpoints between intent and effect</b>. So this is a gauntlet, annotated with authority.
+</div>
+
+<div class="legend">
+  <span><i class="sw" style="background:var(--block)"></i>code · refuses (exit 2)</span>
+  <span><i class="sw" style="background:var(--report)"></i>code · reports only</span>
+  <span><i class="sw" style="background:var(--prose)"></i>prose · asks nicely</span>
+  <span><i class="sw" style="background:var(--absent)"></i>nothing there</span>
+</div>
+
+<div class="toggle" id="tog">
+  <button data-v="now">Today</button>
+  <button data-v="aft">After phase 5.5</button>
+  <button data-v="both" class="on">Side by side</button>
+</div>
+
+<div class="lanes" id="lanes">
+
+<!-- ================= TODAY ================= -->
+<div class="lane now" id="l-now">
+  <div class="lhead"><span class="n">Today</span><span class="c">3 real · 2 partial · 5 absent</span></div>
+  <div class="chain">
+
+    <div class="boundary">Intent boundary — choosing what job this is</div>
+
+    <div class="cp"><i class="dot" style="background:var(--absent)"></i><div class="row">
+      <div class="name">workflow selection <span class="tag t-absent">absent</span></div>
+      <div class="meta">Skill description competes for the user's words. <em>41–59% run-to-run.</em><br>
+      <span class="no">Cannot refuse anything.</span> <code>matching_prompts</code> declared in every WORKFLOW.md, read by <em>nothing</em>.</div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--absent)"></i><div class="row">
+      <div class="name">stage order <span class="tag t-absent">absent</span></div>
+      <div class="meta"><code>depends_on</code> is a chain in every STAGE.md.<br>
+      <span class="no">grep for a reader of WORKFLOW.md / STAGE.md returns zero files.</span></div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--absent)"></i><div class="row">
+      <div class="name">skill declaration <span class="tag t-absent">absent</span></div>
+      <div class="meta">Stage lists its <code>skills:</code>. Agent may load anything it likes.</div>
+    </div></div>
+
+    <div class="boundary">File boundary — the agent touches a file</div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">pre-write-check.sh <span class="tag t-block">refuses</span></div>
+      <div class="meta"><code>PreToolUse · Write|Edit</code> → <span class="verdict">exit 2</span> on protected dirs, bad filename.<br>
+      <em>P0-A: finds harness.config.json at the git root only — nested packages silently no-op, and <code>2>/dev/null</code> swallows it.</em></div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">post-write-lint.sh <span class="tag t-block">refuses</span></div>
+      <div class="meta"><code>PostToolUse · Write|Edit</code> → <span class="verdict">exit 2</span> on lint failure. Formats first.</div>
+    </div></div>
+
+    <div class="boundary">Turn boundary — the agent tries to stop</div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">stop-gate.sh <span class="tag t-block">refuses</span></div>
+      <div class="meta"><code>Stop</code> → <span class="verdict">exit 2</span> if the tree is dirty and the gate fails. Loop-guarded via <code>stop_hook_active</code>.<br>
+      <em>Does not know whether a workflow finished — there is no run to check.</em></div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--absent)"></i><div class="row">
+      <div class="name">one writer <span class="tag t-absent">audited, not enforced</span></div>
+      <div class="meta">Enforced properly by <code>validate-interactive-run.mjs:143</code> — <em>after the fact, and nothing invokes it.</em></div>
+    </div></div>
+
+    <div class="boundary">Commit boundary</div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">pre-commit-gate.sh <span class="tag t-block">refuses</span></div>
+      <div class="meta"><code>PreToolUse · Bash</code> matching <code>git commit</code> → <span class="verdict">exit 2</span>.</div>
+    </div></div>
+
+    <div class="boundary">Merge boundary</div>
+
+    <div class="cp"><i class="dot" style="background:var(--report)"></i><div class="row">
+      <div class="name">gate.sh via CI <span class="tag t-report">partial</span></div>
+      <div class="meta">Severity-driven, exit 2 on blocking. <em>P0-B: e2e runs under the check name <code>relatedTests</code>. P0-C: boundaries and compiler lint never invoked.</em></div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--report)"></i><div class="row">
+      <div class="name">pr-review.yml <span class="tag t-report">reports</span></div>
+      <div class="meta">Comments findings. Advisory by design — correct.</div>
+    </div></div>
+
+  </div>
+</div>
+
+<!-- ================= AFTER ================= -->
+<div class="lane aft" id="l-aft">
+  <div class="lhead"><span class="n">After phase 5.5</span><span class="c">8 real · 2 reports · 0 absent</span></div>
+  <div class="chain">
+
+    <div class="boundary">Intent boundary — <em style="color:var(--block)">now enforced at the file boundary</em></div>
+
+    <div class="cp"><i class="dot" style="background:var(--prose)"></i><div class="row">
+      <div class="name">prompt <span class="tag t-prose">unconstrained</span></div>
+      <div class="meta">Deliberately. Say anything. Selection no longer depends on your words.</div>
+    </div></div>
+
+    <div class="boundary">File boundary — one hook, five refusals</div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">require-workflow.sh · no run open <span class="tag t-block">refuses</span></div>
+      <div class="meta">Walks up from <code>file_path</code> to the nearest <code>WORKFLOWS.md</code> →
+      <span class="verdict">exit 2</span>, prints the local menu.<br><em>This is where workflow selection happens. The folder answers what the prompt couldn't.</em></div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">· workflow not legal here <span class="tag t-block">refuses</span></div>
+      <div class="meta">Run open, but its workflow is absent from this folder's <code>allowed:</code> → <span class="verdict">exit 2</span>.</div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">· stage deps unmet <span class="tag t-block">refuses</span></div>
+      <div class="meta"><code>depends_on</code> becomes a rail. <span class="verdict">exit 2</span> before the write lands, not after.</div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">· undeclared skill <span class="tag t-block">refuses</span></div>
+      <div class="meta">Loaded a skill the stage didn't declare → <span class="verdict">exit 2</span>.</div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">· not the writer <span class="tag t-block">refuses</span></div>
+      <div class="meta">One-writer moves from post-hoc audit to a live refusal.</div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">pre-write-check.sh <span class="tag t-block">refuses</span></div>
+      <div class="meta">Unchanged, plus P0-A fixed: walks up from the <em>file</em>, fails loudly when no config is found. Never no-ops.</div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">post-write-lint.sh <span class="tag t-block">refuses</span></div>
+      <div class="meta">Unchanged.</div>
+    </div></div>
+
+    <div class="boundary">Turn boundary</div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">stop-gate.sh + completion <span class="tag t-block">refuses</span></div>
+      <div class="meta"><span class="verdict">exit 2</span> on a dirty tree <em>and</em> on an incomplete run — stages unpassed, verification not <code>pass</code>, or <code>approval-required</code>.</div>
+    </div></div>
+
+    <div class="boundary">Commit + merge</div>
+
+    <div class="cp"><i class="dot" style="background:var(--block)"></i><div class="row">
+      <div class="name">pre-commit-gate · gate.sh · CI <span class="tag t-block">refuses</span></div>
+      <div class="meta">P0-B and P0-C fixed: e2e under its own name, boundaries and compiler in the main gate.</div>
+    </div></div>
+
+    <div class="cp"><i class="dot" style="background:var(--report)"></i><div class="row">
+      <div class="name">pr-review.yml <span class="tag t-report">reports</span></div>
+      <div class="meta">Still advisory. Correctly so.</div>
+    </div></div>
+
+  </div>
+</div>
+</div>
+
+<div class="punch">
+  <h3>The shape of the problem, in one table</h3>
+  <table>
+    <thead><tr><th>Boundary</th><th style="width:42%">Enforcement today</th><th style="width:16%">Real?</th></tr></thead>
+    <tbody>
+      <tr><td>Intent — which job is this</td><td><span class="bar" style="width:0;background:var(--absent)"></span>nothing</td><td style="color:var(--absent)">0 of 3</td></tr>
+      <tr><td>File — this write, right now</td><td><span class="bar" style="width:96px;background:var(--block)"></span>2 hooks, exit 2</td><td style="color:var(--block)">2 of 2</td></tr>
+      <tr><td>Turn — can the agent stop</td><td><span class="bar" style="width:48px;background:var(--block)"></span>dirty tree only</td><td style="color:var(--prose)">1 of 2</td></tr>
+      <tr><td>Commit</td><td><span class="bar" style="width:96px;background:var(--block)"></span>hook, exit 2</td><td style="color:var(--block)">1 of 1</td></tr>
+      <tr><td>Merge</td><td><span class="bar" style="width:72px;background:var(--report)"></span>gate.sh, 2 defects</td><td style="color:var(--prose)">partial</td></tr>
+    </tbody>
+  </table>
+  <p style="margin:18px 0 0;font-size:13.5px;color:var(--dim);border-top:1px solid var(--line);padding-top:15px">
+    <b style="color:var(--ink)">Enforcement is dense at the file boundary and empty at the workflow boundary.</b>
+    Every mechanism that actually refuses something lives at the moment a file is touched. Everything about
+    <i>which job this is</i> and <i>what order it happens in</i> is prose.
+    <br><br>
+    Which is exactly why scope-by-location is the right fix rather than a runner: it enforces the workflow
+    boundary <b style="color:var(--ink)">using the file boundary</b> — the one place enforcement already works.
+    You are not adding a new kind of control. You are pointing the control you already have at the thing that
+    has none.
+  </p>
+</div>
+
+<div class="caveat">
+  <b>What still can't be enforced, and shouldn't be.</b> A hook refuses actions it can see. It cannot judge whether the abstraction was earned, whether the test is meaningful, or whether stage 4 was done <i>well</i>. That is the gates' and the reviewer's job, and no amount of hook is a substitute. The prose layer isn't a failure — it's the part that was always going to be prose. The failure was prose sitting where code belonged.
+</div>
+
+<footer>
+  verified 2026-07-26 against harness/hooks/*.sh, harness/scripts/gate.sh, harness/ci/*.yml,
+  harness/templates/claude-settings.json, prototypes/scripts/*.mjs<br>
+  companion to FINAL_EXECUTION_PLAN.md phase 2 and phase 5.5
+</footer>
+
+<script>
+  const tog=document.getElementById('tog'),lanes=document.getElementById('lanes');
+  const n=document.getElementById('l-now'),a=document.getElementById('l-aft');
+  tog.addEventListener('click',e=>{const b=e.target.closest('button'); if(!b)return;
+    [...tog.children].forEach(x=>x.classList.toggle('on',x===b));
+    const v=b.dataset.v; lanes.classList.toggle('solo',v!=='both');
+    n.classList.toggle('hidden',v==='aft'); a.classList.toggle('hidden',v==='now');});
+</script>
+</div></body></html>

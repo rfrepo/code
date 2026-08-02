@@ -1,0 +1,30 @@
+{
+  "$comment": "Harness hooks block — install.sh MERGES this into the project's existing .claude/settings.json, never clobbers. TDD Guard: if harness.config.json tddGuard.enabled, installer adds `tdd-guard` as an extra PreToolUse Write|Edit hook. tool-activity-log is observability-only: async so it never blocks a tool call, PostToolUse-only (the Post event carries everything Pre does, plus success).",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [{ "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/pre-write-check.sh\"" }]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [{ "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/pre-commit-gate.sh\"" }]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [{ "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/post-write-lint.sh\"" }]
+      },
+      {
+        "matcher": "*",
+        "hooks": [{ "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/tool-activity-log.sh\"", "async": true, "timeout": 5 }]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [{ "type": "command", "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/stop-gate.sh\"", "timeout": 900 }]
+      }
+    ]
+  }
+}

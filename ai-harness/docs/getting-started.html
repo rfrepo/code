@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quality Enforcement Harness — getting started</title>
+  <style>
+    :root {
+      --black: #101012; --white: #ffffff;
+      --gray-150: #ececef; --bg-subtle: #f7f7f8;
+      --border: #e2e2e6; --text: #1b1b1f; --text-2: #55555e; --text-3: #8a8a94;
+      --primary: #4f46e5; --ok: #16a34a; --warn: #d97706;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, "SF Pro Text", "Segoe UI", Inter, sans-serif; color: var(--text); background: var(--white); line-height: 1.55; }
+    .topbar { display: flex; align-items: center; gap: 12px; padding: 24px 48px 0; flex-wrap: wrap; }
+    .topbar .logo { font-weight: 700; font-size: 1.15rem; color: var(--text); text-decoration: none; }
+    .topbar .logo span { color: var(--primary); }
+    .topbar .crumb { color: var(--text-3); }
+    .article { max-width: 880px; margin: 0 auto; padding: 32px 48px 64px; }
+    .eyebrow { margin: 0 0 10px; color: var(--primary); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+    h1 { font-size: 2rem; font-weight: 700; line-height: 1.2; margin: 0 0 14px; }
+    .lede { font-size: 1.05rem; color: var(--text-2); max-width: 62ch; margin: 0 0 32px; }
+    h2 { font-size: 1.4rem; margin: 44px 0 14px; }
+    h3 { font-size: 1.05rem; margin: 24px 0 10px; }
+    ol, ul { padding-left: 1.25rem; }
+    li { margin-bottom: 8px; }
+    .callout { border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-subtle); padding: 20px; margin: 20px 0; }
+    .callout strong { display: block; margin-bottom: 8px; }
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+    .steps li { position: relative; padding: 16px 16px 16px 3.5rem; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; background: var(--white); }
+    .steps li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 16px; top: 16px; width: 1.75rem; height: 1.75rem;
+      border-radius: 50%; background: var(--black); color: var(--white);
+      font-size: 0.8rem; font-weight: 600; display: grid; place-items: center;
+    }
+    pre { background: var(--black); color: var(--white); border-radius: var(--radius); padding: 16px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+    p code, li code, td code { background: var(--gray-150); padding: 0.1em 0.35em; border-radius: 4px; }
+    pre code { background: transparent; padding: 0; color: inherit; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 0.88rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { color: var(--text-2); font-weight: 600; }
+    .pill { display: inline-block; padding: 0.05em 0.55em; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+    .pill.block { background: #fee2e2; color: #b91c1c; }
+    .pill.report { background: #fef3c7; color: #92400e; }
+    .pill.ok { background: #dcfce7; color: #166534; }
+    .foot-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); flex-wrap: wrap; color: var(--text-3); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a href="#" class="logo">quality<span>-harness</span></a>
+    <span class="crumb">getting started</span>
+  </div>
+
+  <main class="article">
+    <p class="eyebrow">Claude Code · Codex · humans · CI</p>
+    <h1>Get the Quality Enforcement Harness running in a project</h1>
+    <p class="lede">
+      Layered, token-efficient quality gates for React/TS projects. One rulebook
+      (<code>docs/clean-code.md</code>), enforced at the cheapest layer that can
+      catch each violation — deterministic hooks first, AI judgement last.
+    </p>
+
+    <div class="callout">
+      <strong>What you get</strong>
+      <p style="margin:0">
+        A single gate script with three entry points (Claude hooks, git pre-commit, CI),
+        write-time filename/protected-dir checks, format-and-lint on every edit, a
+        turn-end Stop hook that chains gate → peer-review proof → LLM review, and an
+        observability trail under <code>.harness/runs/</code>.
+      </p>
+    </div>
+
+    <h2>The layers</h2>
+    <pre><code>Deterministic rules  → hooks + ESLint (fire every time, zero tokens)
+Soft design guidance → lean CLAUDE.md distillation (~15 lines, always on)
+Procedures/reference → skills (loaded only when the task matches)
+Judgment calls       → read-only reviewer subagent + pluggable AI reviewers
+Turn-end enforcement → Stop hook: gate → peer-review proof → LLM review
+Observability        → .harness/runs/: artifact bundles + JSONL activity feed
+One source of truth  → docs/clean-code.md</code></pre>
+
+    <h2>Install</h2>
+    <ol class="steps">
+      <li>
+        <strong>Run the installer from your project root</strong>
+        <p>No argument needed — it installs into the directory you run it from:</p>
+        <pre><code>cd /path/to/project
+bash /path/to/harness/install.sh
+
+# or via npx from a local checkout:
+npx --yes -p /path/to/harness quality-harness
+
+# or once the harness is pushed to GitHub:
+npx --yes github:&lt;your-username&gt;/quality-enforcement-harness</code></pre>
+        <p>It refuses to run outside a git repo root with a <code>package.json</code>.
+        Everything it touches is backed up first; merges never clobber your config.</p>
+      </li>
+      <li>
+        <strong>Answer the prompts</strong>
+        <p>Protected dirs (Open-Closed enforcement), dev dependencies, optional
+        extras (fallow, sonarjs, Stryker, TDD Guard), git hooks and CI workflows.
+        Say no to anything — every piece works independently.</p>
+      </li>
+      <li>
+        <strong>Wire ESLint if flagged</strong>
+        <p>If you already had a flat config, spread the harness base in:</p>
+        <pre><code>import harness from './eslint/base.config.mjs'
+export default [...harness, /* your overrides */]</code></pre>
+      </li>
+      <li>
+        <strong>Start a new Claude Code session</strong>
+        <p>Hook registrations are snapshotted at session start — an already-open
+        session will not see them. Run <code>/hooks</code> to confirm registration.</p>
+      </li>
+      <li>
+        <strong>Smoke the gates</strong>
+        <ul>
+          <li>Write a file named against convention → expect a PreToolUse deny</li>
+          <li>Edit a protected dir → expect a deny with the Open-Closed message</li>
+          <li>Finish a turn with failing checks → expect the Stop hook to block</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Upgrade</h2>
+    <div class="callout">
+      <strong>Re-running the installer is the upgrade path — it is idempotent</strong>
+      <p style="margin:0">
+        <code>scripts/</code> and <code>.claude/hooks/</code> are overwritten with current
+        versions. In <code>.claude/settings.json</code>, harness-owned hook entries are
+        <em>replaced</em>, never duplicated; your own hooks and permissions are untouched.
+        In <code>harness.config.json</code>, new keys are added and your tuned values always
+        win (reviewers matched by name). The installer prints exactly what it added.
+        Then start a new session.
+      </p>
+    </div>
+
+    <h2>One gate, three entry points</h2>
+    <p><code>scripts/gate.sh</code> is the single gate — Claude hooks (pre-commit + Stop),
+    lefthook git pre-commit, and CI all run the same script, so they can never drift.</p>
+    <pre><code>gate.sh --staged           # staged files (git pre-commit, Claude commit hook)
+gate.sh --changed &lt;base&gt;   # committed + staged + unstaged vs base (Stop hook, CI)
+gate.sh --all [--e2e]      # full sweep (CI main, on demand)</code></pre>
+
+    <h2>The Stop hook: three checks before the agent may finish</h2>
+    <ol>
+      <li><strong>gate.sh <code>--changed</code></strong> — all deterministic checks.</li>
+      <li><strong>Peer-review proof</strong> — the activity log must show a
+        <code>code-reviewer</code> subagent run <em>newer than the last edit</em>
+        (<code>harness.config.json → subagentReview</code>).</li>
+      <li><strong>LLM review</strong> — each enabled CLI reviewer (e.g. codex) reviews the
+        diff against <code>clean-code.md</code>; a report ending
+        <code>VERDICT: FAIL</code> blocks when <code>llmReview.mode</code> is
+        <code>"block"</code>.</li>
+    </ol>
+    <p>Fix rounds are capped per session by <code>llmReview.maxRounds</code> (default 2),
+    so two models can never argue forever. Reports are saved under
+    <code>.harness/runs/</code> either way.</p>
+
+    <h2>Severity model</h2>
+    <table>
+      <thead><tr><th>Severity</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><span class="pill block">block</span></td><td>Deterministic failure — stops the commit / turn</td></tr>
+        <tr><td><span class="pill block">block-new</span></td><td>Blocks only regressions vs a committed baseline</td></tr>
+        <tr><td><span class="pill report">report</span></td><td>Advisory — surfaced, never blocks. New checks start here; promote after a week</td></tr>
+        <tr><td><span class="pill ok">off</span></td><td>Disabled</td></tr>
+      </tbody>
+    </table>
+    <p>Set per check in <code>harness.config.json → checks</code>. Only deterministic
+    checks block — the one exception is the turn-end LLM review in
+    <code>"block"</code> mode, and it is bounded by <code>maxRounds</code>.</p>
+
+    <h2>Observability</h2>
+    <ul>
+      <li>Every gate run writes an artifact bundle under
+        <code>.harness/runs/&lt;stamp&gt;/</code>: <code>result.json</code>,
+        <code>brief.md</code>, per-check output in <code>checks/</code>.</li>
+      <li>Every tool call is appended to <code>runs/&lt;date&gt;/events.jsonl</code> by an
+        async PostToolUse hook — it never blocks a tool call.</li>
+      <li><code>logging.enabled: false</code> turns it all off;
+        <code>logging.retainDays</code> (default 30) prunes old runs.</li>
+    </ul>
+
+    <h2>Escape hatches (all auditable)</h2>
+    <ul>
+      <li><code>// hoisted: &lt;reason&gt;</code> — legitimate state lift</li>
+      <li><code>SKIP_TESTS_CHECK=1</code> — no-behaviour changes (renames, comments)</li>
+      <li><code>npx fallow dupes --save-baseline</code> — accept justified duplication</li>
+      <li><code>node scripts/ratchet.mjs update</code> — lock in improvements</li>
+    </ul>
+
+    <h2>Verify the install</h2>
+    <pre><code># From the harness repo — its own test suite:
+bash scripts/__tests__/run-logging.test.sh
+bash scripts/__tests__/nested-config-gate.test.sh
+bash scripts/__tests__/llm-review.test.sh
+bash scripts/__tests__/check-filename.test.sh
+
+# From the target project:
+bash scripts/gate.sh --changed origin/main   # expect check output, not silence</code></pre>
+
+    <h2>Where the source lives</h2>
+    <ul>
+      <li>Rulebook: <code>docs/clean-code.md</code> — change a rule here first</li>
+      <li>Rule → layer → file map: <code>README.md</code></li>
+      <li>Config: <code>harness.config.json</code> — severities, reviewers, logging, models</li>
+      <li>Gate + reviewers: <code>scripts/gate.sh</code>, <code>scripts/llm-review.sh</code>,
+        <code>scripts/review.sh</code>, <code>scripts/subagent-review-check.sh</code></li>
+      <li>Hooks: <code>hooks/</code> → installed to <code>.claude/hooks/</code></li>
+    </ul>
+
+    <div class="foot-nav">
+      <span>Companion to <code>README.md</code> — this file is the narrative walk-through.</span>
+      <span>Self-contained: no external assets.</span>
+    </div>
+  </main>
+</body>
+</html>

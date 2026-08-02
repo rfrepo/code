@@ -1,0 +1,84 @@
+{
+  "$comment": "Quality harness configuration. One place to tune enforcement, reviewers, and model costs.",
+  "protectedDirs": [],
+  "formatter": "auto",
+  "testCommand": "npx jest --passWithNoTests --findRelatedTests",
+  "e2eCommand": "npx playwright test",
+  "checks": {
+    "eslint": "block",
+    "filename": "block",
+    "protectedDirs": "block",
+    "testsAccompanyCode": "block",
+    "relatedTests": "block",
+    "duplication": "block-new",
+    "jsxShapes": "report",
+    "knip": "report",
+    "gitleaks": "block",
+    "semgrep": "report",
+    "ratchet": "block",
+    "dispatchPropGrep": "block",
+    "boundaries": "block",
+    "compiler": "block",
+    "e2e": "block"
+  },
+  "boundaries": {
+    "$comment": "Feature-based structure (docs/clean-code.md §10). severity: warn (report-only) or error (blocks via eslint gate). Set enabled:false for repos not yet feature-sliced. shared/app accept a string or array of paths.",
+    "enabled": true,
+    "severity": "warn",
+    "shared": "src/shared",
+    "features": "src/features/*",
+    "app": "src/app"
+  },
+  "ratchet": {
+    "baselineFile": ".quality-baseline.json",
+    "track": ["lintWarnings", "typeCoverage"]
+  },
+  "logging": {
+    "$comment": "Run artifacts + agent tool-call log under .harness/runs/. Observability only — never blocks.",
+    "enabled": true,
+    "retainDays": 30
+  },
+  "tddGuard": {
+    "enabled": false,
+    "model": "haiku"
+  },
+  "models": {
+    "$comment": "reviewer: opus — strongest Claude model for review-style reasoning (multi-file logic, explanation quality); runs once per turn so the extra cost is bounded. Drop to sonnet for ~1/5 the price at slightly lower quality.",
+    "reviewer": "opus",
+    "visualQa": "inherit"
+  },
+  "subagentReview": {
+    "$comment": "Peer review by a Claude subagent, enforced at the Stop hook: the activity log must show a run of this agent newer than the engineer's last edit, else the stop blocks with instructions to run it. Fast first pass; codex (llmReview) stays the independent final check.",
+    "enabled": true,
+    "agent": "code-reviewer"
+  },
+  "llmReview": {
+    "$comment": "Second-pair-of-eyes review at the Stop hook, after gate.sh passes. mode: 'block' feeds VERDICT: FAIL findings back to the engineer via exit 2; 'advisory' only saves the report to .harness/runs/. maxRounds caps review-fix-review cycles per turn.",
+    "enabled": true,
+    "mode": "block",
+    "maxRounds": 2
+  },
+  "reviewers": [
+    {
+      "name": "claude-reviewer",
+      "type": "subagent",
+      "agent": "code-reviewer",
+      "blocking": false
+    },
+    {
+      "name": "codex",
+      "type": "cli",
+      "command": "codex exec --sandbox read-only \"Review the diff between {base} and HEAD strictly against docs/clean-code.md. Report clear violations only, with file:line and the clean-code.md section each one breaks. Separate sections: Standards, Spec (skip Spec if no issue/PRD is referenced). End your reply with exactly one line: 'VERDICT: PASS' if there are no clear violations, or 'VERDICT: FAIL' if there are.\"",
+      "blocking": false,
+      "enabled": true
+    },
+    {
+      "name": "third-party-pr",
+      "type": "external",
+      "provider": "coderabbit",
+      "blocking": false,
+      "enabled": false,
+      "$comment": "CodeRabbit/Greptile install via their GitHub App; this entry documents the slot."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Git-level parity: humans and non-Claude agents hit the SAME gate.
+pre-commit:
+  commands:
+    quality-gate:
+      run: HARNESS_ENTRY=lefthook bash scripts/gate.sh --staged
+
+commit-msg:
+  commands:
+    commitlint:
+      run: npx --no-install commitlint --edit {1}

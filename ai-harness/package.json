@@ -1,0 +1,28 @@
+{
+  "name": "quality-enforcement-harness",
+  "version": "0.1.0",
+  "description": "Quality enforcement harness for Claude Code projects: gate script, hooks, reviewers, and observability. Run `npx quality-enforcement-harness` from a project root to install.",
+  "bin": {
+    "quality-harness": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "install.sh",
+    "docs/clean-code.md",
+    "scripts/",
+    "hooks/",
+    "templates/",
+    "eslint/rules/",
+    "eslint/base.config.mjs",
+    "eslint/boundaries.config.mjs",
+    "ci/",
+    "harness.config.json",
+    "CLAUDE.md.template",
+    "commitlint.config.mjs",
+    "stryker.config.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

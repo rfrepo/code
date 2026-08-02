@@ -1,0 +1,24 @@
+# .github/workflows/quality-gate.yml — same gate.sh as local hooks. CI is the backstop.
+name: quality-gate
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Gate (diff vs base)
+        run: |
+          BASE="${{ github.event.pull_request.base.sha || 'HEAD~1' }}"
+          HARNESS_ENTRY=ci bash scripts/gate.sh --changed "$BASE"
+      - name: E2E (critical journeys)
+        if: github.event_name == 'pull_request'
+        run: |
+          npx playwright install --with-deps chromium
+          npx playwright test

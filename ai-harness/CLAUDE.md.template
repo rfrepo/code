@@ -1,0 +1,16 @@
+<!-- Quality harness distillation. Full rules: docs/clean-code.md (read it when creating/refactoring components, hooks, or tests). -->
+
+## Code standards (distilled — full doc: docs/clean-code.md)
+
+- Courier test: hook result forwarded to exactly ONE child → move the hook into that child. Exempt: useContext/useRef/router hooks, `// hoisted: waterfall`.
+- Never pass setState setters, `dispatch`, or whole hook-return objects as props. Communicate via `onChange`/`onCommit`; initialize via `defaultValue`.
+- Names describe domain purpose, never structure: no `Wrapper`/`Container`/`Helper`/`Utils`/`data2`. `onX` props, `handleX` handlers.
+- Files: `PascalCase.tsx` components, `useCamelCase.ts` hooks, `kebab-case/` folders.
+- New code goes in `src/features/<name>/`; features never import other features. Shared by 2+ features → `src/shared/`. `src/app/` is routing/layout glue only (flow: shared ← features ← app).
+- Rule of three before extracting shared components; name extractions for domain purpose.
+- Protected dirs (see harness.config.json) are closed for modification — extend via new files implementing existing interfaces.
+- Logic lives in hooks; components are JSX + wiring. Helpers and constants outside. No magic values.
+- TDD: one failing test → minimal code to pass → repeat. Tests accompany code in the same commit. Tracer bullet for a new flow = its first e2e.
+- Tests: SUT imported last, "should…" names, no conditionals, semantic queries, literal expected values.
+- Use the code-reviewer subagent only when explicitly asked or at commit time; do not spawn subagents for tasks a direct approach handles.
+- Use the project's task runner; never run destructive commands; no recap .md files unless asked.
