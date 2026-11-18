@@ -4,6 +4,10 @@ A chat agent on Cloudflare that checks GitHub pull requests against your team's 
 
 You write rules in plain words, such as "no console.log in src/". You paste a pull request link. The agent replies with one line per rule: **pass**, **fail** or **unclear**, with a short reason and, where there is one, the file and line. Rules and past reviews stay in the agent's memory, so you can ask "what did you find on owner/repo#123?" later.
 
+A 100-second walkthrough of the approach and the design decisions:
+
+https://github.com/user-attachments/assets/80e2e81e-6537-45a1-bc38-5cbd1018d897
+
 The finished review shows as a card: a link to the pull request, a count of each verdict, and one row per rule with a green tick, a red cross or an amber warning.
 
 ![A finished review card for cloudflare/agents#100](docs/media/review-card.png)
