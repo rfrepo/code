@@ -1,0 +1,33 @@
+name: PR Policy Reviewer check
+
+on:
+  push:
+    branches: [main]
+    paths: ["ai-tools/cf-ai-pr-policy-reviewer/**", ".github/workflows/pr-policy-reviewer-check.yml"]
+  pull_request:
+    branches: [main]
+    paths: ["ai-tools/cf-ai-pr-policy-reviewer/**", ".github/workflows/pr-policy-reviewer-check.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    timeout-minutes: 5
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: ai-tools/cf-ai-pr-policy-reviewer
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: ai-tools/cf-ai-pr-policy-reviewer/package-lock.json
+
+      - run: npm ci
+      - run: npm run check
