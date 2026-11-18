@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
+  "ignorePatterns": ["env.d.ts"],
+  "ignoreDependencies": ["@babel/plugin-proposal-decorators"],
+  "usedClassMembers": [
+    "maxPersistedMessages",
+    "onChatMessage",
+    "onWorkflowComplete",
+    "onWorkflowError",
+    "saveReview",
+    "run"
+  ],
+  "boundaries": {
+    "zones": [
+      {
+        "name": "app",
+        "patterns": ["src/*.ts", "src/*.tsx"]
+      },
+      {
+        "name": "agent",
+        "patterns": ["src/agent/**"]
+      },
+      {
+        "name": "rules",
+        "patterns": ["src/features/rules/**"]
+      },
+      {
+        "name": "reviews",
+        "patterns": ["src/features/reviews/**"]
+      },
+      {
+        "name": "chat",
+        "patterns": ["src/features/chat/**"]
+      },
+      {
+        "name": "shared",
+        "patterns": ["src/shared/**"]
+      }
+    ],
+    "rules": [
+      {
+        "from": "app",
+        "allow": ["agent", "rules", "reviews", "chat", "shared"]
+      },
+      {
+        "from": "agent",
+        "allow": ["rules", "reviews", "shared"]
+      },
+      {
+        "from": "rules",
+        "allow": ["shared"]
+      },
+      {
+        "from": "reviews",
+        "allow": ["shared"]
+      },
+      {
+        "from": "chat",
+        "allow": ["shared"]
+      },
+      {
+        "from": "shared",
+        "allow": []
+      }
+    ],
+    "coverage": {
+      "requireAllFiles": true,
+      "allowUnmatched": ["*.config.ts", "index.html", "src/styles.css"]
+    }
+  }
+}
